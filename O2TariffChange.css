@@ -1,0 +1,307 @@
+/* Need to update segmented control to one from Beta Project
+
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+  margin:0;
+  padding:0;
+}
+
+html { 
+  background: linear-gradient(#667EEA, #764BA2) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#mainDiv {
+  display: grid;
+  grid-template-columns: auto 500px auto;
+  color: white;
+}
+
+.containerZero {
+  display: grid;
+  grid-template-rows: 55px;
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+
+.containerOne {
+  display: grid;
+  grid-template-rows: 30px px 30px 8px 30px 8px;
+  grid-template-columns: 0px auto;
+  grid-column-start: 2;
+}
+
+.containerTwo {
+  display: grid;
+  grid-template-rows: 65px;
+  grid-template-columns: 0px auto;
+  grid-column-start: 2;
+}
+
+.containerThree {
+  display: grid;
+  grid-template-columns: 0px auto;
+  grid-column-start: 2;
+}
+
+.containerFour {
+  display: grid;
+  grid-template-rows: 30px;
+  grid-template-columns: 0px auto;
+  grid-column-start: 2;
+}
+
+.containerFive {
+  display: grid;
+  grid-template-columns: 0px auto;
+  grid-column-start: 2;
+}
+
+#topHeader {
+  grid-column-start: 2;
+}
+
+#selectTariffDiv {
+  grid-row-start: 1;
+  grid-column-start: 2;
+}
+
+h2 {
+  background-color: rgba(241, 64, 169, 0);
+  color: white;
+  padding: 10px; 
+  height: 50px;
+  border-radius: 8px;
+  width: 500px;
+  text-align: center;
+}
+
+.generateButton {
+  background-color: rgba(241, 64, 169, 0);
+  color: white;
+  padding: 1px; 
+  border-radius: 8px;
+  width: 130px;
+  font-size: 14px;
+}
+
+#generateButtonDiv {
+  grid-column-start: 2;
+  color: white;
+}
+
+.one {
+  color: white;
+}
+
+.generatedScriptArea {
+  width: 500px;
+  height: 500px;
+  border-radius: 8px;
+  padding: 5px;
+  color: white;
+  background: rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+}
+
+#generatedScriptAreaDiv {
+  grid-column-start: 2;
+}
+
+.dropdownOne {
+  grid-column-start: 2;
+}
+
+.mobileNumberDiv {
+  width: 235px;
+  grid-column-start: 2;
+  color: white;
+  padding-top: 8px;
+}
+
+.simNumberDiv {
+  grid-column-start: 3;
+}
+
+.mobileNumberArea {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  padding: 5px;
+  color: white;
+  background: rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+}
+
+.simNumberArea {
+  width: 200px;
+  height: 150px;
+  border-radius: 8px;
+}
+
+.leadHandsetNumber {
+  border-radius: 8px;
+  height: 34px;
+  width: 222px;
+}
+
+#enterLeadNumber {
+  grid-column-start: 2;
+}
+
+#selectLeadhandsetDiv {
+  grid-column-start: 3
+}
+
+#navDiv {
+  display: grid;
+  grid-template-rows: 51px 5px;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-expand-lg {
+  background-color: rgba(255, 255, 255, 0);
+  border-color: #ffffff;
+  border-bottom: 1px solid white;
+}
+.navbar-expand-lg .navbar-brand {
+  color: #ffffff;
+}
+.navbar-expand-lg .navbar-brand:hover,
+.navbar-expand-lg .navbar-brand:focus {
+  color: #ffbbbc;
+}
+.navbar-expand-lg .navbar-text {
+  color: #ffffff;
+}
+.navbar-expand-lg .navbar-nav > li > a {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0);
+}
+.navbar-expand-lg .navbar-nav > li > a:hover,
+.navbar-expand-lg .navbar-nav > li > a:focus {
+  color: #ffbbbc;
+}
+.navbar-expand-lg .navbar-nav > .active > a,
+.navbar-expand-lg .navbar-nav > .active > a:hover,
+.navbar-expand-lg .navbar-nav > .active > a:focus {
+  color: #ffbbbc;
+}
+.navbar-expand-lg .navbar-nav > .open > a,
+.navbar-expand-lg .navbar-nav > .open > a:hover,
+.navbar-expand-lg .navbar-nav > .open > a:focus {
+  color: #ffbbbc;
+  background-color: #e169b0;
+}
+.navbar-expand-lg .navbar-toggle {
+  border-color: #ffffff;
+}
+.navbar-expand-lg .navbar-toggle:hover,
+.navbar-expand-lg .navbar-toggle:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.navbar-expand-lg .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+.navbar-expand-lg .navbar-collapse,
+.navbar-expand-lg .navbar-form {
+  border-color: #ffffff;
+}
+.navbar-expand-lg .navbar-link {
+  color: #ffffff;
+}
+.navbar-expand-lg .navbar-link:hover {
+  color: #ffbbbc;
+}
+
+@media (max-width: 1010px) {
+  .navbar-expand-lg .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffffff;
+  }
+  .navbar-expand-lg .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-expand-lg .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffbbbc;
+  }
+  .navbar-expand-lg .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-expand-lg .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-expand-lg .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffbbbc;
+    background-color: #e169b0;
+  }
+}
+
+.segmented-control {
+  display: table;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.segmented-control__item {
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.segmented-control__input {
+  position: absolute;
+  visibility: hidden;
+}
+
+.segmented-control__label {
+  display: block;
+  margin: 0 -1px -1px 0; /* -1px margin removes double-thickness borders between items */
+  padding: 5px;
+
+  border: 1px solid #ddd;
+
+  font: 14px; 
+  text-align: center;  
+
+  cursor: pointer;
+}
+
+.segmented-control__label:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.segmented-control__input:checked + .segmented-control__label {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+#voiceOrData {
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+
+textarea {
+  resize: none;
+}
+
+textarea:focus {
+  outline: none !important;
+  border:1px solid rgb(241, 64, 169);
+  box-shadow: 0 0 10px #719ECE;
+}

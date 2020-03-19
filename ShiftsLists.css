@@ -1,0 +1,209 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+  margin:0;
+  padding:0;
+}
+
+html { 
+  background: linear-gradient(#667EEA, #764BA2) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#navDiv {
+  display: grid;
+  grid-template-rows: 51px 5px;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-expand-lg {
+  background-color: rgba(255, 255, 255, 0);
+  border-color: #ffffff;
+  border-bottom: 1px solid white;
+}
+.navbar-expand-lg .navbar-brand {
+  color: #ffffff;
+}
+.navbar-expand-lg .navbar-brand:hover,
+.navbar-expand-lg .navbar-brand:focus {
+  color: #ffbbbc;
+}
+.navbar-expand-lg .navbar-text {
+  color: #ffffff;
+}
+.navbar-expand-lg .navbar-nav > li > a {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0);
+}
+.navbar-expand-lg .navbar-nav > li > a:hover,
+.navbar-expand-lg .navbar-nav > li > a:focus {
+  color: #ffbbbc;
+}
+.navbar-expand-lg .navbar-nav > .active > a,
+.navbar-expand-lg .navbar-nav > .active > a:hover,
+.navbar-expand-lg .navbar-nav > .active > a:focus {
+  color: #ffbbbc;
+}
+.navbar-expand-lg .navbar-nav > .open > a,
+.navbar-expand-lg .navbar-nav > .open > a:hover,
+.navbar-expand-lg .navbar-nav > .open > a:focus {
+  color: #ffbbbc;
+  background-color: #e169b0;
+}
+.navbar-expand-lg .navbar-toggle {
+  border-color: #ffffff;
+}
+.navbar-expand-lg .navbar-toggle:hover,
+.navbar-expand-lg .navbar-toggle:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.navbar-expand-lg .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+.navbar-expand-lg .navbar-collapse,
+.navbar-expand-lg .navbar-form {
+  border-color: #ffffff;
+}
+.navbar-expand-lg .navbar-link {
+  color: #ffffff;
+}
+.navbar-expand-lg .navbar-link:hover {
+  color: #ffbbbc;
+}
+
+@media (max-width: 1010px) {
+  .navbar-expand-lg .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffffff;
+  }
+  .navbar-expand-lg .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-expand-lg .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffbbbc;
+  }
+  .navbar-expand-lg .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-expand-lg .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-expand-lg .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffbbbc;
+    background-color: #e169b0;
+  }
+}
+
+h1 {
+  color: #ffffff;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.header-item {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.table-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: space-between;
+  flex-basis: 100%;
+}
+
+.table-item-1 {
+  order: 2;
+  flex-grow: 1;
+  flex-basis: 33%;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2em;
+  margin-left: 2em;
+  max-width: 550px;
+  min-width: 550px;
+}
+
+.table-item-2 {
+  order: 1;
+  flex-grow: 1;
+  flex-basis: 33%;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2em;
+  margin-left: 2em;
+  max-width: 350px;
+  min-width: 350px;
+}
+
+.table-item-3 {
+  order: 3;
+  flex-grow: 1;
+  flex-basis: 33%;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
+  max-width: 330px;
+  min-width: 330px;
+}
+
+td {
+  color: white;
+  border: 1px solid white;
+}
+
+th {
+  color: white;
+  border: 1px solid white;
+}
+
+table {
+  border: 1px solid white;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.table1 {
+  max-width: 550px;
+  min-width: 550px;
+  width: 100%;
+}
+
+.table2 {
+  max-width: 350px;
+  min-width: 350px;
+  width: 100%;
+}
+
+.table3 {
+  max-width: 330px;
+  min-width: 330px;
+  width: 100%;
+}
+
+.title {
+  margin-bottom: 0.25em;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mobile Scripts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css">
+    <link rel="stylesheet" href="O2Barring.css">
+    <link rel="icon" type="image/png" sizes="128x128" href="https://cdn.discordapp.com/attachments/197830973608558592/409559039639289859/unknown.png">
+  </head>
+  <body>
+    <div id="navDiv">
+      <nav class="navbar navbar-expand-lg">
+        
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapse_target">
+        <a class ="navbar-brand" href="index.html">Home</a>
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="MSG.html">New/Port/Mig</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="ChangeLead.html">VF Change Lead</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="O2DiscRec.html">O2 Disc & Rec</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="O2Export.html">O2 Export</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="O2TariffChange.html">O2 Tariff Change</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="VFDataAddGPRS.html">VF Data Add GPRS</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link"  href="O2Barring.html">O2 Bars & Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ShiftsLists.html">Shifts & Lists</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ISAACInterpreter.html">ISAAC Interpreter</a>
+          </li>
+        </ul>
+        </div>
+      </nav>
+    </div>
+    <div id="mainDiv">
+      <div class="containerZero">
+        <div id="topHeader">
+          <h2 class="one">O2 Barring & Services</h2>
+        </div>
+      </div>
+      <div class="containerOne">
+        <div id="addOrRemove">
+          <form name="formA">
+            <ul class="segmented-control">
+              <li class="segmented-control__item">
+                <input class="segmented-control__input" type="radio" value="1" name="option" id="option-1" checked>
+                <label class="segmented-control__label" for="option-1">Add</label>
+              </li>
+              <li class="segmented-control__item">
+                <input class="segmented-control__input" type="radio" value="2" name="option" id="option-2" >
+                <label class="segmented-control__label" for="option-2">Remove</label>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+      <div class="containerTwo">
+        <div class="dropdownOne">
+          <label>Select bar or service:</label>
+          <select class="selectpicker" multiple id="selectTariff" data-size="20" data-width="100%" data-live-search="true" title="Select bar or service">
+            <option value="3G">3G Service Enabled</option>
+            <option value="4G">4G Service Enabled</option>
+            <option value="5G">5G Service Enabled</option>
+            <option value="c1">c1 Spend Cap Inclusive Calls Bar</option>
+            <option value="c2">c2 Spend Cap Chargeable Calls Bar</option>
+            <option value="c3">c3 Spend Cap International Zones 2 Bar</option>
+            <option value="c5">c5 Spend Cap International Zones 4 and 5 Bar</option>
+            <option value="c6">c6 Spend Cap International Ireland Bar</option>
+            <option value="h">Call Hold</option>
+            <option value="q">Call Waiting</option>
+            <option value="p">CLI Presentation</option>
+            <option value="k">CLI Restriction</option>
+            <option value="d">Conference Call Access</option>
+            <option value="DC">Data Service (standard on all)</option>
+            <option value="gb">GPRS Bar (Including MMS)</option>
+            <option value="gs">GPRS Service active(not a bar)</option>
+            <option value="gp=985,,N,2">Idata APN</option>
+            <option value="hb">IMEI Handset Bar</option>
+            <option value="x">Incoming & Outgoing Call Bar</option>
+            <option value="t">Incoming Call Bar</option>
+            <option value="I">International Bar</option>
+            <option value="7">International Traveller Service</option>
+            <option value="mm">MMS</option>
+            <option value="gp=58,,N,2">Mobile APN</option>
+            <option value="T">Outgoing Call Bar</option>
+            <option value="M">Premium and International Bar</option>
+            <option value="L">Premium Rate Call Bar</option>
+            <option value="sb=0003">Premium Text Bar</option>
+            <option value="w">Roaming Bar (GSM and GPRS)</option>
+            <option value="gp=986,,N,2">Tethering APN</option>
+            <option value="gp=1174,,N,2">Timico APN</option>
+            <option value="MV">Visual Voicemail</option>
+            <option value="gp=2041,,N,2">WAP APN</option>
+            <option value="vl+vw+gp=1729,,N,2">Wifi Calling</option>
+          </select>
+        </div>
+      </div>
+      <div class="containerThree">
+        <div class="mobileNumberDiv">
+          <label for="mobileNumbers">Enter mobile numbers:</label>
+          <textarea class="mobileNumberArea" id="mobileNumbersArea" rows="5"></textarea>
+        </div>
+      </div>
+      <div class="containerFour">
+        <div id="generateButtonDiv">
+          <input class="generateButton" type="button" value="Generate Script" onclick="go()" />
+        </div>
+      </div>
+      <div class="containerFive">
+        <div id="generatedScriptAreaDiv">
+          <div>
+            <label for="generatedScriptArea">Generated script:</label>
+          </div>
+          <div>
+            <textarea class="generatedScriptArea" id="generatedScriptArea" rows="5" disabled></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.bundle.js"></script>
+    <script src="O2Barring.js"></script>
+  </body>
+</html>

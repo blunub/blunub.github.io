@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mobile Scripts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css">
+    <link rel="stylesheet" href="O2Export.css">
+    <link rel="icon" type="image/png" sizes="128x128" href="https://cdn.discordapp.com/attachments/197830973608558592/409559039639289859/unknown.png">
+  </head>
+  <body>
+    <div id="navDiv">
+      <nav class="navbar navbar-expand-lg">
+        
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapse_target">
+        <a class ="navbar-brand" href="index.html">Home</a>
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="MSG.html">New/Port/Mig</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="ChangeLead.html">VF Change Lead</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="O2DiscRec.html">O2 Disc & Rec</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link"  href="O2Export.html">O2 Export</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="O2TariffChange.html">O2 Tariff Change</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="VFDataAddGPRS.html">VF Data Add GPRS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="O2Barring.html">O2 Bars & Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ShiftsLists.html">Shifts & Lists</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ISAACInterpreter.html">ISAAC Interpreter</a>
+          </li>
+        </ul>
+        </div>
+      </nav>
+    </div>
+    <div id="mainDiv">
+      <div class="containerZero">
+        <h2 class="one" id="topHeader">O2 Export</h2>
+      </div>
+      <div class="containerOne">
+        <div class="dropdownOne" id="selectTariffDiv">
+          <label>Select RNO:</label>
+          <select class="selectpicker" id="selectRNO" data-size="15" data-live-search="true" title="Select RNO">
+            <option>BT</option>
+            <option>Cable and Wireless</option>
+            <option>Cellnet</option>
+            <option>Cloud9</option>
+            <option>Gamma</option>
+            <option>Hay Systems Ltd</option>
+            <option>Limitless Mobile</option>
+            <option>Lleida</option>
+            <option>LYCA Mobile</option>
+            <option>MCom/Mundio</option>
+            <option>Orange</option>
+            <option>Resilient Plc</option>
+            <option>Sky</option>
+            <option>Stour Marine</option>
+            <option>Teleena</option>
+            <option>Three</option>
+            <option>TISMI</option>
+            <option>T-Mobile</option>
+            <option>Truphone</option>
+            <option>Vectone</option>
+            <option>Virgin</option>
+            <option>Vodafone</option>
+          </select>
+        </div>
+      </div>
+      <div class="containerTwo">
+        <div class="mobileNumberDiv">
+          <label for="mobileNumbers">Enter mobile numbers:</label>
+          <textarea class="mobileNumberArea" id="mobileNumberArea" rows="5"></textarea>
+        </div>
+      </div>
+      <div class="containerThree">
+        <div id="generateButtonDiv">
+          <input class="generateButton" type="button" value="Generate Script" onclick="go()" />
+        </div>
+      </div>
+      <div class="containerFour">
+        <div id="generatedScriptAreaDiv">
+          <div>
+            <label for="generatedScriptArea">Generated script:</label>
+          </div>
+          <div>
+            <textarea class="generatedScriptArea" id="generatedScriptArea" rows="5" disabled></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.bundle.js"></script>
+    <script src="O2Export.js"></script>
+  </body>
+</html>
