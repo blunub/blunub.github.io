@@ -461,6 +461,79 @@ function go() {
           "\n" +
           "\n" +
           "\n";
+      } else if (selectTariff in redExecTariffsDataBar) {
+        finalScript +=
+          "MIGRATE VFVSZ713 " +
+          mobileNumber +
+          " CD300400" +
+          "\n" +
+          "\n" +
+          "SERV CD300400 USER" +
+          "\n" +
+          "\n" +
+          "ADD CAGPRS " +
+          mobileNumber +
+          " GPZ09 INTERNET" +
+          "\n" +
+          "CHANGE VALUEBUNDLE " +
+          mobileNumber +
+          " GPZ09" +
+          "\n" +
+          "ADD APN " +
+          mobileNumber +
+          " WAP" +
+          "\n" +
+          "\n" +
+          "ADD 4G " +
+          mobileNumber +
+          "\n" +
+          "ADD MMS " +
+          mobileNumber +
+          "\n" +
+          "\n" +
+          "ADD APNBUNDLE " +
+          mobileNumber +
+          " V2WT3" +
+          "\n" +
+          "\n" +
+          "ADD APN " +
+          mobileNumber +
+          " V3BH1" +
+          "\n" +
+          "\n" +
+          "ADD DNOO " +
+          mobileNumber +
+          "\n" +
+          "ADD APNBUNDLE " +
+          mobileNumber +
+          " IRWDC" +
+          "\n" +
+          "\n" +
+          "ADD APNBUNDLE " +
+          mobileNumber +
+          " WTRDC" +
+          "\n" +
+          "\n" +
+          "BAR GPRS " +
+          mobileNumber +
+          "\n" +
+          "\n" +
+          "BAR GPRSROAM " +
+          mobileNumber +
+          "\n" +
+          "\n" +
+          "ADD APNBUNDLE " +
+          mobileNumber +
+          " MRD21" +
+          "\n" +
+          "\n" +
+          "CONNECT RECALL " +
+          mobileNumber +
+          "\n" +
+          "\n" +
+          "\n" +
+          "\n" +
+          "\n";
       } else {
         finalScript = "Please select a tariff";
       }
@@ -937,6 +1010,88 @@ function go() {
           mobileNumber +
           " MRD21" +
           "\n" +
+          "\n" +
+          "CONNECT RECALL " +
+          mobileNumber +
+          "\n" +
+          "\n" +
+          "TRANSFER SNB OC600000 CD300400 " +
+          mobileNumber +
+          "\n" +
+          "Y" +
+          "\n" +
+          "\n" +
+          "\n" +
+          "\n" +
+          "\n";
+      } else if (selectTariff in redExecTariffsDataBar) {
+        finalScript +=
+          "CON/SNB VFVSZ713 " +
+          simNumber +
+          " " +
+          mobileNumber +
+          " 1919" +
+          "\n" +
+          "\n" +
+          "ADD CAGPRS " +
+          mobileNumber +
+          " GPZ09 INTERNET" +
+          "\n" +
+          "CHANGE VALUEBUNDLE " +
+          mobileNumber +
+          " GPZ09" +
+          "\n" +
+          "ADD APN " +
+          mobileNumber +
+          " WAP" +
+          "\n" +
+          "\n" +
+          "ADD 4G " +
+          mobileNumber +
+          "\n" +
+          "ADD MMS " +
+          mobileNumber +
+          "\n" +
+          "\n" +
+          "ADD APN " +
+          mobileNumber +
+          " ACCINT" +
+          "\n" +
+          "\n" +
+          "ADD APNBUNDLE " +
+          mobileNumber +
+          " V2WT3" +
+          "\n" +
+          "\n" +
+          "ADD APN " +
+          mobileNumber +
+          " V3BH1" +
+          "\n" +
+          "\n" +
+          "ADD DNOO " +
+          mobileNumber +
+          "\n" +
+          "\n" +
+          "ADD APNBUNDLE " +
+          mobileNumber +
+          " IRWDC" +
+          "\n" +
+          "\n" +
+          "ADD APNBUNDLE " +
+          mobileNumber +
+          " WTRDC" +
+          "\n" +
+          "\n" +
+          "ADD APNBUNDLE " +
+          mobileNumber +
+          " MRD21" +
+          "\n" +
+          "\n" +
+          "BAR GPRS " +
+          mobileNumber +
+          "\n" +
+          "BAR GPRSROAM " +
+          mobileNumber +
           "\n" +
           "CONNECT RECALL " +
           mobileNumber +
@@ -2672,7 +2827,11 @@ var o2VoiceTariffs = {
   "O2 Unlimited Data Flex": "",
   "O2 Unlimited Data Flex (2020)": "",
   "O2 Small Biz Unlimited (2019)": "",
-  "O2 Small Biz EU Unlimited (2019)": ""
+  "O2 Small Biz EU Unlimited (2019)": "",
+  "O2 Small Biz 2GB (2020)": "",
+  "O2 Small Biz 8GB (2020)": "",
+  "O2 Small Biz 24GB (2020)": "",
+  "O2 Small Biz 50GB (2020)": ""
 };
 
 var vfPPMTariffs = {
@@ -2690,7 +2849,12 @@ var o2DataTariffs = {
   "O2 Mobile Broadband 4GB (2017)": "",
   "O2 Mobile Broadband 8GB (2017)": "",
   "O2 Mobile Broadband 20GB (2017)": "",
-  "O2 Mobile Broadband 30GB (2017)": ""
+  "O2 Mobile Broadband 30GB (2017)": "",
+  "O2 Mobile Broadband 2GB (2020)": "",
+  "O2 Mobile Broadband 8GB (2020)": "",
+  "O2 Mobile Broadband 24GB (2020)": "",
+  "O2 Mobile Broadband 60GB (2020)": "",
+  "O2 Mobile Broadband 100GB (2020)": ""
 };
 
 var vfGigaCubeTariffs = {
