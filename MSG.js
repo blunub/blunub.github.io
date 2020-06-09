@@ -91,12 +91,6 @@ function go() {
         finalScript +=
           "change " +
           mobileNumber +
-          "/serv=+gs=476+gp=2041,,N,2+gp=58,,N,2+gp=985,,N,2+gp=986,,N,2+mm+MV+d y" +
-          "\n";
-      } else if (selectTariff in o25GVoiceTariffs) {
-        finalScript +=
-          "change " +
-          mobileNumber +
           "/serv=+gs=476+gp=2041,,N,2+gp=58,,N,2+gp=985,,N,2+gp=986,,N,2+mm+MV+d+5G y" +
           "\n";
       } else if (selectTariff in o2DataTariffs) {
@@ -548,14 +542,6 @@ function go() {
           mobileNumber +
           " " +
           simNumber +
-          " 095 +DC+24+gs=476+gp=2041,,N,2+gp=58,,N,2+gp=985,,N,2+gp=986,,N,2+mm+MV+d y" +
-          "\n";
-      } else if (selectTariff in o25GVoiceTariffs) {
-        finalScript +=
-          "INS " +
-          mobileNumber +
-          " " +
-          simNumber +
           " 095 +DC+24+gs=476+gp=2041,,N,2+gp=58,,N,2+gp=985,,N,2+gp=986,,N,2+mm+MV+d+5G y" +
           "\n";
       } else if (selectTariff in o2DataTariffs) {
@@ -564,7 +550,7 @@ function go() {
           mobileNumber +
           " " +
           simNumber +
-          " 691 +YX+gs=467+gp=2041,,N,2+gp=58,,N,2+gp=985,,N,2+gp=986,,N,2 y" +
+          " 691 +YX+gs=467+gp=2041,,N,2+gp=58,,N,2+gp=985,,N,2+gp=986,,N,2+5G y" +
           "\n";
       } else if (selectTariff in sbSharerTariffs) {
         finalScript +=
@@ -1049,13 +1035,13 @@ function go() {
             mobileNumber +
             " " +
             simNumber +
-            " 095 +DC+gs=476+gp=2041,,N,2+gp=58,,N,2+gp=985,,N,2+gp=986,,N,2+mm+MV " +
+            " 095 +DC+gs=476+gp=2041,,N,2+gp=58,,N,2+gp=985,,N,2+gp=986,,N,2+mm+MV+d+5G " +
             DNOCode +
             " 536 y" +
             "\n" +
             "\n";
         }
-      } else if (selectTariff in o25GVoiceTariffs) {
+      } else if (selectTariff in o2DataTariffs) {
         if (DNO == "") {
           finalScript = "Please select a DNO";
         } else {
@@ -1064,22 +1050,7 @@ function go() {
             mobileNumber +
             " " +
             simNumber +
-            " 095 +DC+gs=476+gp=2041,,N,2+gp=58,,N,2+gp=985,,N,2+gp=986,,N,2+mm+MV+5G " +
-            DNOCode +
-            " 536 y" +
-            "\n" +
-            "\n";
-        }
-      }  else if (selectTariff in o2DataTariffs) {
-        if (DNO == "") {
-          finalScript = "Please select a DNO";
-        } else {
-          finalScript +=
-            "PIN " +
-            mobileNumber +
-            " " +
-            simNumber +
-            " 691 +YX+gs=467+gp=2041,,N,2+gp=58,,N,2+gp=985,,N,2+gp=986,,N,2 " +
+            " 691 +YX+gs=467+gp=2041,,N,2+gp=58,,N,2+gp=985,,N,2+gp=986,,N,2+5G " +
             DNOCode +
             " 536 y" +
             "\n" +
@@ -1474,6 +1445,88 @@ function go() {
           "CONNECT RECALL " +
           mobileNumber +
           "\n" +
+          "\n" +
+          "TRANSFER SNB OC600000 CD300400 " +
+          mobileNumber +
+          "\n" +
+          "Y" +
+          "\n" +
+          "\n" +
+          "\n" +
+          "\n" +
+          "\n";
+      } else if (selectTariff in redExecTariffsDataBar) {
+        finalScript +=
+          "IMPORT VFVSZ713 " +
+          simNumber +
+          " " +
+          mobileNumber +
+          " 1919" +
+          "\n" +
+          "\n" +
+          "ADD CAGPRS " +
+          mobileNumber +
+          " GPZ09 INTERNET" +
+          "\n" +
+          "CHANGE VALUEBUNDLE " +
+          mobileNumber +
+          " GPZ09" +
+          "\n" +
+          "ADD APN " +
+          mobileNumber +
+          " WAP" +
+          "\n" +
+          "\n" +
+          "ADD 4G " +
+          mobileNumber +
+          "\n" +
+          "ADD MMS " +
+          mobileNumber +
+          "\n" +
+          "\n" +
+          "ADD APN " +
+          mobileNumber +
+          " ACCINT" +
+          "\n" +
+          "\n" +
+          "ADD APNBUNDLE " +
+          mobileNumber +
+          " V2WT3" +
+          "\n" +
+          "\n" +
+          "ADD APN " +
+          mobileNumber +
+          " V3BH1" +
+          "\n" +
+          "\n" +
+          "ADD DNOO " +
+          mobileNumber +
+          "\n" +
+          "\n" +
+          "ADD APNBUNDLE " +
+          mobileNumber +
+          " IRWDC" +
+          "\n" +
+          "\n" +
+          "ADD APNBUNDLE " +
+          mobileNumber +
+          " WTRDC" +
+          "\n" +
+          "\n" +
+          "ADD APNBUNDLE " +
+          mobileNumber +
+          " MRD21" +
+          "\n" +
+          "\n" +
+          "CONNECT RECALL " +
+          mobileNumber +
+          "\n" +
+          "\n" +
+          "BAR GPRS " +
+          mobileNumber +
+          "\n" +
+          "BAR GPRSROAM " +
+          mobileNumber +
           "\n" +
           "TRANSFER SNB OC600000 CD300400 " +
           mobileNumber +
@@ -2279,7 +2332,16 @@ var redExecTariffs = {
   "VF Red Executive EU 25GB (2019)": "",
   "VF Red Executive EU 50GB (2019)": "",
   "VF Red Executive EU 100GB (2019)": "",
-  "VF Red Executive 1GB (2019)": ""
+  "VF Red Executive 1GB (2019)": "",
+  "VF Bus Adv - Value Base 1GB": "",
+  "VF Bus Adv - Value Base 2GB": "",
+  "VF Bus Adv - Value Trav 1GB": "",
+  "VF Bus Adv - Value Trav 2GB": ""
+};
+
+var redExecTariffsDataBar = {
+  "VF Bus Adv - Value Base 0GB": "",
+  "VF Bus Adv - Value Trav 0GB": ""
 };
 
 var redExecTariffs5G = {
@@ -2298,7 +2360,23 @@ var redExecTariffs5G = {
   "VF Red Executive 20GB (5G) (2019)": "",
   "VF Red Executive 20GB (5G) Plus (2019)": "",
   "VF 5G Business Unlimited Max": "",
-  "VF 5G Business Unlimited Max Plus": ""
+  "VF 5G Business Unlimited Max Plus": "",
+  "VF Red 2GB - (2020)": "",
+  "VF Red 6GB - (2020)": "",
+  "VF Red 12GB - (2020)": "",
+  "VF Red 24GB - (2020)": "",
+  "VF Red Int 6GB - (2020)": "",
+  "VF Red Int 12GB - (2020)": "",
+  "VF Red Int 24GB - (2020)": "",
+  "VF Red Unlimited - (2020)": "",
+  "VF Red Int Unlimited - (2020)": "",
+  "VF Bus Opt Voice and Data 50": "",
+  "VF Bus Opt Voice and Data 500": "",
+  "VF Bus Opt Voice and Data 750": "",
+  "VF Bus Adv - Value Base 5GB": "",
+  "VF Bus Adv - Value Base 10GB": "",
+  "VF Bus Adv - Value Trav 5GB": "",
+  "VF Bus Adv - Value Trav 10GB": ""
 };
 
 var vfDataTariffs = {
@@ -2325,12 +2403,20 @@ var vfDataTariffs = {
   "VF Mobile Broadband 1GB (2019)": "",
   "VF Mobile Broadband 5GB (2019)": "",
   "VF Mobile Broadband 20GB (2019)": "",
-  "VF Mobile Broadband 50GB (2019)": ""
+  "VF Mobile Broadband 50GB (2019)": "",
+  "VF Mobile Broadband 2GB - (2020)": ""
 };
 
 var vfDataTariffs5G = {
   "VF 5G Business Advance Basic BT 5GB MBB": "",
-  "VF 5G Business Advance Extra BT 5GB MBB": ""
+  "VF 5G Business Advance Extra BT 5GB MBB": "",
+  "VF Mobile Broadband 6GB - (2020)": "",
+  "VF Mobile Broadband 24GB - (2020)": "",
+  "VF Mobile Broadband Unlimited - (2020)": "",
+  "VF Bus Opt Data Only 50": "",
+  "VF Bus Opt Data Only 500": "",
+  "VF Bus Opt Data Only 750": "",
+  "VF Bus Adv - MBB Value 4GB": ""
 };
 
 var sbSharerTariffs = {
@@ -2584,10 +2670,7 @@ var o2VoiceTariffs = {
   "O2 wholesale PPM (2016)": "",
   "O2 wholesale PPM (2017)": "",
   "O2 Unlimited Data Flex": "",
-  "O2 Unlimited Data Flex (2020)": ""
-};
-
-var o25GVoiceTariffs = {
+  "O2 Unlimited Data Flex (2020)": "",
   "O2 Small Biz Unlimited (2019)": "",
   "O2 Small Biz EU Unlimited (2019)": ""
 };
