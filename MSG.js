@@ -2835,7 +2835,8 @@ var o2VoiceTariffs = {
 };
 
 var vfPPMTariffs = {
-  "VF Wholesale PPM Tariff": ""
+  "VF Wholesale PPM Tariff": "",
+  "VF Wholesale PPM (2020)": ""
 };
 
 var o2DataTariffs = {
