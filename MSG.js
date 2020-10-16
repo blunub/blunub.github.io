@@ -2491,12 +2491,30 @@ var redExecTariffs = {
   "VF Bus Adv - Value Base 1GB": "",
   "VF Bus Adv - Value Base 2GB": "",
   "VF Bus Adv - Value Trav 1GB": "",
-  "VF Bus Adv - Value Trav 2GB": ""
+  "VF Bus Adv - Value Trav 2GB": "",
+  "VF Bus Adv - Extra Base 1GB": "",
+  "VF Bus Adv - Extra Base 2GB": "",
+  "VF Bus Adv - Extra Trav 1GB": "",
+  "VF Bus Adv - Extra Trav 2GB": "",
+  "VF Bus Freedom 250 Sharer": "",
+  "VF Bus Freedom 250 Single": "",
+  "VF Bus Freedom 500 Sharer": "",
+  "VF Bus Freedom 500 Single": "",
+  "VF Bus Freedom 750 Sharer": "",
+  "VF Bus Freedom 750 Single": "",
+  "VF Bus Freedom Sharer": "",
+  "VF Bus Freedom Single": ""
 };
 
 var redExecTariffsDataBar = {
   "VF Bus Adv - Value Base 0GB": "",
-  "VF Bus Adv - Value Trav 0GB": ""
+  "VF Bus Adv - Value Trav 0GB": "",
+  "VF Bus Adv - Extra Base 0GB": "",
+  "VF Bus Adv - Extra Trav 0GB": "",
+  "VF Bus Adv Unlimited Voice Only - Extra Base": "",
+  "VF Bus Adv Unlimited Voice Only - Extra Trav": "",
+  "VF Bus Adv Unlimited Voice Only - Value Base": "",
+  "VF Bus Adv Unlimited Voice Only - Value Trav": ""
 };
 
 var redExecTariffs5G = {
@@ -2531,7 +2549,18 @@ var redExecTariffs5G = {
   "VF Bus Adv - Value Base 5GB": "",
   "VF Bus Adv - Value Base 10GB": "",
   "VF Bus Adv - Value Trav 5GB": "",
-  "VF Bus Adv - Value Trav 10GB": ""
+  "VF Bus Adv - Value Trav 10GB": "",
+  "VF Bus Adv - Extra Base 10GB": "",
+  "VF Bus Adv - Extra Base 5GB": "",
+  "VF Bus Adv - Extra Trav 10GB": "",
+  "VF Bus Adv - Extra Trav 5GB": "",
+  "VF Bus Adv Unlimited Calls & Data - Extra Base": "",
+  "VF Bus Adv Unlimited Calls & Data - Extra Trav": "",
+  "VF Bus Adv Unlimited Calls & Data - Value Base": "",
+  "VF Bus Adv Unlimited Calls & Data - Value Trav": "",
+  "VF Flex Unlimited Voice - (2020)": "",
+  "VF Sharer Unlimited Voice": "",
+  "VF Sharer Unlimited Voice + Int": ""
 };
 
 var vfDataTariffs = {
@@ -2559,7 +2588,11 @@ var vfDataTariffs = {
   "VF Mobile Broadband 5GB (2019)": "",
   "VF Mobile Broadband 20GB (2019)": "",
   "VF Mobile Broadband 50GB (2019)": "",
-  "VF Mobile Broadband 2GB - (2020)": ""
+  "VF Mobile Broadband 2GB - (2020)": "",
+  "VF Bus Freedom 250 Data Sharer": "",
+  "VF Bus Freedom 500 Data Sharer": "",
+  "VF Bus Freedom 750 Data Sharer": "",
+  "VF Bus Freedom Data Sharer": ""
 };
 
 var vfDataTariffs5G = {
@@ -2571,7 +2604,12 @@ var vfDataTariffs5G = {
   "VF Bus Opt Data Only 50": "",
   "VF Bus Opt Data Only 500": "",
   "VF Bus Opt Data Only 750": "",
-  "VF Bus Adv - MBB Value 4GB": ""
+  "VF Bus Adv - MBB Value 4GB": "",
+  "VF Bus Adv - MBB Extra 4GB": "",
+  "VF Bus Adv Unlimited Data Only - Extra": "",
+  "VF Bus Adv Unlimited Data Only - Value": "",
+  "VF Flex Data Only - (2020)": "",
+  "VF Sharer Data Only": ""
 };
 
 var sbSharerTariffs = {
@@ -2758,7 +2796,8 @@ var sbSharerLeadTariffs = {
 
 var vfPPMTariffs = {
   "VF Wholesale PPM Tariff": "",
-  "VF Wholesale PPM (2020)": ""
+  "VF Wholesale PPM (2020)": "",
+  "VF Gighub PPM": ""
 };
 
 var vfGigaCubeTariffs = {
