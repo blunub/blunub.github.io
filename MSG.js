@@ -62,11 +62,6 @@ function go() {
           " V2WT3" +
           "\n" +
           "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " V3BH1" +
-          "\n" +
-          "\n" +
           "ADD DNOO " +
           mobileNumber +
           "\n" +
@@ -363,11 +358,6 @@ function go() {
           " V2WT3" +
           "\n" +
           "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " V3BH1" +
-          "\n" +
-          "\n" +
           "ADD DNOO " +
           mobileNumber +
           "\n" +
@@ -431,11 +421,6 @@ function go() {
           " V2WT3" +
           "\n" +
           "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " V3BH1" +
-          "\n" +
-          "\n" +
           "ADD DNOO " +
           mobileNumber +
           "\n" +
@@ -494,11 +479,6 @@ function go() {
           "ADD APNBUNDLE " +
           mobileNumber +
           " V2WT3" +
-          "\n" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " V3BH1" +
           "\n" +
           "\n" +
           "ADD DNOO " +
@@ -575,11 +555,6 @@ function go() {
           "ADD APNBUNDLE " +
           mobileNumber +
           " V2WT3" +
-          "\n" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " V3BH1" +
           "\n" +
           "\n" +
           "ADD DNOO " +
@@ -908,11 +883,6 @@ function go() {
           " V2WT3" +
           "\n" +
           "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " V3BH1" +
-          "\n" +
-          "\n" +
           "ADD DNOO " +
           mobileNumber +
           "\n" +
@@ -987,11 +957,6 @@ function go() {
           " V2WT3" +
           "\n" +
           "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " V3BH1" +
-          "\n" +
-          "\n" +
           "ADD DNOO " +
           mobileNumber +
           "\n" +
@@ -1061,11 +1026,6 @@ function go() {
           "ADD APNBUNDLE " +
           mobileNumber +
           " V2WT3" +
-          "\n" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " V3BH1" +
           "\n" +
           "\n" +
           "ADD DNOO " +
@@ -1147,11 +1107,6 @@ function go() {
           "ADD APNBUNDLE " +
           mobileNumber +
           " V2WT3" +
-          "\n" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " V3BH1" +
           "\n" +
           "\n" +
           "ADD DNOO " +
@@ -1494,11 +1449,6 @@ function go() {
           " V2WT3" +
           "\n" +
           "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " V3BH1" +
-          "\n" +
-          "\n" +
           "ADD DNOO " +
           mobileNumber +
           "\n" +
@@ -1573,11 +1523,6 @@ function go() {
           " V2WT3" +
           "\n" +
           "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " V3BH1" +
-          "\n" +
-          "\n" +
           "ADD DNOO " +
           mobileNumber +
           "\n" +
@@ -1647,11 +1592,6 @@ function go() {
           "ADD APNBUNDLE " +
           mobileNumber +
           " V2WT3" +
-          "\n" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " V3BH1" +
           "\n" +
           "\n" +
           "ADD DNOO " +
