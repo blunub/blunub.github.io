@@ -13,21 +13,19 @@ function go() {
   var generatedScript = document.getElementById('generatedScriptArea');
   var sharersArray = sharers.split(/\n/);
   var finalScript = "";
-  var leadCode = newTest.leadCode;
-  var sharerCode = newTestTwo.sharerCode;
   var valueBundle = newTest.valueBundle;
   var tempLeadCode = newTest.tempCode;
   var tempSharerCode = newTestTwo.tempCodeSharer;
   var groupCode = newTestTwo.groupCode;
   for(i=0;i<sharersArray.length;i++){
     var sharerNumber = sharersArray[i];
-    finalScript += "MIGRATE " + tempSharerCode + " " + sharerNumber + " " + newLead + " CD300400" + "\n";
+    finalScript += `MIGRATE ${tempSharerCode} ${sharerNumber} ${newLead} CD300400\n`;
   }
-  var lineOne = "CHANGE VALUEBUNDLE " + currentLead + " GPZ09" + "\n" + "\n";
-  var lineTwo = "MIGRATE " + tempLeadCode + " " + newLead + " CD300400" + "\n" + "\n";
-  var lineThree = "MIGRATE " + tempSharerCode + " " + currentLead + " " + newLead + " CD300400" + "\n";
-  var lineFour = "\n" + "MIGRATE PFGROUP " + groupCode + " " + newLead + "\n";
-  var lineFive = "\n" + "CHANGE VALUEBUNDLE " + newLead + " " + valueBundle + "\n";
+  var lineOne = `CHANGE VALUEBUNDLE ${currentLead} GPZ091\n\n`;
+  var lineTwo = `MIGRATE ${tempLeadCode} ${newLead} CD300400\n\n`;
+  var lineThree = `MIGRATE ${tempSharerCode} ${currentLead} ${newLead} CD300400\n`;
+  var lineFour = `\nMIGRATE PFGROUP ${groupCode} ${newLead}\n`;
+  var lineFive = `\nCHANGE VALUEBUNDLE ${newLead} ${valueBundle}\n`;
   if (tariff === "") {
     generatedScript.innerHTML = "Please select a tariff";
   } else if (currentLead === "") {
