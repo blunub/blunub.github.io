@@ -28,1610 +28,542 @@ function go() {
     var simNumber = bothArray[i][1];
     if (selectConnectionType == "Migration") {
       if (selectTariff in redTariffs) {
-        finalScript +=
-          "MIGRATE VFVSZ713 " +
-          mobileNumber +
-          " CD300400" +
-          "\n" +
-          "\n" +
-          "SERV CD300400 USER" +
-          "\n" +
-          "\n" +
-          "ADD CAGPRS " +
-          mobileNumber +
-          " GPZ09 INTERNET" +
-          "\n" +
-          "CHANGE VALUEBUNDLE " +
-          mobileNumber +
-          " GPZ09" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " WAP" +
-          "\n" +
-          "\n" +
-          "ADD 4G " +
-          mobileNumber +
-          "\n" +
-          "ADD MMS " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " V2WT3" +
-          "\n" +
-          "\n" +
-          "ADD DNOO " +
-          mobileNumber +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " IRWDC" +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " WTRDC" +
-          "\n" +
-          "\n" +
-          "CONNECT RECALL " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n";
+        finalScript += `MIGRATE VFVSZ713 ${mobileNumber} CD300400
+SERV CD300400 USER
+ADD CAGPRS ${mobileNumber} GPZ09 INTERNET
+CHANGE VALUEBUNDLE ${mobileNumber} GPZ09
+ADD APN ${mobileNumber} WAP
+
+ADD 4G ${mobileNumber}
+ADD MMS ${mobileNumber}
+ADD APNBUNDLE ${mobileNumber} V2WT3
+ADD DNOO ${mobileNumber}
+ADD APNBUNDLE ${mobileNumber} IRWDC
+ADD APNBUNDLE ${mobileNumber} WTRDC
+CONNECT RECALL ${mobileNumber}
+
+
+`;
       } else if (selectTariff in o2VoiceTariffs) {
-        finalScript +=
-          "change " +
-          mobileNumber +
-          "/serv=+gs=476+gp=2041,,N,2+gp=58,,N,2+gp=985,,N,2+gp=986,,N,2+mm+MV+d+5G y" +
-          "\n";
+        finalScript += `change ${mobileNumber}/serv=+gs=476+gp=2041,,N,2+gp=58,,N,2+gp=985,,N,2+gp=986,,N,2+mm+MV+d+5G y\n`;
       } else if (selectTariff in o2DataTariffs) {
-        finalScript +=
-          "Transfer " +
-          mobileNumber +
-          " 691/serv=+YX+gs=467+gp=2041,,N,2+gp=58,,N,2+gp=985,,N,2+gp=986,,N,2 y" +
-          "\n";
+        finalScript += `Transfer ${mobileNumber} 691/serv=+YX+gs=467+gp=2041,,N,2+gp=58,,N,2+gp=985,,N,2+gp=986,,N,2 y\n`;
       } else if (selectTariff in vfDataTariffs) {
-        finalScript +=
-          "MIGRATE DATA " +
-          mobileNumber +
-          " CD300400" +
-          "\n" +
-          "\n" +
-          "SERV CD300400 USER" +
-          "\n" +
-          "\n" +
-          "ADD CAGPRS " +
-          mobileNumber +
-          " GPZ53 INTERNET" +
-          "\n" +
-          "CHANGE GPRS " +
-          mobileNumber +
-          " GPZ53" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " WAP" +
-          "\n" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " ACCINT" +
-          "\n" +
-          "\n" +
-          "ADD 4G " +
-          mobileNumber +
-          "\n" +
-          "ADD MMS " +
-          mobileNumber +
-          "\n" +
-          "ADD WIFI " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " IRWDC" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " WTRDC" +
-          "\n" +
-          "\n";
+        finalScript += `MIGRATE DATA ${mobileNumber} CD300400
+SERV CD300400 USER
+ADD CAGPRS ${mobileNumber} GPZ53 INTERNET
+CHANGE GPRS ${mobileNumber} GPZ53
+ADD APN ${mobileNumber} WAP
+
+ADD APN ${mobileNumber} ACCINT
+
+ADD 4G ${mobileNumber}
+ADD MMS ${mobileNumber}
+ADD WIFI ${mobileNumber}
+ADD APNBUNDLE ${mobileNumber} IRWDC
+ADD APNBUNDLE ${mobileNumber} WTRDC
+
+`;
       } else if (selectTariff in vfDataTariffs5G) {
-        finalScript +=
-          "MIGRATE DATA " +
-          mobileNumber +
-          " CD300400" +
-          "\n" +
-          "\n" +
-          "SERV CD300400 USER" +
-          "\n" +
-          "\n" +
-          "ADD CAGPRS " +
-          mobileNumber +
-          " GPZ53 INTERNET" +
-          "\n" +
-          "CHANGE GPRS " +
-          mobileNumber +
-          " GPZ53" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " WAP" +
-          "\n" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " ACCINT" +
-          "\n" +
-          "\n" +
-          "ADD 4G " +
-          mobileNumber +
-          "\n" +
-          "ADD 5G " +
-          mobileNumber +
-          "\n" +
-          "ADD MMS " +
-          mobileNumber +
-          "\n" +
-          "ADD WIFI " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " IRWDC" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " WTRDC" +
-          "\n" +
-          "\n";
+        finalScript += `MIGRATE DATA ${mobileNumber} CD300400
+SERV CD300400 USER
+ADD CAGPRS ${mobileNumber} GPZ53 INTERNET
+CHANGE GPRS ${mobileNumber} GPZ53
+ADD APN ${mobileNumber} WAP
+
+ADD APN ${mobileNumber} ACCINT
+
+ADD 4G ${mobileNumber}
+ADD 5G ${mobileNumber}
+ADD MMS ${mobileNumber}
+ADD WIFI ${mobileNumber}
+ADD APNBUNDLE ${mobileNumber} IRWDC
+ADD APNBUNDLE ${mobileNumber} WTRDC
+
+`;
       } else if (selectTariff in sbSharerTariffs) {
-        finalScript +=
-          "MIGRATE " +
-          tariffCode +
-          " " +
-          mobileNumber +
-          " " +
-          leadHandsetNumber +
-          " CD300400" +
-          "\n" +
-          "\n" +
-          "SERV CD300400 USER" +
-          "\n" +
-          "\n" +
-          "ADD MMS " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " ACCINT" +
-          "\n" +
-          "\n" +
-          "ADD WIFI " +
-          mobileNumber +
-          "\n" +
-          "CONNECT RECALL " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD WO " +
-          mobileNumber +
-          " 1" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n";
+        finalScript += `MIGRATE ${tariffCode} ${mobileNumber} ${leadHandsetNumber} CD300400
+SERV CD300400 USER
+ADD MMS ${mobileNumber}
+ADD APN ${mobileNumber} ACCINT
+
+ADD WIFI ${mobileNumber}
+CONNECT RECALL ${mobileNumber}
+
+ADD WO ${mobileNumber} 1
+
+`;
       } else if (selectTariff in sbSharerLeadTariffs) {
-        finalScript +=
-          "MIGRATE " +
-          leadTariffCode +
-          " " +
-          mobileNumber +
-          " " +
-          " CD300400" +
-          "\n" +
-          "\n" +
-          "SERV CD300400 USER" +
-          "\n" +
-          "\n" +
-          "CHANGE VALUEBUNDLE " +
-          mobileNumber +
-          " " +
-          leadTariffValuebundle +
-          "\n" +
-          "\n" +
-          "ADD MMS " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " ACCINT" +
-          "\n" +
-          "\n" +
-          "ADD WIFI " +
-          mobileNumber +
-          "\n" +
-          "CONNECT RECALL " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD WO " +
-          mobileNumber +
-          " 1" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n";
+        finalScript += `MIGRATE ${leadTariffCode} ${mobileNumber} CD300400
+SERV CD300400 USER
+CHANGE VALUEBUNDLE ${mobileNumber} ${leadTariffValuebundle}
+ADD MMS ${mobileNumber}
+ADD APN ${mobileNumber} ACCINT
+
+ADD WIFI ${mobileNumber}
+CONNECT RECALL ${mobileNumber}
+
+ADD WO ${mobileNumber} 1
+
+`;
       } else if (selectTariff in vfPPMTariffs) {
-        finalScript +=
-          "MIGRATE VFVSZ685 " +
-          mobileNumber +
-          "/ORGID=ABZORBPPM CD300400" +
-          "\n";
+        finalScript += `MIGRATE VFVSZ685 ${mobileNumber}/ORGID=ABZORBPPM CD300400\n`;
       } else if (selectTariff in vfGigaCubeTariffs) {
-        finalScript +=
-          "MIGRATE DATA1 " +
-          mobileNumber +
-          " CD300400" +
-          "\n" +
-          "\n" +
-          "SERV CD300400 USER" +
-          "\n" +
-          "\n" +
-          "ADD CAGPRS " +
-          mobileNumber +
-          " GPZ53 INTERNET" +
-          "\n" +
-          "CHANGE GPRS " +
-          mobileNumber +
-          " GPZ53" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " WAP" +
-          "\n" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " ACCINT" +
-          "\n" +
-          "\n" +
-          "ADD 4G " +
-          mobileNumber +
-          "\n" +
-          "ADD 5G " +
-          mobileNumber +
-          "\n" +
-          "ADD MMS " +
-          mobileNumber +
-          "\n" +
-          "ADD WIFI " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "BAR GPRSROAM " +
-          mobileNumber +
-          "\n" +
-          "\n";
+        finalScript += `MIGRATE DATA1 ${mobileNumber} CD300400
+SERV CD300400 USER
+ADD CAGPRS ${mobileNumber} GPZ53 INTERNET
+CHANGE GPRS ${mobileNumber} GPZ53
+ADD APN ${mobileNumber} WAP
+
+ADD APN ${mobileNumber} ACCINT
+
+ADD 4G ${mobileNumber}
+ADD 5G ${mobileNumber}
+ADD MMS ${mobileNumber}
+ADD WIFI ${mobileNumber}
+BAR GPRSROAM ${mobileNumber}
+
+`;
       } else if (selectTariff in redExecTariffs) {
-        finalScript +=
-          "MIGRATE VFVSZ713 " +
-          mobileNumber +
-          " CD300400" +
-          "\n" +
-          "\n" +
-          "SERV CD300400 USER" +
-          "\n" +
-          "\n" +
-          "ADD CAGPRS " +
-          mobileNumber +
-          " GPZ09 INTERNET" +
-          "\n" +
-          "CHANGE VALUEBUNDLE " +
-          mobileNumber +
-          " GPZ09" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " WAP" +
-          "\n" +
-          "\n" +
-          "ADD 4G " +
-          mobileNumber +
-          "\n" +
-          "ADD MMS " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " V2WT3" +
-          "\n" +
-          "\n" +
-          "ADD DNOO " +
-          mobileNumber +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " IRWDC" +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " WTRDC" +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " MRD21" +
-          "\n" +
-          "\n" +
-          "CONNECT RECALL " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n";
+        finalScript += `MIGRATE VFVSZ713 ${mobileNumber} CD300400
+SERV CD300400 USER
+ADD CAGPRS ${mobileNumber} GPZ09 INTERNET
+CHANGE VALUEBUNDLE ${mobileNumber} GPZ09
+ADD APN ${mobileNumber} WAP
+
+ADD 4G ${mobileNumber}
+ADD MMS ${mobileNumber}
+ADD APNBUNDLE ${mobileNumber} V2WT3
+ADD DNOO ${mobileNumber}
+ADD APNBUNDLE ${mobileNumber} IRWDC
+ADD APNBUNDLE ${mobileNumber} WTRDC
+ADD APNBUNDLE ${mobileNumber} MRD21
+CONNECT RECALL ${mobileNumber}
+
+
+`;
       } else if (selectTariff in redExecTariffs5G) {
-        finalScript +=
-          "MIGRATE VFVSZ713 " +
-          mobileNumber +
-          " CD300400" +
-          "\n" +
-          "\n" +
-          "SERV CD300400 USER" +
-          "\n" +
-          "\n" +
-          "ADD CAGPRS " +
-          mobileNumber +
-          " GPZ09 INTERNET" +
-          "\n" +
-          "CHANGE VALUEBUNDLE " +
-          mobileNumber +
-          " GPZ09" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " WAP" +
-          "\n" +
-          "\n" +
-          "ADD 4G " +
-          mobileNumber +
-          "\n" +
-          "ADD 5G " +
-          mobileNumber +
-          "\n" +
-          "ADD MMS " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " V2WT3" +
-          "\n" +
-          "\n" +
-          "ADD DNOO " +
-          mobileNumber +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " IRWDC" +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " WTRDC" +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " MRD21" +
-          "\n" +
-          "\n" +
-          "CONNECT RECALL " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n";
+        finalScript += `MIGRATE VFVSZ713 ${mobileNumber} CD300400
+SERV CD300400 USER
+ADD CAGPRS ${mobileNumber} GPZ09 INTERNET
+CHANGE VALUEBUNDLE ${mobileNumber} GPZ09
+ADD APN ${mobileNumber} WAP
+
+ADD 4G ${mobileNumber}
+ADD 5G ${mobileNumber}
+ADD MMS ${mobileNumber}
+ADD APNBUNDLE ${mobileNumber} V2WT3
+ADD DNOO ${mobileNumber}
+ADD APNBUNDLE ${mobileNumber} IRWDC
+ADD APNBUNDLE ${mobileNumber} WTRDC
+ADD APNBUNDLE ${mobileNumber} MRD21
+CONNECT RECALL ${mobileNumber}
+
+
+`;
       } else if (selectTariff in redExecTariffsDataBar) {
-        finalScript +=
-          "MIGRATE VFVSZ713 " +
-          mobileNumber +
-          " CD300400" +
-          "\n" +
-          "\n" +
-          "SERV CD300400 USER" +
-          "\n" +
-          "\n" +
-          "ADD CAGPRS " +
-          mobileNumber +
-          " GPZ09 INTERNET" +
-          "\n" +
-          "CHANGE VALUEBUNDLE " +
-          mobileNumber +
-          " GPZ09" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " WAP" +
-          "\n" +
-          "\n" +
-          "ADD 4G " +
-          mobileNumber +
-          "\n" +
-          "ADD MMS " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " V2WT3" +
-          "\n" +
-          "\n" +
-          "ADD DNOO " +
-          mobileNumber +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " IRWDC" +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " WTRDC" +
-          "\n" +
-          "\n" +
-          "BAR GPRS " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "BAR GPRSROAM " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " MRD21" +
-          "\n" +
-          "\n" +
-          "CONNECT RECALL " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n";
+        finalScript += `MIGRATE VFVSZ713 ${mobileNumber} CD300400
+SERV CD300400 USER
+ADD CAGPRS ${mobileNumber} GPZ09 INTERNET
+CHANGE VALUEBUNDLE ${mobileNumber} GPZ09
+ADD APN ${mobileNumber} WAP
+
+ADD 4G ${mobileNumber}
+ADD MMS ${mobileNumber}
+ADD APNBUNDLE ${mobileNumber} V2WT3
+ADD DNOO ${mobileNumber}
+ADD APNBUNDLE ${mobileNumber} IRWDC
+ADD APNBUNDLE ${mobileNumber} WTRDC
+BAR GPRS ${mobileNumber}
+BAR GPRSROAM ${mobileNumber}
+ADD APNBUNDLE ${mobileNumber} MRD21
+CONNECT RECALL ${mobileNumber}
+
+
+`;
       } else {
         finalScript = "Please select a tariff";
       }
     } else if (selectConnectionType == "New") {
       if (selectTariff in redTariffs) {
-        finalScript +=
-          "CON/SNB VFVSZ713 " +
-          simNumber +
-          " " +
-          mobileNumber +
-          " 1919" +
-          "\n" +
-          "\n" +
-          "ADD CAGPRS " +
-          mobileNumber +
-          " GPZ09 INTERNET" +
-          "\n" +
-          "CHANGE VALUEBUNDLE " +
-          mobileNumber +
-          " GPZ09" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " WAP" +
-          "\n" +
-          "\n" +
-          "ADD 4G " +
-          mobileNumber +
-          "\n" +
-          "ADD MMS " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " ACCINT" +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " V2WT3" +
-          "\n" +
-          "\n" +
-          "ADD DNOO " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " IRWDC" +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " WTRDC" +
-          "\n" +
-          "\n" +
-          "CONNECT RECALL " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "TRANSFER SNB OC600000 CD300400 " +
-          mobileNumber +
-          "\n" +
-          "Y" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n";
+        finalScript += `CON/SNB VFVSZ713 ${simNumber} ${mobileNumber} 1919
+
+ADD CAGPRS ${mobileNumber} GPZ09 INTERNET
+CHANGE VALUEBUNDLE ${mobileNumber} GPZ09
+ADD APN ${mobileNumber} WAP
+
+ADD 4G ${mobileNumber}
+ADD MMS ${mobileNumber}
+ADD APN ${mobileNumber} ACCINT
+
+ADD APNBUNDLE ${mobileNumber} V2WT3
+ADD DNOO ${mobileNumber}
+ADD APNBUNDLE ${mobileNumber} IRWDC
+ADD APNBUNDLE ${mobileNumber} WTRDC
+CONNECT RECALL ${mobileNumber}
+
+TRANSFER SNB OC600000 CD300400 ${mobileNumber}
+Y
+
+`;
       } else if (selectTariff in o2VoiceTariffs) {
         finalScript +=
-          "INS " +
-          mobileNumber +
-          " " +
-          simNumber +
-          " 095 +DC+24+gs=476+gp=2041,,N,2+gp=58,,N,2+gp=985,,N,2+gp=986,,N,2+mm+MV+d+5G y" +
-          "\n";
+          `INS ${mobileNumber} ${simNumber} 095 +DC+24+gs=476+gp=2041,,N,2+gp=58,,N,2+gp=985,,N,2+gp=986,,N,2+mm+MV+d+5G y\n`;
       } else if (selectTariff in o2DataTariffs) {
         finalScript +=
-          "INS " +
-          mobileNumber +
-          " " +
-          simNumber +
-          " 691 +YX+gs=467+gp=2041,,N,2+gp=58,,N,2+gp=985,,N,2+gp=986,,N,2+5G y" +
-          "\n";
+          `INS ${mobileNumber} ${simNumber} 691 +YX+gs=467+gp=2041,,N,2+gp=58,,N,2+gp=985,,N,2+gp=986,,N,2+5G y\n`;
       } else if (selectTariff in sbSharerTariffs) {
-        finalScript +=
-          "CON/SNB " +
-          tariffCode +
-          " " +
-          simNumber +
-          " " +
-          mobileNumber +
-          " " +
-          leadHandsetNumber +
-          " 1919" +
-          "\n" +
-          "\n" +
-          "ADD MMS " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " ACCINT" +
-          "\n" +
-          "\n" +
-          "ADD WIFI " +
-          mobileNumber +
-          "\n" +
-          "CONNECT RECALL " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD WO " +
-          mobileNumber +
-          " 1" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n";
+        finalScript +=`CON/SNB ${tariffCode} ${simNumber} ${mobileNumber} ${leadHandsetNumber} 1919
+
+ADD MMS ${mobileNumber}
+ADD APN ${mobileNumber} ACCINT
+
+ADD WIFI ${mobileNumber}
+CONNECT RECALL ${mobileNumber}
+
+ADD WO ${mobileNumber} 1
+
+
+`;
       } else if (selectTariff in sbSharerLeadTariffs) {
-        finalScript +=
-          "CON/SNB " +
-          leadTariffCode +
-          " " +
-          simNumber +
-          " " +
-          mobileNumber +
-          " 1919" +
-          "\n" +
-          "\n" +
-          "CHANGE VALUEBUNDLE " +
-          mobileNumber +
-          " " +
-          leadTariffValuebundle +
-          "\n" +
-          "\n" +
-          "ADD MMS " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " ACCINT" +
-          "\n" +
-          "\n" +
-          "ADD WIFI " +
-          mobileNumber +
-          "\n" +
-          "CONNECT RECALL " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD WO " +
-          mobileNumber +
-          " 1" +
-          "\n" +
-          "\n" +
-          "TRANSFER SNB OC600000 CD300400 " +
-          mobileNumber +
-          "\n" +
-          "Y" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n";
+        finalScript += `CON/SNB leadTariffCode ${simNumber} ${mobileNumber} 1919
+
+CHANGE VALUEBUNDLE ${mobileNumber} ${leadTariffValuebundle}
+ADD MMS ${mobileNumber}
+ADD APN ${mobileNumber} ACCINT
+
+ADD WIFI ${mobileNumber}
+CONNECT RECALL ${mobileNumber}
+
+ADD WO ${mobileNumber} 1
+
+TRANSFER SNB OC600000 CD300400 ${mobileNumber}
+Y
+
+`;
       } else if (selectTariff in vfPPMTariffs) {
-        finalScript +=
-          "CON/SNB VFVSZ685 " +
-          simNumber +
-          " " +
-          mobileNumber +
-          " ABZORBPPM 1919" +
-          "\n" +
-          "\n" +
-          "ADD MMS " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " ACCINT" +
-          "\n" +
-          "\n" +
-          "ADD WIFI " +
-          mobileNumber +
-          "\n" +
-          "CONNECT RECALL " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD WO " +
-          mobileNumber +
-          " 1" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n";
+        finalScript += `CON/SNB VFVSZ685 ${simNumber} ${mobileNumber} ABZORBPPM 1919
+
+ADD MMS ${mobileNumber}
+ADD APN ${mobileNumber} ACCINT 
+
+ADD WIFI ${mobileNumber}
+CONNECT RECALL ${mobileNumber}
+
+ADD WO ${mobileNumber} 1
+
+`;
       } else if (selectTariff in vfDataTariffs) {
-        finalScript +=
-          "CON/SNB DATA " +
-          simNumber +
-          " " +
-          mobileNumber +
-          " 1919" +
-          "\n" +
-          "\n" +
-          "ADD CAGPRS " +
-          mobileNumber +
-          " GPZ53 INTERNET" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " WAP" +
-          "\n" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " ACCINT" +
-          "\n" +
-          "\n" +
-          "ADD 4G " +
-          mobileNumber +
-          "\n" +
-          "ADD MMS " +
-          mobileNumber +
-          "\n" +
-          "ADD WIFI " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " IRWDC" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " WTRDC" +
-          "\n" +
-          "\n";
+        finalScript += `CON/SNB DATA ${simNumber} ${mobileNumber} 1919
+
+ADD CAGPRS ${mobileNumber} GPZ53 INTERNET
+ADD APN ${mobileNumber} WAP
+
+ADD APN ${mobileNumber} ACCINT
+
+ADD 4G ${mobileNumber}
+ADD MMS ${mobileNumber}
+ADD WIFI ${mobileNumber}
+ADD APNBUNDLE ${mobileNumber} IRWDC
+ADD APNBUNDLE ${mobileNumber} WTRDC
+
+`;
       } else if (selectTariff in vfDataTariffs5G) {
-        finalScript +=
-          "CON/SNB DATA " +
-          simNumber +
-          " " +
-          mobileNumber +
-          " 1919" +
-          "\n" +
-          "\n" +
-          "ADD CAGPRS " +
-          mobileNumber +
-          " GPZ53 INTERNET" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " WAP" +
-          "\n" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " ACCINT" +
-          "\n" +
-          "\n" +
-          "ADD 4G " +
-          mobileNumber +
-          "\n" +
-          "ADD 5G " +
-          mobileNumber +
-          "\n" +
-          "ADD MMS " +
-          mobileNumber +
-          "\n" +
-          "ADD WIFI " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " IRWDC" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " WTRDC" +
-          "\n" +
-          "\n";
+        finalScript += `CON/SNB DATA ${simNumber} ${mobileNumber} 1919
+
+ADD CAGPRS ${mobileNumber} GPZ53 INTERNET
+ADD APN ${mobileNumber} WAP
+
+ADD APN ${mobileNumber} ACCINT
+
+ADD 4G ${mobileNumber}
+ADD 5G ${mobileNumber}
+ADD MMS ${mobileNumber}
+ADD WIFI ${mobileNumber}
+
+ADD APNBUNDLE ${mobileNumber} IRWDC
+ADD APNBUNDLE ${mobileNumber} WTRDC
+
+`;
       } else if (selectTariff in vfGigaCubeTariffs) {
-        finalScript +=
-          "CON/SNB DATA1 " +
-          simNumber +
-          " " +
-          mobileNumber +
-          " 1919" +
-          "\n" +
-          "\n" +
-          "ADD CAGPRS " +
-          mobileNumber +
-          " GPZ53 INTERNET" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " WAP" +
-          "\n" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " ACCINT" +
-          "\n" +
-          "\n" +
-          "ADD 4G " +
-          mobileNumber +
-          "\n" +
-          "ADD 5G " +
-          mobileNumber +
-          "\n" +
-          "ADD MMS " +
-          mobileNumber +
-          "\n" +
-          "ADD WIFI " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "BAR GPRSROAM " +
-          mobileNumber +
-          "\n" +
-          "\n";
+        finalScript += `CON/SNB DATA1 ${simNumber} ${mobileNumber} 1919
+
+ADD CAGPRS ${mobileNumber} GPZ53 INTERNET
+ADD APN ${mobileNumber} WAP
+
+ADD APN ${mobileNumber} ACCINT
+
+ADD 4G ${mobileNumber}
+ADD 5G ${mobileNumber}
+ADD MMS ${mobileNumber}
+ADD WIFI ${mobileNumber}
+
+BAR GPRSROAM ${mobileNumber}
+
+`;
       } else if (selectTariff in redExecTariffs) {
-        finalScript +=
-          "CON/SNB VFVSZ713 " +
-          simNumber +
-          " " +
-          mobileNumber +
-          " 1919" +
-          "\n" +
-          "\n" +
-          "ADD CAGPRS " +
-          mobileNumber +
-          " GPZ09 INTERNET" +
-          "\n" +
-          "CHANGE VALUEBUNDLE " +
-          mobileNumber +
-          " GPZ09" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " WAP" +
-          "\n" +
-          "\n" +
-          "ADD 4G " +
-          mobileNumber +
-          "\n" +
-          "ADD MMS " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " ACCINT" +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " V2WT3" +
-          "\n" +
-          "\n" +
-          "ADD DNOO " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " IRWDC" +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " WTRDC" +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " MRD21" +
-          "\n" +
-          "\n" +
-          "CONNECT RECALL " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "TRANSFER SNB OC600000 CD300400 " +
-          mobileNumber +
-          "\n" +
-          "Y" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n";
+        finalScript += `CON/SNB VFVSZ713 ${simNumber} ${mobileNumber} 1919
+
+ADD CAGPRS ${mobileNumber} GPZ09 INTERNET
+CHANGE VALUEBUNDLE ${mobileNumber} GPZ09
+ADD APN ${mobileNumber} WAP
+
+ADD 4G ${mobileNumber}
+ADD MMS ${mobileNumber}
+ADD APN ${mobileNumber} ACCINT
+
+ADD APNBUNDLE ${mobileNumber} V2WT3
+ADD DNOO ${mobileNumber}
+ADD APNBUNDLE ${mobileNumber} IRWDC
+ADD APNBUNDLE ${mobileNumber} WTRDC
+ADD APNBUNDLE ${mobileNumber} MRD21
+CONNECT RECALL ${mobileNumber}
+
+TRANSFER SNB OC600000 CD300400 ${mobileNumber}
+Y
+
+`;
       } else if (selectTariff in redExecTariffs5G) {
-        finalScript +=
-          "CON/SNB VFVSZ713 " +
-          simNumber +
-          " " +
-          mobileNumber +
-          " 1919" +
-          "\n" +
-          "\n" +
-          "ADD CAGPRS " +
-          mobileNumber +
-          " GPZ09 INTERNET" +
-          "\n" +
-          "CHANGE VALUEBUNDLE " +
-          mobileNumber +
-          " GPZ09" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " WAP" +
-          "\n" +
-          "\n" +
-          "ADD 4G " +
-          mobileNumber +
-          "\n" +
-          "ADD 5G " +
-          mobileNumber +
-          "\n" +
-          "ADD MMS " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " ACCINT" +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " V2WT3" +
-          "\n" +
-          "\n" +
-          "ADD DNOO " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " IRWDC" +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " WTRDC" +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " MRD21" +
-          "\n" +
-          "\n" +
-          "CONNECT RECALL " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "TRANSFER SNB OC600000 CD300400 " +
-          mobileNumber +
-          "\n" +
-          "Y" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n";
+        finalScript += `CON/SNB VFVSZ713 ${simNumber} ${mobileNumber} 1919
+
+ADD CAGPRS ${mobileNumber} GPZ09 INTERNET
+CHANGE VALUEBUNDLE ${mobileNumber} GPZ09
+ADD APN ${mobileNumber} WAP
+
+ADD 4G ${mobileNumber}
+ADD 5G ${mobileNumber}
+ADD MMS ${mobileNumber}
+ADD APN ${mobileNumber} ACCINT
+
+ADD APNBUNDLE ${mobileNumber} V2WT3
+ADD DNOO ${mobileNumber}
+ADD APNBUNDLE ${mobileNumber} IRWDC
+ADD APNBUNDLE ${mobileNumber} WTRDC
+ADD APNBUNDLE ${mobileNumber} MRD21
+CONNECT RECALL ${mobileNumber}
+
+TRANSFER SNB OC600000 CD300400 ${mobileNumber}
+Y
+
+`;
       } else if (selectTariff in redExecTariffsDataBar) {
-        finalScript +=
-          "CON/SNB VFVSZ713 " +
-          simNumber +
-          " " +
-          mobileNumber +
-          " 1919" +
-          "\n" +
-          "\n" +
-          "ADD CAGPRS " +
-          mobileNumber +
-          " GPZ09 INTERNET" +
-          "\n" +
-          "CHANGE VALUEBUNDLE " +
-          mobileNumber +
-          " GPZ09" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " WAP" +
-          "\n" +
-          "\n" +
-          "ADD 4G " +
-          mobileNumber +
-          "\n" +
-          "ADD MMS " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " ACCINT" +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " V2WT3" +
-          "\n" +
-          "\n" +
-          "ADD DNOO " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " IRWDC" +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " WTRDC" +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " MRD21" +
-          "\n" +
-          "\n" +
-          "BAR GPRS " +
-          mobileNumber +
-          "\n" +
-          "BAR GPRSROAM " +
-          mobileNumber +
-          "\n" +
-          "CONNECT RECALL " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "TRANSFER SNB OC600000 CD300400 " +
-          mobileNumber +
-          "\n" +
-          "Y" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n";
+        finalScript += `CON/SNB VFVSZ713 ${simNumber} ${mobileNumber} 1919
+
+ADD CAGPRS ${mobileNumber} GPZ09 INTERNET
+CHANGE VALUEBUNDLE ${mobileNumber} GPZ09
+ADD APN ${mobileNumber} WAP
+
+ADD 4G ${mobileNumber}
+ADD MMS ${mobileNumber}
+ADD APN ${mobileNumber} ACCINT
+
+ADD APNBUNDLE ${mobileNumber} V2WT3
+ADD DNOO ${mobileNumber}
+ADD APNBUNDLE ${mobileNumber} IRWDC
+ADD APNBUNDLE ${mobileNumber} WTRDC
+ADD APNBUNDLE ${mobileNumber} MRD21
+BAR GPRS ${mobileNumber}
+BAR GPRSROAM ${mobileNumber}
+CONNECT RECALL ${mobileNumber}
+
+TRANSFER SNB OC600000 CD300400 ${mobileNumber}
+Y
+
+`;
       } else {
         finalScript = "Please select a tariff";
       }
     } else if (selectConnectionType == "Port") {
       if (selectTariff in redTariffs) {
-        finalScript +=
-          "IMPORT VFVSZ713 " +
-          simNumber +
-          " " +
-          mobileNumber +
-          " 1919" +
-          "\n" +
-          "\n" +
-          "ADD CAGPRS " +
-          mobileNumber +
-          " GPZ09 INTERNET" +
-          "\n" +
-          "CHANGE VALUEBUNDLE " +
-          mobileNumber +
-          " GPZ09" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " WAP" +
-          "\n" +
-          "\n" +
-          "ADD 4G " +
-          mobileNumber +
-          "\n" +
-          "ADD MMS " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " ACCINT" +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " V2WT3" +
-          "\n" +
-          "\n" +
-          "ADD DNOO " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " IRWDC" +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " WTRDC" +
-          "\n" +
-          "\n" +
-          "CONNECT RECALL " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "TRANSFER SNB OC600000 CD300400 " +
-          mobileNumber +
-          "\n" +
-          "Y" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n";
+        finalScript += `IMPORT VFVSZ713 ${simNumber} ${mobileNumber} 1919
+
+ADD CAGPRS ${mobileNumber} GPZ09 INTERNET
+CHANGE VALUEBUNDLE ${mobileNumber} GPZ09
+ADD APN ${mobileNumber} WAP
+
+ADD 4G ${mobileNumber}
+ADD MMS ${mobileNumber}
+ADD APN ${mobileNumber} ACCINT
+
+ADD APNBUNDLE ${mobileNumber} V2WT3
+ADD DNOO ${mobileNumber}
+ADD APNBUNDLE ${mobileNumber} IRWDC
+ADD APNBUNDLE ${mobileNumber} WTRDC
+CONNECT RECALL ${mobileNumber}
+
+TRANSFER SNB OC600000 CD300400 ${mobileNumber}
+Y
+
+`;
       } else if (selectTariff in o2VoiceTariffs) {
         if (DNO == "") {
           finalScript = "Please select a DNO";
         } else {
-          finalScript +=
-            "PIN " +
-            mobileNumber +
-            " " +
-            simNumber +
-            " 095 +DC+gs=476+gp=2041,,N,2+gp=58,,N,2+gp=985,,N,2+gp=986,,N,2+mm+MV+d+5G " +
-            DNOCode +
-            " 536 y" +
-            "\n" +
-            "\n";
+          finalScript += `PIN ${mobileNumber} ${simNumber} 095 DCgs=476gp=2041,,N,2gp=58,,N,2gp=985,,N,2gp=986,,N,2mmMVd5GDNOCode 536 y\n`;
         }
       } else if (selectTariff in o2DataTariffs) {
         if (DNO == "") {
           finalScript = "Please select a DNO";
         } else {
-          finalScript +=
-            "PIN " +
-            mobileNumber +
-            " " +
-            simNumber +
-            " 691 +YX+gs=467+gp=2041,,N,2+gp=58,,N,2+gp=985,,N,2+gp=986,,N,2+5G " +
-            DNOCode +
-            " 536 y" +
-            "\n" +
-            "\n";
+          finalScript += `PIN ${mobileNumber} ${simNumber} 691 YXgs=467gp=2041,,N,2gp=58,,N,2gp=985,,N,2gp=986,,N,25GDNOCode 536 y\n`;
         }
       } else if (selectTariff in vfDataTariffs) {
-        finalScript +=
-          "IMPORT DATA " +
-          simNumber +
-          " " +
-          mobileNumber +
-          " 1919" +
-          "\n" +
-          "\n" +
-          "ADD CAGPRS " +
-          mobileNumber +
-          " GPZ53 INTERNET" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " WAP" +
-          "\n" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " ACCINT" +
-          "\n" +
-          "\n" +
-          "ADD 4G " +
-          mobileNumber +
-          "\n" +
-          "ADD MMS " +
-          mobileNumber +
-          "\n" +
-          "ADD WIFI " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " IRWDC" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " WTRDC" +
-          "\n" +
-          "\n";
+        finalScript += `IMPORT DATA ${simNumber} ${mobileNumber} 1919
+
+ADD CAGPRS ${mobileNumber} GPZ53 INTERNET
+ADD APN ${mobileNumber} WAP
+
+ADD APN ${mobileNumber} ACCINT
+
+ADD 4G ${mobileNumber}
+ADD MMS ${mobileNumber}
+ADD WIFI ${mobileNumber}
+ADD APNBUNDLE ${mobileNumber} IRWDC
+ADD APNBUNDLE ${mobileNumber} WTRDC
+
+`;
       } else if (selectTariff in vfDataTariffs5G) {
-        finalScript +=
-          "IMPORT DATA " +
-          simNumber +
-          " " +
-          mobileNumber +
-          " 1919" +
-          "\n" +
-          "\n" +
-          "ADD CAGPRS " +
-          mobileNumber +
-          " GPZ53 INTERNET" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " WAP" +
-          "\n" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " ACCINT" +
-          "\n" +
-          "\n" +
-          "ADD 4G " +
-          mobileNumber +
-          "\n" +
-          "ADD 5G " +
-          mobileNumber +
-          "\n" +
-          "ADD MMS " +
-          mobileNumber +
-          "\n" +
-          "ADD WIFI " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " IRWDC" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " WTRDC" +
-          "\n" +
-          "\n";
+        finalScript += `IMPORT DATA ${simNumber} ${mobileNumber} 1919
+
+ADD CAGPRS ${mobileNumber} GPZ53 INTERNET
+ADD APN ${mobileNumber} WAP
+
+ADD APN ${mobileNumber} ACCINT
+
+ADD 4G ${mobileNumber}
+ADD 5G ${mobileNumber}
+ADD MMS ${mobileNumber}
+ADD WIFI ${mobileNumber}
+
+ADD APNBUNDLE ${mobileNumber} IRWDC
+ADD APNBUNDLE ${mobileNumber} WTRDC
+
+`;
       } else if (selectTariff in sbSharerTariffs) {
-        finalScript +=
-          "IMPORT " +
-          tariffCode +
-          " " +
-          simNumber +
-          " " +
-          mobileNumber +
-          " " +
-          leadHandsetNumber +
-          " 1919" +
-          "\n" +
-          "\n" +
-          "ADD MMS " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " ACCINT" +
-          "\n" +
-          "\n" +
-          "ADD WIFI " +
-          mobileNumber +
-          "\n" +
-          "CONNECT RECALL " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD WO " +
-          mobileNumber +
-          " 1" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n";
+        finalScript += `IMPORT ${tariffCode} ${simNumber} ${mobileNumber} ${leadHandsetNumber} 1919
+
+ADD MMS ${mobileNumber}
+ADD APN ${mobileNumber} ACCINT
+
+ADD WIFI ${mobileNumber}
+CONNECT RECALL ${mobileNumber}
+
+ADD WO ${mobileNumber} 1
+
+`;
       } else if (selectTariff in sbSharerLeadTariffs) {
-        finalScript +=
-          "IMPORT " +
-          leadTariffCode +
-          " " +
-          simNumber +
-          " " +
-          mobileNumber +
-          " 1919" +
-          "\n" +
-          "\n" +
-          "CHANGE VALUEBUNDLE " +
-          mobileNumber +
-          " " +
-          leadTariffValuebundle +
-          "\n" +
-          "\n" +
-          "ADD MMS " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " ACCINT" +
-          "\n" +
-          "\n" +
-          "ADD WIFI " +
-          mobileNumber +
-          "\n" +
-          "CONNECT RECALL " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD WO " +
-          mobileNumber +
-          " 1" +
-          "\n" +
-          "\n" +
-          "TRANSFER SNB OC600000 CD300400 " +
-          mobileNumber +
-          "\n" +
-          "Y" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n";
+        finalScript += `IMPORT ${leadTariffCode} ${simNumber} ${mobileNumber} 1919
+
+CHANGE VALUEBUNDLE ${mobileNumber} ${leadTariffValuebundle}
+
+ADD MMS ${mobileNumber}
+ADD APN ${mobileNumber} ACCINT
+
+ADD WIFI ${mobileNumber}
+CONNECT RECALL ${mobileNumber}
+
+ADD WO ${mobileNumber} 1
+
+TRANSFER SNB OC600000 CD300400 ${mobileNumber}
+Y
+
+`;
       } else if (selectTariff in vfPPMTariffs) {
-        finalScript +=
-          "IMPORT VFVSZ685 " +
-          simNumber +
-          " " +
-          mobileNumber +
-          " ABZORBPPM 1919" +
-          "\n" +
-          "\n" +
-          "ADD MMS " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " ACCINT" +
-          "\n" +
-          "\n" +
-          "ADD WIFI " +
-          mobileNumber +
-          "\n" +
-          "CONNECT RECALL " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD WO " +
-          mobileNumber +
-          " 1" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n";
+        finalScript += `IMPORT VFVSZ685 ${simNumber} ${mobileNumber} ABZORBPPM 1919
+
+ADD MMS ${mobileNumber}
+ADD APN ${mobileNumber} ACCINT
+
+ADD WIFI ${mobileNumber}
+CONNECT RECALL ${mobileNumber}
+
+ADD WO ${mobileNumber} 1
+
+`;
       } else if (selectTariff in vfGigaCubeTariffs) {
-        finalScript +=
-          "IMPORT DATA1 " +
-          simNumber +
-          " " +
-          mobileNumber +
-          " 1919" +
-          "\n" +
-          "\n" +
-          "ADD CAGPRS " +
-          mobileNumber +
-          " GPZ53 INTERNET" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " WAP" +
-          "\n" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " ACCINT" +
-          "\n" +
-          "\n" +
-          "ADD 4G " +
-          mobileNumber +
-          "\n" +
-          "ADD 5G " +
-          mobileNumber +
-          "\n" +
-          "ADD MMS " +
-          mobileNumber +
-          "\n" +
-          "ADD WIFI " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "BAR GPRSROAM " +
-          mobileNumber +
-          "\n" +
-          "\n";
+        finalScript += `IMPORT DATA1 ${simNumber} ${mobileNumber} 1919
+
+ADD CAGPRS ${mobileNumber} GPZ53 INTERNET
+ADD APN ${mobileNumber} WAP
+
+ADD APN ${mobileNumber} ACCINT
+
+ADD 4G ${mobileNumber}
+ADD 5G ${mobileNumber}
+ADD MMS ${mobileNumber}
+ADD WIFI ${mobileNumber}
+BAR GPRSROAM ${mobileNumber}
+
+`;
       } else if (selectTariff in redExecTariffs) {
-        finalScript +=
-          "IMPORT VFVSZ713 " +
-          simNumber +
-          " " +
-          mobileNumber +
-          " 1919" +
-          "\n" +
-          "\n" +
-          "ADD CAGPRS " +
-          mobileNumber +
-          " GPZ09 INTERNET" +
-          "\n" +
-          "CHANGE VALUEBUNDLE " +
-          mobileNumber +
-          " GPZ09" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " WAP" +
-          "\n" +
-          "\n" +
-          "ADD 4G " +
-          mobileNumber +
-          "\n" +
-          "ADD MMS " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " ACCINT" +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " V2WT3" +
-          "\n" +
-          "\n" +
-          "ADD DNOO " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " IRWDC" +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " WTRDC" +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " MRD21" +
-          "\n" +
-          "\n" +
-          "CONNECT RECALL " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "TRANSFER SNB OC600000 CD300400 " +
-          mobileNumber +
-          "\n" +
-          "Y" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n";
+        finalScript += `IMPORT VFVSZ713 ${simNumber} ${mobileNumber} 1919
+
+ADD CAGPRS ${mobileNumber} GPZ09 INTERNET
+CHANGE VALUEBUNDLE ${mobileNumber} GPZ09
+ADD APN ${mobileNumber} WAP
+
+ADD 4G ${mobileNumber}
+ADD MMS ${mobileNumber}
+ADD APN ${mobileNumber} ACCINT
+
+ADD APNBUNDLE ${mobileNumber} V2WT3
+ADD DNOO ${mobileNumber}
+ADD APNBUNDLE ${mobileNumber} IRWDC
+ADD APNBUNDLE ${mobileNumber} WTRDC
+ADD APNBUNDLE ${mobileNumber} MRD21
+CONNECT RECALL ${mobileNumber}
+
+TRANSFER SNB OC600000 CD300400 ${mobileNumber}
+Y
+
+`;
       } else if (selectTariff in redExecTariffs5G) {
-        finalScript +=
-          "IMPORT VFVSZ713 " +
-          simNumber +
-          " " +
-          mobileNumber +
-          " 1919" +
-          "\n" +
-          "\n" +
-          "ADD CAGPRS " +
-          mobileNumber +
-          " GPZ09 INTERNET" +
-          "\n" +
-          "CHANGE VALUEBUNDLE " +
-          mobileNumber +
-          " GPZ09" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " WAP" +
-          "\n" +
-          "\n" +
-          "ADD 4G " +
-          mobileNumber +
-          "\n" +
-          "ADD 5G " +
-          mobileNumber +
-          "\n" +
-          "ADD MMS " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " ACCINT" +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " V2WT3" +
-          "\n" +
-          "\n" +
-          "ADD DNOO " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " IRWDC" +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " WTRDC" +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " MRD21" +
-          "\n" +
-          "\n" +
-          "CONNECT RECALL " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "TRANSFER SNB OC600000 CD300400 " +
-          mobileNumber +
-          "\n" +
-          "Y" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n";
+        finalScript += `IMPORT VFVSZ713 ${simNumber} ${mobileNumber} 1919
+
+ADD CAGPRS ${mobileNumber} GPZ09 INTERNET
+CHANGE VALUEBUNDLE ${mobileNumber} GPZ09
+ADD APN ${mobileNumber} WAP
+
+ADD 4G ${mobileNumber}
+ADD 5G ${mobileNumber}
+ADD MMS ${mobileNumber}
+ADD APN ${mobileNumber} ACCINT
+
+ADD APNBUNDLE ${mobileNumber} V2WT3
+ADD DNOO ${mobileNumber}
+ADD APNBUNDLE ${mobileNumber} IRWDC
+ADD APNBUNDLE ${mobileNumber} WTRDC
+ADD APNBUNDLE ${mobileNumber} MRD21
+CONNECT RECALL ${mobileNumber}
+
+TRANSFER SNB OC600000 CD300400 ${mobileNumber}
+Y
+
+`;
       } else if (selectTariff in redExecTariffsDataBar) {
-        finalScript +=
-          "IMPORT VFVSZ713 " +
-          simNumber +
-          " " +
-          mobileNumber +
-          " 1919" +
-          "\n" +
-          "\n" +
-          "ADD CAGPRS " +
-          mobileNumber +
-          " GPZ09 INTERNET" +
-          "\n" +
-          "CHANGE VALUEBUNDLE " +
-          mobileNumber +
-          " GPZ09" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " WAP" +
-          "\n" +
-          "\n" +
-          "ADD 4G " +
-          mobileNumber +
-          "\n" +
-          "ADD MMS " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD APN " +
-          mobileNumber +
-          " ACCINT" +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " V2WT3" +
-          "\n" +
-          "\n" +
-          "ADD DNOO " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " IRWDC" +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " WTRDC" +
-          "\n" +
-          "\n" +
-          "ADD APNBUNDLE " +
-          mobileNumber +
-          " MRD21" +
-          "\n" +
-          "\n" +
-          "CONNECT RECALL " +
-          mobileNumber +
-          "\n" +
-          "\n" +
-          "BAR GPRS " +
-          mobileNumber +
-          "\n" +
-          "BAR GPRSROAM " +
-          mobileNumber +
-          "\n" +
-          "TRANSFER SNB OC600000 CD300400 " +
-          mobileNumber +
-          "\n" +
-          "Y" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n";
+        finalScript += `IMPORT VFVSZ713 ${simNumber} ${mobileNumber} 1919
+
+ADD CAGPRS ${mobileNumber} GPZ09 INTERNET
+CHANGE VALUEBUNDLE ${mobileNumber} GPZ09
+ADD APN ${mobileNumber} WAP
+
+ADD 4G ${mobileNumber}
+ADD MMS ${mobileNumber}
+ADD APN ${mobileNumber} ACCINT
+
+ADD APNBUNDLE ${mobileNumber} V2WT3
+ADD DNOO ${mobileNumber}
+ADD APNBUNDLE ${mobileNumber} IRWDC
+ADD APNBUNDLE ${mobileNumber} WTRDC
+ADD APNBUNDLE ${mobileNumber} MRD21
+CONNECT RECALL ${mobileNumber}
+
+BAR GPRS ${mobileNumber}
+BAR GPRSROAM ${mobileNumber}
+TRANSFER SNB OC600000 CD300400 ${mobileNumber}
+Y
+
+`;
       } else {
         finalScript = "Please select a tariff";
       }
