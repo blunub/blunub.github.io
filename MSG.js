@@ -399,13 +399,13 @@ Y
         if (DNO == "") {
           finalScript = "Please select a DNO";
         } else {
-          finalScript += `PIN ${mobileNumber} ${simNumber} 095 DCgs=476gp=2041,,N,2gp=58,,N,2gp=985,,N,2gp=986,,N,2mmMVd5GDNOCode 536 y\n`;
+          finalScript += `PIN ${mobileNumber} ${simNumber} 095 +DC+gs=476+gp=2041,,N,2+gp=58,,N,2+gp=985,,N,2+gp=986,,N,2+mm+MV+d+5G ${DNOCode} 536 y\n`;
         }
       } else if (selectTariff in o2DataTariffs) {
         if (DNO == "") {
           finalScript = "Please select a DNO";
         } else {
-          finalScript += `PIN ${mobileNumber} ${simNumber} 691 YXgs=467gp=2041,,N,2gp=58,,N,2gp=985,,N,2gp=986,,N,25GDNOCode 536 y\n`;
+          finalScript += `PIN ${mobileNumber} ${simNumber} 691 +YX+gs=467+gp=2041,,N,2+gp=58,,N,2+gp=985,,N,2+gp=986,,N,2+5G ${DNOCode} 536 y\n`;
         }
       } else if (selectTariff in vfDataTariffs) {
         finalScript += `IMPORT DATA ${simNumber} ${mobileNumber} 1919
