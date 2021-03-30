@@ -1483,7 +1483,29 @@ var redExecTariffs5G = {
   "VF Red Int Unlimited - (2021)": "",
   "VF Red Unlimited - (2021)": "",
   "VF Sharer Unlimited Voice - (2021)": "",
-  "VF Sharer Unlimited Voice + Int - (2021)": ""
+  "VF Sharer Unlimited Voice + Int - (2021)": "",
+  "VF Flex - SIM Only": "",
+  "VF Flex - With Kit": "",
+  "VF Evolve 24m Business Voice": "",
+  "VF Evolve 24m Business Single 2GB": "",
+  "VF Evolve 24m Business Single 6GB": "",
+  "VF Evolve 24m Business Single 12GB": "",
+  "VF Evolve 24m Business Single 25GB": "",
+  "VF Evolve 24m Business Pro Unlimited": "",
+  "VF Evolve 36m Business Voice": "",
+  "VF Evolve 36m Business Single 2GB": "",
+  "VF Evolve 36m Business Single 6GB": "",
+  "VF Evolve 36m Business Single 12GB": "",
+  "VF Evolve 36m Business Single 25GB": "",
+  "VF Evolve 36m Business Pro Unlimited": "",
+  "VF Evolve 24m Business Voice": "",
+  "VF Evolve 24m Business Sharer 2GB": "",
+  "VF Evolve 24m Business Sharer 6GB": "",
+  "VF Evolve 24m Business Sharer 12GB": "",
+  "VF Evolve 36m Business Voice": "",
+  "VF Evolve 36m Business Sharer 2GB": "",
+  "VF Evolve 36m Business Sharer 6GB": "",
+  "VF Evolve 36m Business Sharer 12GB": ""
 };
 
 var vfDataTariffs = {
@@ -1549,7 +1571,9 @@ var vfDataTariffs5G = {
   "VF Mobile Broadband 24GB - (2021)": "",
   "VF Mobile Broadband 6GB - (2021)": "",
   "VF Mobile Broadband Unlimited - (2021)": "",
-  "VF Sharer Data Only - (2021)": ""
+  "VF Sharer Data Only - (2021)": "",
+  "VF Evolve 24m Business Data 4GB": "",
+  "VF Evolve 36m Business Data 4GB": ""
 };
 
 var sbSharerTariffs = {
@@ -1909,7 +1933,13 @@ var o2VoiceTariffs = {
   "O2 Small Biz SIMO 32GB (2018)": "",
   "O2 Small Biz SIMO 500MB (2018)": "",
   "O2 Small Biz SIMO 5GB (2018)": "",
-  "O2 Small Biz SIMO 8GB (2018)": ""
+  "O2 Small Biz SIMO 8GB (2018)": "",
+  "O2 Small Biz Voice & Data Share (2021)": "",
+  "O2 Small Biz 2GB (2021)": "",
+  "O2 Small Biz 6GB (2021)": "",
+  "O2 Small Biz 20GB (2021)": "",
+  "O2 Small Biz 50GB (2021)": "",
+  "O2 Small Biz Unlimited (2021)": ""
 };
 
 var o2DataTariffs = {
@@ -1934,5 +1964,10 @@ var o2DataTariffs = {
   "Capped - O2 Mobile Broadband 4GB (2017)": "",
   "Capped - O2 Mobile Broadband 8GB (2017)": "",
   "Capped - O2 Mobile Broadband 20GB (2017)": "",
-  "Capped - O2 Mobile Broadband 30GB (2017)": ""
+  "Capped - O2 Mobile Broadband 30GB (2017)": "",
+  "O2 Small Biz Data Share (2021)": "",
+  "O2 Mobile Broadband 2GB (2021)": "",
+  "O2 Mobile Broadband 10GB (2021)": "",
+  "O2 Mobile Broadband 30GB (2021)": "",
+  "O2 Mobile Broadband 150GB (2021)": ""
 };
