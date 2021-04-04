@@ -14,3 +14,11 @@ function go() {
     generatedScript.innerHTML = finalScript;
   }
 }
+
+//Function to copy text from generated script area
+let copyGeneratedScript = () => {
+  var copyText = document.getElementById("generatedScriptArea");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+}

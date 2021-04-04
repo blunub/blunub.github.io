@@ -1,11 +1,25 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="style.css" />
+    <title>Mobile Scripts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
     <link
-      href="https://fonts.googleapis.com/css?family=Titillium+Web"
       rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css"
+    />
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="icon"
       type="image/png"
@@ -14,105 +28,37 @@
     />
   </head>
   <body>
-    <div class="container group">
-      <div class="grid-1-5">
-        <h2>Connections</h2>
-        <h3><span class="uppercase">New/port/mig</span></h3>
-        <p>Vodafone & O2</p>
-        <ul>
-          <li>New Connections</li>
-          <li>Porting Connections</li>
-          <li>Migrating Connections</li>
-        </ul>
-        <a href="MSG.html" class="button">Open</a>
+    <div class="mainDivContainer">
+      <div class="divContainer">
+        <h2>
+          HOME
+        </h2>
       </div>
-      <div class="grid-1-5">
-        <h2>VF change lead</h2>
-        <h3><span class="uppercase">Change Lead</span></h3>
-        <p>Vodafone</p>
-        <ul>
-          <li>Change Lead</li>
-          <li>Handset On Vodafone</li>
-          <li>Connections</li>
-        </ul>
-        <a href="ChangeLead.html" class="button">Open</a>
-      </div>
-      <div class="grid-1-5">
-        <h2>Refresh</h2>
-        <h3><span class="uppercase">Disc & Rec</span></h3>
-        <p>O2</p>
-        <ul>
-          <li>Disconnect Then</li>
-          <li>Reconnect O2</li>
-          <li>Connections</li>
-        </ul>
-        <a href="O2DiscRec.html" class="button">Open</a>
-      </div>
-      <div class="grid-1-5">
-        <h2>Export</h2>
-        <h3><span class="uppercase">O2 Export</span></h3>
-        <p>O2</p>
-        <ul>
-          <li>Export O2</li>
-          <li>Connections To</li>
-          <li>Another Network</li>
-        </ul>
-        <a href="O2Export.html" class="button">Open</a>
-      </div>
-      <div class="grid-1-5">
-        <h2>Tariff Change</h2>
-        <h3><span class="uppercase">O2 Tariff</span></h3>
-        <p>O2</p>
-        <ul>
-          <li>Change The</li>
-          <li>Tariff For</li>
-          <li>O2 Connections</li>
-        </ul>
-        <a href="O2TariffChange.html" class="button">Open</a>
-      </div>
-      <div class="grid-1-5">
-        <h2>Add gprs</h2>
-        <h3><span class="uppercase">VF Add GPRS</span></h3>
-        <p>Vodafone</p>
-        <ul>
-          <li>Add GPRS</li>
-          <li>To Connections</li>
-          <li>With This Missing</li>
-        </ul>
-        <a href="VFDataAddGPRS.html" class="button">Open</a>
-      </div>
-      <div class="grid-1-5">
-        <h2>Bars & Services</h2>
-        <h3><span class="uppercase">O2 Barring</span></h3>
-        <p>O2</p>
-        <ul>
-          <li>Add/Remove</li>
-          <li>Bars & Services</li>
-          <li>To O2 Connections</li>
-        </ul>
-        <a href="O2Barring.html" class="button">Open</a>
-      </div>
-      <div class="grid-1-5">
-        <h2>Rota</h2>
-        <h3><span class="uppercase">Shifts & Lists</span></h3>
-        <p>Staff</p>
-        <ul>
-          <li>View Assigned</li>
-          <li>Provisioning</li>
-          <li>Shifts & Lists</li>
-        </ul>
-        <a href="ShiftsLists.html" class="button">Open</a>
-      </div>
-      <div class="grid-1-5">
-        <h2>ISAAC</h2>
-        <h3><span class="uppercase">Interpreter</span></h3>
-        <p>Vodafone</p>
-        <ul>
-          <li>Interpret</li>
-          <li>ISAAC</li>
-          <li>Data</li>
-        </ul>
-        <a href="ISAACInterpreter.html" class="button">Open</a>
+      <div class="mainDiv">
+        <div class="divContainer">
+          <a href="MSG.html" class="rainbow-button" alt="New/Port/Mig"></a>
+        </div>
+        <div class="divContainer">
+          <a href="ChangeLead.html" class="rainbow-button" alt="VF Change Lead"></a>
+        </div>
+        <div class="divContainer">
+          <a href="O2DiscRec.html" class="rainbow-button" alt="O2 Disc & Rec"></a>
+        </div>
+        <div class="divContainer">
+          <a href="O2Export.html" class="rainbow-button" alt="O2 Export"></a>
+        </div>
+        <div class="divContainer">
+          <a href="O2TariffChange.html" class="rainbow-button" alt="O2 Tariff Change"></a>
+        </div>
+        <div class="divContainer">
+          <a href="VFDataAddGPRS.html" class="rainbow-button" alt="VF Data Add GPRS"></a>
+        </div>
+        <div class="divContainer">
+          <a href="O2Barring.html" class="rainbow-button" alt="O2 Bars & Services"></a>
+        </div>
+        <div class="divContainer">
+          <a href="ISAACInterpreter.html" class="rainbow-button" alt="ISAAC Interpreter"></a>
+        </div>
       </div>
     </div>
   </body>

@@ -57,7 +57,8 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="O2TariffChange.html"
-                >O2 Tariff Change</a>
+                >O2 Tariff Change</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="VFDataAddGPRS.html">VF Data Add GPRS</a>
@@ -66,913 +67,975 @@
               <a class="nav-link" href="O2Barring.html">O2 Bars & Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="ShiftsLists.html">Shifts & Lists</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="ISAACInterpreter.html">ISAAC Interpreter</a>
+              <a class="nav-link" href="ISAACInterpreter.html"
+                >ISAAC Interpreter</a
+              >
             </li>
           </ul>
         </div>
       </nav>
     </div>
-    <div id="mainDiv">
-      <div class="containerZero">
-        <h2 class="one" id="topHeader">Mobile Script Generator</h2>
-      </div>
-      <div class="containerOne">
-        <div class="dropdownOne" id="selectTariffDiv">
-          <label>Select tariff:</label>
-          <select
-            class="selectpicker"
-            id="selectTariff"
-            data-size="15"
-            data-live-search="true"
-            title="Select tariff"
-          >
-            <!-- VF Abzorb Unlimited -->
-            <option>VF Abzorb Unlimited 2GB (4G)</option>
-            <option>VF Abzorb Unlimited 6GB (4G)</option>
-            <option>VF Abzorb Unlimited 10GB (4G)</option>
-            <option>VF Abzorb Unlimited 20GB (4G)</option>
-            <!-- VF Business Advance -->
-            <option>VF Business Advance Basic BT Lead</option>
-            <option>VF Business Advance Basic BT Child</option>
-            <option>VF Business Advance Basic Lead</option>
-            <option>VF Business Advance Basic Child</option>
-            <option>VF Business Advance Extra BT Lead</option>
-            <option>VF Business Advance Extra BT Child</option>
-            <option>VF Business Advance Extra Lead</option>
-            <option>VF Business Advance Extra Child</option>            
-            <!-- VF Business Advance 5G-->
-            <option>VF 5G Business Advance Basic BT 5GB Lead</option>
-            <option>VF 5G Business Advance Basic BT 5GB Child</option>
-            <option>VF 5G Business Advance Extra BT 5GB Lead</option>
-            <option>VF 5G Business Advance Extra BT 5GB Child</option>
-            <!-- VF Business Advance 2020 -->
-            <option>VF Bus Adv - Value Base 0GB</option>
-            <option>VF Bus Adv - Value Base 1GB</option>
-            <option>VF Bus Adv - Value Base 2GB</option>
-            <option>VF Bus Adv - Value Base 5GB</option>
-            <option>VF Bus Adv - Value Base 10GB</option>
-            <option>VF Bus Adv - Value Trav 0GB</option>
-            <option>VF Bus Adv - Value Trav 1GB</option>
-            <option>VF Bus Adv - Value Trav 2GB</option>
-            <option>VF Bus Adv - Value Trav 5GB</option>
-            <option>VF Bus Adv - Value Trav 10GB</option>
-            <option>VF Bus Adv - Value Base 0GB - (2021)</option>
-            <option>VF Bus Adv - Value Base 1GB - (2021)</option>
-            <option>VF Bus Adv - Value Base 2GB - (2021)</option>
-            <option>VF Bus Adv - Value Base 5GB - (2021)</option>
-            <option>VF Bus Adv - Value Base 10GB - (2021)</option>
-            <option>VF Bus Adv - Value Trav 0GB - (2021)</option>
-            <option>VF Bus Adv - Value Trav 1GB - (2021)</option>
-            <option>VF Bus Adv - Value Trav 2GB - (2021)</option>
-            <option>VF Bus Adv - Value Trav 5GB - (2021)</option>
-            <option>VF Bus Adv - Value Trav 10GB - (2021)</option>
-            <option>VF Bus Adv - Extra Base 0GB<option>
-            <option>VF Bus Adv - Extra Base 1GB<option>
-            <option>VF Bus Adv - Extra Base 2GB<option>
-            <option>VF Bus Adv - Extra Base 5GB<option>
-            <option>VF Bus Adv - Extra Base 10GB<option>
-            <option>VF Bus Adv - Extra Trav 0GB<option>
-            <option>VF Bus Adv - Extra Trav 1GB<option>
-            <option>VF Bus Adv - Extra Trav 2GB<option>
-            <option>VF Bus Adv - Extra Trav 5GB<option>
-            <option>VF Bus Adv - Extra Trav 10GB<option>
-            <option>VF Bus Adv - Extra Base 0GB - (2021)</option>
-            <option>VF Bus Adv - Extra Base 1GB - (2021)</option>
-            <option>VF Bus Adv - Extra Base 2GB - (2021)</option>
-            <option>VF Bus Adv - Extra Base 5GB - (2021)</option>
-            <option>VF Bus Adv - Extra Base 10GB - (2021)</option>
-            <option>VF Bus Adv - Extra Trav 0GB - (2021)</option>
-            <option>VF Bus Adv - Extra Trav 1GB - (2021)</option>
-            <option>VF Bus Adv - Extra Trav 2GB - (2021)</option>
-            <option>VF Bus Adv - Extra Trav 5GB - (2021)</option>
-            <option>VF Bus Adv - Extra Trav 10GB - (2021)</option>
-            <option>VF Bus Adv Unlimited Calls & Data - Extra Base<option>
-            <option>VF Bus Adv Unlimited Calls & Data - Extra Trav<option>
-            <option>VF Bus Adv Unlimited Calls & Data - Value Base<option>
-            <option>VF Bus Adv Unlimited Calls & Data - Value Trav<option>
-            <option>VF Bus Adv Unlimited Data Only - Extra<option>
-            <option>VF Bus Adv Unlimited Data Only - Value<option>
-            <option>VF Bus Adv Unlimited Voice Only - Extra Base<option>
-            <option>VF Bus Adv Unlimited Voice Only - Extra Trav<option>
-            <option>VF Bus Adv Unlimited Voice Only - Value Base<option>
-            <option>VF Bus Adv Unlimited Voice Only - Value Trav<option>
-            <option>VF Bus Adv Unlimited Calls & Data - Extra Base - (2021)</option>
-            <option>VF Bus Adv Unlimited Calls & Data - Extra Trav - (2021)</option>
-            <option>VF Bus Adv Unlimited Calls & Data - Value Base - (2021)</option>
-            <option>VF Bus Adv Unlimited Calls & Data - Value Trav - (2021)</option>
-            <option>VF Bus Adv Unlimited Voice Only - Extra Base - (2021)</option>
-            <option>VF Bus Adv Unlimited Voice Only - Extra Trav - (2021)</option>
-            <option>VF Bus Adv Unlimited Voice Only - Value Base - (2021)</option>
-            <option>VF Bus Adv Unlimited Voice Only - Value Trav - (2021)</option>
-            <option>VF Bus Adv Unlimited Data Only - Extra - (2021)</option>
-            <option>VF Bus Adv Unlimited Data Only - Value - (2021)</option>
-            <!-- VF Business Value -->
-            <option>VF Business Value 500MB + 250Mb WiFi</option>
-            <option>VF Business Value 1GB + 250Mb WiFi</option>
-            <option>VF Business Value 3GB + 250Mb WiFi</option>
-            <!-- Business Freedom -->
-            <option>VF Bus Freedom 250 Data Sharer<option>
-            <option>VF Bus Freedom 250 Sharer<option>
-            <option>VF Bus Freedom 250 Single<option>
-            <option>VF Bus Freedom 500 Data Sharer<option>
-            <option>VF Bus Freedom 500 Sharer<option>
-            <option>VF Bus Freedom 500 Single<option>
-            <option>VF Bus Freedom 750 Data Sharer<option>
-            <option>VF Bus Freedom 750 Sharer<option>
-            <option>VF Bus Freedom 750 Single<option>
-            <option>VF Bus Freedom Data Sharer<option>
-            <option>VF Bus Freedom Sharer<option>
-            <option>VF Bus Freedom Single<option>
-            <option>VF Bus Freedom 250 Sharer - (2021)</option>
-            <option>VF Bus Freedom 250 Single - (2021)</option>
-            <option>VF Bus Freedom 500 Sharer - (2021)</option>
-            <option>VF Bus Freedom 500 Single - (2021)</option>
-            <option>VF Bus Freedom 750 Sharer - (2021)</option>
-            <option>VF Bus Freedom 750 Single - (2021)</option>
-            <option>VF Bus Freedom Sharer - (2021)</option>
-            <option>VF Bus Freedom Single - (2021)</option>
-            <option>VF Bus Freedom 250 Data Sharer - (2021)</option>
-            <option>VF Bus Freedom 500 Data Sharer - (2021)</option>
-            <option>VF Bus Freedom 750 Data Sharer - (2021)</option>
-            <option>VF Bus Freedom Data Sharer - (2021)</option>
-            <!-- VF Red Tariffs -->
-            <option>VF EU Red Bundle 12GB + 1GB WiFi</option>
-            <option>VF EU Red Bundle 12GB + 2GB WiFi</option>
-            <option>VF EU Red Bundle 12GB + 3GB WiFi</option>
-            <option>VF EU Red Bundle 12GB + 4GB WiFi</option>
-            <option>VF EU Red Bundle 12GB + 5GB WiFi</option>
-            <option>VF EU Red Bundle 1GB + 1GB WiFi</option>
-            <option>VF EU Red Bundle 1GB + 2GB WiFi</option>
-            <option>VF EU Red Bundle 1GB + 3GB WiFi</option>
-            <option>VF EU Red Bundle 1GB + 4GB WiFi</option>
-            <option>VF EU Red Bundle 1GB + 5GB WiFi</option>
-            <option>VF EU Red Bundle 24GB + 1GB WiFi</option>
-            <option>VF EU Red Bundle 24GB + 2GB WiFi</option>
-            <option>VF EU Red Bundle 24GB + 3GB WiFi</option>
-            <option>VF EU Red Bundle 24GB + 4GB WiFi</option>
-            <option>VF EU Red Bundle 24GB + 5GB WiFi</option>
-            <option>VF EU Red Bundle 2GB + 1GB WiFi</option>
-            <option>VF EU Red Bundle 3GB + 1GB WiFi</option>
-            <option>VF EU Red Bundle 3GB + 2GB WiFi</option>
-            <option>VF EU Red Bundle 3GB + 3GB WiFi</option>
-            <option>VF EU Red Bundle 3GB + 4GB WiFi</option>
-            <option>VF EU Red Bundle 3GB + 5GB WiFi</option>
-            <option>VF EU Red Bundle 4GB + 1GB WiFi</option>
-            <option>VF EU Red Bundle 6GB + 1GB WiFi</option>
-            <option>VF EU Red Bundle 6GB + 2GB WiFi</option>
-            <option>VF EU Red Bundle 6GB + 3GB WiFi</option>
-            <option>VF EU Red Bundle 6GB + 4GB WiFi</option>
-            <option>VF EU Red Bundle 6GB + 5GB WiFi</option>
-            <option>VF EU Red Standard Bundle 500min 500MB + 1GB WiFi</option>
-            <option>VF EU Red Standard Bundle 500min 500MB + 2GB WiFi</option>
-            <option>VF EU Red Standard Bundle 500min 500MB + 3GB WiFi</option>
-            <option>VF EU Red Standard Bundle 500min 500MB + 4GB WiFi</option>
-            <option>VF EU Red Standard Bundle 500min 500MB + 5GB WiFi</option>
-            <option>VF EU Red Value Bundle 10GB + 1GB WiFi</option>
-            <option>VF EU Red Value Bundle 10GB + 2GB WiFi</option>
-            <option>VF EU Red Value Bundle 10GB + 3GB WiFi</option>
-            <option>VF EU Red Value Bundle 10GB + 4GB WiFi</option>
-            <option>VF EU Red Value Bundle 10GB + 5GB WiFi</option>
-            <option>VF EU Red Value Bundle 12GB + 1GB WiFi</option>
-            <option>VF EU Red Value Bundle 20GB + 1GB WiFi</option>
-            <option>VF EU Red Value Bundle 20GB + 1GB WiFi</option>
-            <option>VF EU Red Value Bundle 20GB + 2GB WiFi</option>
-            <option>VF EU Red Value Bundle 20GB + 3GB WiFi</option>
-            <option>VF EU Red Value Bundle 20GB + 4GB WiFi</option>
-            <option>VF EU Red Value Bundle 20GB + 5GB WiFi</option>
-            <option>VF EU Red Value Bundle 2GB + 1GB WiFi</option>
-            <option>VF EU Red Value Bundle 2GB + 2GB WiFi</option>
-            <option>VF EU Red Value Bundle 2GB + 3GB WiFi</option>
-            <option>VF EU Red Value Bundle 2GB + 4GB WiFi</option>
-            <option>VF EU Red Value Bundle 2GB + 5GB WiFi</option>
-            <option>VF EU Red Value Bundle 30GB + 1GB WiFi</option>
-            <option>VF EU Red Value Bundle 30GB + 2GB WiFi</option>
-            <option>VF EU Red Value Bundle 30GB + 3GB WiFi</option>
-            <option>VF EU Red Value Bundle 30GB + 4GB WiFi</option>
-            <option>VF EU Red Value Bundle 30GB + 5GB WiFi</option>
-            <option>VF EU Red Value Bundle 5GB + 1GB WiFi</option>
-            <option>VF EU Red Value Bundle 5GB + 2GB WiFi</option>
-            <option>VF EU Red Value Bundle 5GB + 3GB WiFi</option>
-            <option>VF EU Red Value Bundle 5GB + 4GB WiFi</option>
-            <option>VF EU Red Value Bundle 5GB + 5GB WiFi</option>
-            <option>VF EU Red Value Bundle 8GB + 1GB WiFi</option>
-            <option>VF Red</option>
-            <option>VF Red 10GB DATA + 2GB WiFi</option>
-            <option>VF Red 10GB DATA + 4GB WiFi</option>
-            <option>VF Red 13GB DATA + 2GB WiFi</option>
-            <option>VF Red 13GB DATA + 4GB WiFi</option>
-            <option>VF Red 20Gb DATA + 2Gb WiFi</option>
-            <option>VF Red 20Gb DATA + 4Gb WiFi</option>
-            <option>VF Red 4G</option>
-            <option>VF Red 4G 16GB</option>
-            <option>VF Red 4G L</option>
-            <option>VF Red 4G XL</option>
-            <option>VF Red 4GB DATA + 2GB WiFi</option>
-            <option>VF Red 4GB DATA + 4GB WiFi</option>
-            <option>VF Red 7GB DATA + 2GB WiFi</option>
-            <option>VF Red 7GB DATA + 4GB WiFi</option>
-            <option>VF Red Basic 600mins 1GB DATA + 2GB WiFi</option>
-            <option>VF Red Basic 600mins 1GB DATA + 4GB WiFi</option>
-            <option>VF Red Bundle 10GB + 2GB WiFi</option>
-            <option>VF Red Bundle 10GB + 3GB WiFi</option>
-            <option>VF Red Bundle 10GB + 4GB WiFi</option>
-            <option>VF Red Bundle 10GB + 5GB WiFi</option>
-            <option>VF Red Bundle 20GB + 2GB WiFi</option>
-            <option>VF Red Bundle 20GB + 3GB WiFi</option>
-            <option>VF Red Bundle 20GB + 4GB WiFi</option>
-            <option>VF Red Bundle 20GB + 5GB WiFi</option>
-            <option>VF Red Bundle 2GB + 2GB WiFi</option>
-            <option>VF Red Bundle 2GB + 3GB WiFi</option>
-            <option>VF Red Bundle 2GB + 4GB WiFi</option>
-            <option>VF Red Bundle 2GB + 5GB WiFi</option>
-            <option>VF Red Bundle 6GB + 2GB WiFi</option>
-            <option>VF Red Bundle 6GB + 3GB WiFi</option>
-            <option>VF Red Bundle 6GB + 4GB WiFi</option>
-            <option>VF Red Bundle 6GB + 5GB WiFi</option>
-            <option>VF Red Business Share 4G</option>
-            <option>VF Red Business Share 4G + 2GB WiFi</option>
-            <option>VF Red Business Share 4G L</option>
-            <option>VF Red Business Share 4G L + 2GB WiFi</option>
-            <option>VF Red Business Share 4G XL</option>
-            <option>VF Red Business Share 4G XL + 2GB WiFi</option>
-            <option>VF Red Essentials 250MB + 250MB WiFi</option>
-            <option>VF Red Essentials 500MB + 250MB WiFi</option>
-            <option>VF Red Executive 10GB </option>
-            <option>VF Red Executive 16GB </option>
-            <option>VF Red Executive 1GB </option>
-            <option>VF Red Executive 20GB </option>
-            <option>VF Red Executive 250MB </option>
-            <option>VF Red Executive 2GB </option>
-            <option>VF Red Executive 32GB + 250MB WiFi</option>
-            <option>VF Red Executive 40GB </option>
-            <option>VF Red Executive 4GB </option>
-            <option>VF Red Executive 500MB </option>
-            <option>VF Red Executive 5GB </option>
-            <option>VF Red Executive 60GB + 250MB WiFi</option>
-            <option>VF Red Executive 8GB </option>
-            <option>VF Red Executive 8GB + 250MB WiFi</option>
-            <option>VF Red Executive 20GB (2019)</option>
-            <option>VF Red Executive EU 25GB (2019)</option>
-            <option>VF Red Executive EU 50GB (2019)</option>
-            <option>VF Red Executive EU 100GB (2019)</option>
-            <option>VF Red Extra 16GB + 250MB WiFi</option>
-            <option>VF Red Extra 1GB + 250MB WiFi</option>
-            <option>VF Red Extra 40GB + 1GB WiFi</option>
-            <option>VF Red Extra 4GB + 250MB WiFi</option>
-            <option>VF Red L</option>
-            <option>VF Red Sharer 2GB</option>
-            <option>VF Red Sharer 3GB</option>
-            <option>VF Red Sharer 4GB</option>
-            <option>VF Red Standard Bundle 1000min 1GB + 2GB WiFi</option>
-            <option>VF Red Standard Bundle 1000min 1GB + 3GB WiFi</option>
-            <option>VF Red Standard Bundle 1000min 1GB + 4GB WiFi</option>
-            <option>VF Red Standard Bundle 1000min 1GB + 5GB WiFi</option>
-            <option>VF Red Standard Bundle 500min 500MB + 2GB WiFi</option>
-            <option>VF Red Standard Bundle 500min 500MB + 3GB WiFi</option>
-            <option>VF Red Standard Bundle 500min 500MB + 4GB WiFi</option>
-            <option>VF Red Standard Bundle 500min 500MB + 5GB WiFi</option>
-            <option>VF Red Value 4GB</option>
-            <option>VF Red Value Bundle 15GB + 2GB WiFi</option>
-            <option>VF Red Value Bundle 15GB + 3GB WiFi</option>
-            <option>VF Red Value Bundle 15GB + 4GB WiFi</option>
-            <option>VF Red Value Bundle 15GB + 5GB WiFi</option>
-            <option>VF Red Value Bundle 25GB + 2GB WiFi</option>
-            <option>VF Red Value Bundle 25GB + 3GB WiFi</option>
-            <option>VF Red Value Bundle 25GB + 4GB WiFi</option>
-            <option>VF Red Value Bundle 25GB + 5GB WiFi</option>
-            <option>VF Red Value Bundle 2GB + 2GB WiFi</option>
-            <option>VF Red Value Bundle 2GB + 3GB WiFi</option>
-            <option>VF Red Value Bundle 2GB + 4GB WiFi</option>
-            <option>VF Red Value Bundle 2GB + 5GB WiFi</option>
-            <option>VF Red Value Bundle 4GB + 2GB WiFi</option>
-            <option>VF Red Value Bundle 4GB + 3GB WiFi</option>
-            <option>VF Red Value Bundle 4GB + 4GB WiFi</option>
-            <option>VF Red Value Bundle 4GB + 5GB WiFi</option>
-            <option>VF Red Value Bundle 8GB + 2GB WiFi</option>
-            <option>VF Red Value Bundle 8GB + 3GB WiFi</option>
-            <option>VF Red Value Bundle 8GB + 4GB WiFi</option>
-            <option>VF Red Value Bundle 8GB + 5GB WiFi</option>
-            <option>VF Red XL</option>
-            <option>VF Red Executive 1GB (2019)</option>
-            <!-- 5G VF Red Tariffs -->
-            <option>VF 5G Red Executive 5GB (2019)</option>
-            <option>VF 5G Red Executive 15GB (2019)</option>
-            <option>VF 5G Red Executive 30GB (2019)</option>
-            <option>VF 5G Red Executive 60GB (2019)</option>
-            <option>VF 5G Red Executive EU 25GB (2019)</option>
-            <option>VF 5G Red Executive EU 50GB (2019)</option>
-            <option>VF 5G Red Executive EU 100GB (2019)</option>
-            <option>VF Red Executive 5GB (5G) (2019)</option>
-            <option>VF Red Executive 20GB (5G) (2019)</option>
-            <option>VF Red Executive 20GB (5G) Plus (2019)</option>
-            <option>VF 5G Business Unlimited Max</option>
-            <option>VF 5G Business Unlimited Max Plus</option>
-            <option>VF Red 2GB - (2020)</option>
-            <option>VF Red 6GB - (2020)</option>
-            <option>VF Red 12GB - (2020)</option>
-            <option>VF Red 24GB - (2020)</option>
-            <option>VF Red Int 6GB - (2020)</option>
-            <option>VF Red Int 12GB - (2020)</option>
-            <option>VF Red Int 24GB - (2020)</option>
-            <option>VF Red Unlimited - (2020)</option>
-            <option>VF Red Int Unlimited - (2020)</option>
-            <option>VF Red 2GB - (2021)</option>
-            <option>VF Red 6GB - (2021)</option>
-            <option>VF Red 12GB - (2021)</option>
-            <option>VF Red 24GB - (2021)</option>
-            <option>VF Red Unlimited - (2021)</option>
-            <option>VF Red Int 6GB - (2021)</option>
-            <option>VF Red Int 12GB - (2021)</option>
-            <option>VF Red Int 24GB - (2021)</option>
-            <option>VF Red Int Unlimited - (2021)</option>
-            <!-- Business Optimiser -->
-            <option>VF Bus Opt Voice and Data 50</option>
-            <option>VF Bus Opt Voice and Data 500</option>
-            <option>VF Bus Opt Voice and Data 750</option>
-            <option>VF Bus Opt Voice and Data 50 - (2021)</option>
-            <option>VF Bus Opt Voice and Data 500 - (2021)</option>
-            <option>VF Bus Opt Voice and Data 750 - (2021)</option>
-            <option>VF Bus Opt Data Only 50</option>
-            <option>VF Bus Opt Data Only 500</option>
-            <option>VF Bus Opt Data Only 750</option>
-            <option>VF Bus Opt Data Only 50 - (2021)</option>
-            <option>VF Bus Opt Data Only 500 - (2021)</option>
-            <option>VF Bus Opt Data Only 750 - (2021)</option>
-            <!-- VF Business Advance MBB -->
-            <option>VF Business Advance Basic BT MBB</option>
-            <option>VF Business Advance Basic MBB</option>
-            <option>VF Business Advance Extra BT MBB</option>
-            <option>VF Business Advance Extra MBB</option>
-            <!-- VF Business Advance MBB -->
-            <option>VF 5G Business Advance Basic BT 5GB MBB</option>
-            <option>VF 5G Business Advance Extra BT 5GB MBB</option>
-            <!-- VF Business Advance MBB 2020 -->
-            <option>VF Bus Adv - MBB Value 4GB</option>
-            <option>VF Bus Adv - MBB Extra 4GB</option>
-            <option>VF Bus Adv - MBB Extra 4GB - (2021)</option>
-            <option>VF Bus Adv - MBB Value 4GB - (2021)</option>
-            <!-- VF Mobile Broadband -->
-            <option>VF Mobile Broadband 10GB + 1GB WiFi</option>
-            <option>VF Mobile Broadband 15GB (4G)</option>
-            <option>VF Mobile Broadband 1GB (3G) + 1GB WiFi</option>
-            <option>VF Mobile Broadband 1GB (4G) + 1GB WiFi</option>
-            <option>VF Mobile Broadband 1GB + 1GB WiFi</option>
-            <option>VF Mobile Broadband 2GB (4G)</option>
-            <option>VF Mobile Broadband 30GB (4G)</option>
-            <option>VF Mobile Broadband 30GB + 1GB WiFi</option>
-            <option>VF Mobile Broadband 3GB (4G) + 1GB WiFi</option>
-            <option>VF Mobile Broadband 3GB + 1GB WiFi</option>
-            <option>VF Mobile Broadband 50GB (4G)</option>
-            <option>VF Mobile Broadband 50GB + 1GB WiFi</option>
-            <option>VF Mobile Broadband 5GB (4G)</option>
-            <option>VF Mobile Broadband 5GB (4G) + 1GB WiFi</option>
-            <option>VF Mobile Broadband 8GB (4G) + 1GB WiFi</option>
-            <option>VF Red Data Sharer</option>
-            <option>VF Mobile Broadband 1GB (2019)</option>
-            <option>VF Mobile Broadband 5GB (2019)</option>
-            <option>VF Mobile Broadband 20GB (2019)</option>
-            <option>VF Mobile Broadband 50GB (2019)</option>
-            <option>VF Mobile Broadband 2GB - (2020)</option>
-            <option>VF Mobile Broadband 6GB - (2020)</option>
-            <option>VF Mobile Broadband 24GB - (2020)</option>
-            <option>VF Mobile Broadband Unlimited - (2020)</option>
-            <option>VF Mobile Broadband 2GB - (2021)</option>
-            <option>VF Mobile Broadband 6GB - (2021)</option>
-            <option>VF Mobile Broadband 24GB - (2021)</option>
-            <option>VF Mobile Broadband Unlimited - (2021)</option>
-            <!-- VF GigaCube -->
-            <option>VF GigaCube UK 60</option>
-            <option>VF GigaCube UK 100</option>
-            <option>VF GigaCube UK 200</option>
-            <option>VF GigaCube UK 300</option>
-            <option>VF GigaCube UK 60 - (2021)</option>
-            <option>VF GigaCube UK 100 - (2021)</option>
-            <option>VF GigaCube UK 200 - (2021)</option>
-            <option>VF GigaCube UK 300 - (2021)</option>
-            <!-- VF Business Share Sharers -->
-            <option>VF SB Sharer 500 Minutes Passport-Sharer 24</option>
-            <option>VF SB Sharer 1000 Minutes Passport-Sharer 24</option>
-            <option>VF SB Sharer 1500 Minutes Passport-Sharer 24</option>
-            <option>VF SB Sharer 2000 Minutes Passport-Sharer 24</option>
-            <option>VF SB Sharer 2500 Minutes Passport-Sharer 24</option>
-            <option>VF SB Sharer 3000 Minutes Passport-Sharer 24</option>
-            <option>VF SB Sharer 3500 Minutes Passport-Sharer 24</option>
-            <option>VF SB Sharer 4000 Minutes Passport-Sharer 24</option>
-            <option>VF SB Sharer 4500 Minutes Passport-Sharer 24</option>
-            <option>VF SB Sharer 5000 Minutes Passport-Sharer 24</option>
-            <option>VF SB Sharer 5500 Minutes Passport-Sharer 24</option>
-            <option>VF SB Sharer 6000 Minutes Passport-Sharer 24</option>
-            <option>VF SB Sharer 6500 Minutes Passport-Sharer 24</option>
-            <option>VF SB Sharer 7000 Minutes Passport-Sharer 24</option>
-            <option>VF SB Sharer 7500 Minutes Passport-Sharer 24</option>
-            <option>VF SB Sharer 8000 Minutes Passport-Sharer 24</option>
-            <option>VF SB Sharer 8500 Minutes Passport-Sharer 24</option>
-            <option>VF SB Sharer 9000 Minutes Passport-Sharer 24</option>
-            <option>VF SB Sharer 9500 Minutes Passport-Sharer 24</option>
-            <option>VF SB Sharer 10000 Minutes Passport-Sharer 24</option>
-            <option>VF SB Sharer 10500 Minutes Passport-Sharer 24</option>
-            <option>VF SB Sharer 11000 Minutes Passport-Sharer 24</option>
-            <option>VF SB Sharer 11500 Minutes Passport-Sharer 24</option>
-            <option>VF SB Sharer 12000 Minutes Passport-Sharer 24</option>
-            <option>VF SB Sharer 500 Minutes VF-World-Sharer 24</option>
-            <option>VF SB Sharer 1000 Minutes VF-World-Sharer 24</option>
-            <option>VF SB Sharer 1500 Minutes VF-World-Sharer 24</option>
-            <option>VF SB Sharer 2000 Minutes VF-World-Sharer 24</option>
-            <option>VF SB Sharer 2500 Minutes VF-World-Sharer 24</option>
-            <option>VF SB Sharer 3000 Minutes VF-World-Sharer 24</option>
-            <option>VF SB Sharer 3500 Minutes VF-World-Sharer 24</option>
-            <option>VF SB Sharer 4000 Minutes VF-World-Sharer 24</option>
-            <option>VF SB Sharer 4500 Minutes VF-World-Sharer 24</option>
-            <option>VF SB Sharer 5000 Minutes VF-World-Sharer 24</option>
-            <option>VF SB Sharer 5500 Minutes VF-World-Sharer 24</option>
-            <option>VF SB Sharer 6000 Minutes VF-World-Sharer 24</option>
-            <option>VF SB Sharer 6500 Minutes VF-World-Sharer 24</option>
-            <option>VF SB Sharer 7000 Minutes VF-World-Sharer 24</option>
-            <option>VF SB Sharer 7500 Minutes VF-World-Sharer 24</option>
-            <option>VF SB Sharer 8000 Minutes VF-World-Sharer 24</option>
-            <option>VF SB Sharer 8500 Minutes VF-World-Sharer 24</option>
-            <option>VF SB Sharer 9000 Minutes VF-World-Sharer 24</option>
-            <option>VF SB Sharer 9500 Minutes VF-World-Sharer 24</option>
-            <option>VF SB Sharer 10000 Minutes VF-World-Sharer 24</option>
-            <option>VF SB Sharer 10500 Minutes VF-World-Sharer 24</option>
-            <option>VF SB Sharer 11000 Minutes VF-World-Sharer 24</option>
-            <option>VF SB Sharer 11500 Minutes VF-World-Sharer 24</option>
-            <option>VF SB Sharer 12000 Minutes VF-World-Sharer 24</option>
-            <option>VF SB Sharer 12500 VF World 24 Add</option>
-            <option>VF SB Sharer 13000 VF World 24 Add</option>
-            <option>VF SB Sharer 13500 VF World 24 Add</option>
-            <option>VF SB Sharer 14000 VF World 24 Add</option>
-            <option>VF SB Sharer 14500 VF World 24 Add</option>
-            <option>VF SB Sharer 15000 VF World 24 Add</option>
-            <option>VF SB Sharer 16000 VF World 24 Add</option>
-            <option>VF SB Sharer 17000 VF World 24 Add</option>
-            <option>VF SB Sharer 18000 VF World 24 Add</option>
-            <option>VF SB Sharer 19000 VF World 24 Add</option>
-            <option>VF SB Sharer 20000 VF World 24 Add</option>
-            <option>VF SB Sharer 21000 VF World 24 Add</option>
-            <option>VF SB Sharer 22000 VF World 24 Add</option>
-            <option>VF SB Sharer 23000 VF World 24 Add</option>
-            <option>VF SB Sharer 24000 VF World 24 Add</option>
-            <option>VF SB Sharer 25000 VF World 24 Add</option>
-            <option>VF SB Sharer 12500 VF Passport 24 Add</option>
-            <option>VF SB Sharer 13000 VF Passport 24 Add</option>
-            <option>VF SB Sharer 13500 VF Passport 24 Add</option>
-            <option>VF SB Sharer 14000 VF Passport 24 Add</option>
-            <option>VF SB Sharer 14500 VF Passport 24 Add</option>
-            <option>VF SB Sharer 15000 VF Passport 24 Add</option>
-            <option>VF SB Sharer 16000 VF Passport 24 Add</option>
-            <option>VF SB Sharer 17000 VF Passport 24 Add</option>
-            <option>VF SB Sharer 18000 VF Passport 24 Add</option>
-            <option>VF SB Sharer 19000 VF Passport 24 Add</option>
-            <option>VF SB Sharer 20000 VF Passport 24 Add</option>
-            <option>VF SB Sharer 21000 VF Passport 24 Add</option>
-            <option>VF SB Sharer 22000 VF Passport 24 Add</option>
-            <option>VF SB Sharer 23000 VF Passport 24 Add</option>
-            <option>VF SB Sharer 24000 VF Passport 24 Add</option>
-            <option>VF SB Sharer 25000 VF Passport 24 Add</option>
-            <option>VF SB Sharer 30000 VF World 24 Add</option>
-            <option>VF SB Sharer 36000 VF World 24 Add</option>
-            <option>VF SB Sharer 42000 VF World 24 Add</option>
-            <option>VF SB Sharer 48000 VF World 24 Add</option>
-            <option>VF SB Sharer 30000 VF Passport 24 Add</option>
-            <option>VF SB Sharer 36000 VF Passport 24 Add</option>
-            <option>VF SB Sharer 42000 VF Passport 24 Add</option>
-            <option>VF SB Sharer 48000 VF Passport 24 Add</option>
-            <!-- VF Businesss Share Leads -->
-            <option>VF SB Sharer 500 Minutes Passport 24</option>
-            <option>VF SB Sharer 1000 Minutes Passport 24</option>
-            <option>VF SB Sharer 1500 Minutes Passport 24</option>
-            <option>VF SB Sharer 2000 Minutes Passport 24</option>
-            <option>VF SB Sharer 2500 Minutes Passport 24</option>
-            <option>VF SB Sharer 3000 Minutes Passport 24</option>
-            <option>VF SB Sharer 3500 Minutes Passport 24</option>
-            <option>VF SB Sharer 4000 Minutes Passport 24</option>
-            <option>VF SB Sharer 4500 Minutes Passport 24</option>
-            <option>VF SB Sharer 5000 Minutes Passport 24</option>
-            <option>VF SB Sharer 5500 Minutes Passport 24</option>
-            <option>VF SB Sharer 6000 Minutes Passport 24</option>
-            <option>VF SB Sharer 6500 Minutes Passport 24</option>
-            <option>VF SB Sharer 7000 Minutes Passport 24</option>
-            <option>VF SB Sharer 7500 Minutes Passport 24</option>
-            <option>VF SB Sharer 8000 Minutes Passport 24</option>
-            <option>VF SB Sharer 8500 Minutes Passport 24</option>
-            <option>VF SB Sharer 9000 Minutes Passport 24</option>
-            <option>VF SB Sharer 9500 Minutes Passport 24</option>
-            <option>VF SB Sharer 10000 Minutes Passport 24</option>
-            <option>VF SB Sharer 10500 Minutes Passport 24</option>
-            <option>VF SB Sharer 11000 Minutes Passport 24</option>
-            <option>VF SB Sharer 11500 Minutes Passport 24</option>
-            <option>VF SB Sharer 12000 Minutes Passport 24</option>
-            <option>VF SB Sharer 500 Minutes VF-World 24</option>
-            <option>VF SB Sharer 1000 Minutes VF-World 24</option>
-            <option>VF SB Sharer 1500 Minutes VF-World 24</option>
-            <option>VF SB Sharer 2000 Minutes VF-World 24</option>
-            <option>VF SB Sharer 2500 Minutes VF-World 24</option>
-            <option>VF SB Sharer 3000 Minutes VF-World 24</option>
-            <option>VF SB Sharer 3500 Minutes VF-World 24</option>
-            <option>VF SB Sharer 4000 Minutes VF-World 24</option>
-            <option>VF SB Sharer 4500 Minutes VF-World 24</option>
-            <option>VF SB Sharer 5000 Minutes VF-World 24</option>
-            <option>VF SB Sharer 5500 Minutes VF-World 24</option>
-            <option>VF SB Sharer 6000 Minutes VF-World 24</option>
-            <option>VF SB Sharer 6500 Minutes VF-World 24</option>
-            <option>VF SB Sharer 7000 Minutes VF-World 24</option>
-            <option>VF SB Sharer 7500 Minutes VF-World 24</option>
-            <option>VF SB Sharer 8000 Minutes VF-World 24</option>
-            <option>VF SB Sharer 8500 Minutes VF-World 24</option>
-            <option>VF SB Sharer 9000 Minutes VF-World 24</option>
-            <option>VF SB Sharer 9500 Minutes VF-World 24</option>
-            <option>VF SB Sharer 10000 Minutes VF-World 24</option>
-            <option>VF SB Sharer 10500 Minutes VF-World 24</option>
-            <option>VF SB Sharer 11000 Minutes VF-World 24</option>
-            <option>VF SB Sharer 11500 Minutes VF-World 24</option>
-            <option>VF SB Sharer 12000 Minutes VF-World 24</option>
-            <option>VF SB Sharer 12500 VF World 24</option>
-            <option>VF SB Sharer 13000 VF World 24</option>
-            <option>VF SB Sharer 13500 VF World 24</option>
-            <option>VF SB Sharer 14000 VF World 24</option>
-            <option>VF SB Sharer 14500 VF World 24</option>
-            <option>VF SB Sharer 15000 VF World 24</option>
-            <option>VF SB Sharer 16000 VF World 24</option>
-            <option>VF SB Sharer 17000 VF World 24</option>
-            <option>VF SB Sharer 18000 VF World 24</option>
-            <option>VF SB Sharer 19000 VF World 24</option>
-            <option>VF SB Sharer 20000 VF World 24</option>
-            <option>VF SB Sharer 21000 VF World 24</option>
-            <option>VF SB Sharer 22000 VF World 24</option>
-            <option>VF SB Sharer 23000 VF World 24</option>
-            <option>VF SB Sharer 24000 VF World 24</option>
-            <option>VF SB Sharer 25000 VF World 24</option>
-            <option>VF SB Sharer 12500 VF Passport 24</option>
-            <option>VF SB Sharer 13000 VF Passport 24</option>
-            <option>VF SB Sharer 13500 VF Passport 24</option>
-            <option>VF SB Sharer 14000 VF Passport 24</option>
-            <option>VF SB Sharer 14500 VF Passport 24</option>
-            <option>VF SB Sharer 15000 VF Passport 24</option>
-            <option>VF SB Sharer 16000 VF Passport 24</option>
-            <option>VF SB Sharer 17000 VF Passport 24</option>
-            <option>VF SB Sharer 18000 VF Passport 24</option>
-            <option>VF SB Sharer 19000 VF Passport 24</option>
-            <option>VF SB Sharer 20000 VF Passport 24</option>
-            <option>VF SB Sharer 21000 VF Passport 24</option>
-            <option>VF SB Sharer 22000 VF Passport 24</option>
-            <option>VF SB Sharer 23000 VF Passport 24</option>
-            <option>VF SB Sharer 24000 VF Passport 24</option>
-            <option>VF SB Sharer 25000 VF Passport 24</option>
-            <option>VF SB Sharer 30000 VF World 24</option>
-            <option>VF SB Sharer 36000 VF World 24</option>
-            <option>VF SB Sharer 42000 VF World 24</option>
-            <option>VF SB Sharer 48000 VF World 24</option>
-            <option>VF SB Sharer 30000 VF Passport 24</option>
-            <option>VF SB Sharer 36000 VF Passport 24</option>
-            <option>VF SB Sharer 42000 VF Passport 24</option>
-            <option>VF SB Sharer 48000 VF Passport 24</option>
-            <!-- VF Wholesale PPM -->
-            <option>VF Wholesale PPM Tariff</option>
-            <option>VF Wholesale PPM (2020)</option>
-            <option>VF Wholesale PPM (2021)</option>
-            <option>VF Gighub PPM</option>
-            <!-- VF Unlimited Data Flex -->
-            <option>VF Unlimited Data Flex</option>
-            <option>VF Unlimited Data Flex (2020)</option>
-            <!-- VF Flex -->
-            <option>VF Flex Data Only - (2020)</option>
-            <option>VF Flex Unlimited Voice - (2020)</option>
-            <option>VF Flex Data Only - (2021)</option>
-            <option>VF Flex Unlimited Voice - (2021)</option>
-            <option>VF Flex - SIM Only</option>
-            <option>VF Flex - With Kit</option>
-            <!-- VF Sharer -->
-            <option>VF Sharer Data Only</option>
-            <option>VF Sharer Data Only - (2021)</option>
-            <option>VF Sharer Unlimited Voice</option>
-            <option>VF Sharer Unlimited Voice + Int</option>
-            <option>VF Sharer Unlimited Voice - (2021)</option>
-            <option>VF Sharer Unlimited Voice + Int - (2021)</option>
-            <!-- VF Evolve Single -->
-            <option>VF Evolve 24m Business Voice</option>
-            <option>VF Evolve 24m Business Single 2GB</option>
-            <option>VF Evolve 24m Business Single 6GB</option>
-            <option>VF Evolve 24m Business Single 12GB</option>
-            <option>VF Evolve 24m Business Single 25GB</option>
-            <option>VF Evolve 24m Business Pro Unlimited</option>
-            <option>VF Evolve 36m Business Voice</option>
-            <option>VF Evolve 36m Business Single 2GB</option>
-            <option>VF Evolve 36m Business Single 6GB</option>
-            <option>VF Evolve 36m Business Single 12GB</option>
-            <option>VF Evolve 36m Business Single 25GB</option>
-            <option>VF Evolve 36m Business Pro Unlimited</option>
-            <!-- VF Evolve Sharer -->
-            <option>VF Evolve 24m Business Sharer 2GB</option>
-            <option>VF Evolve 24m Business Sharer 6GB</option>
-            <option>VF Evolve 24m Business Sharer 12GB</option>
-            <option>VF Evolve 36m Business Sharer 2GB</option>
-            <option>VF Evolve 36m Business Sharer 6GB</option>
-            <option>VF Evolve 36m Business Sharer 12GB</option>
-            <!-- VF Evolve Data -->
-            <option>VF Evolve 24m Business Data 4GB</option>
-            <option>VF Evolve 36m Business Data 4GB</option>
-            <!-- O2 Best for Business -->
-            <option>O2 Best for Business (2016)</option>
-            <!-- O2 Business Shared -->
-            <option>O2 Business Shared 1300 (2016)</option>
-            <option>O2 Business Shared 1300 (2017)</option>
-            <option>O2 Business Shared 1300 Sharer (2016)</option>
-            <option>O2 Business Shared 1300 Sharer (2017)</option>
-            <option>O2 Business Shared 2000 (2016)</option>
-            <option>O2 Business Shared 2000 (2017)</option>
-            <option>O2 Business Shared 2000 Sharer (2016)</option>
-            <option>O2 Business Shared 2000 Sharer (2017)</option>
-            <option>O2 Business Shared 500 (2017)</option>
-            <option>O2 Business Shared 500 Lead (2016)</option>
-            <option>O2 Business Shared 500 Sharer (2016)</option>
-            <option>O2 Business Shared 500 Sharer (2017)</option>
-            <option>O2 Business Shared 5000 (2016)</option>
-            <option>O2 Business Shared 5000 (2017)</option>
-            <option>O2 Business Shared 5000 Sharer (2016)</option>
-            <option>O2 Business Shared 5000 Sharer (2017)</option>
-            <option>Capped - O2 Business Shared 500 (2016)</option>
-            <option>Capped - O2 Business Shared 500 Sharer (2016)</option>
-            <option>Capped - O2 Business Shared 1300 (2016)</option>
-            <option>Capped - O2 Business Shared 1300 Sharer (2016)</option>
-            <option>Capped - O2 Business Shared 2000 (2016)</option>
-            <option>Capped - O2 Business Shared 2000 Sharer (2017)</option>
-            <option>Capped - O2 Business Shared 5000 (2017)</option>
-            <option>Capped - O2 Business Shared 5000 Sharer (2017)</option>
-            <!-- O2 Small Biz -->
-            <option>O2 EU Small Biz 12GB</option>
-            <option>O2 EU Small Biz 15GB</option>
-            <option>O2 EU Small Biz 20GB</option>
-            <option>O2 EU Small Biz 25GB</option>
-            <option>O2 EU Small Biz 2GB</option>
-            <option>O2 EU Small Biz 300Mb</option>
-            <option>O2 EU Small Biz 3GB</option>
-            <option>O2 EU Small Biz 4GB</option>
-            <option>O2 EU Small Biz 500Mb</option>
-            <option>O2 EU Small Biz 750Mb</option>
-            <option>O2 EU Small Biz 7GB</option>
-            <option>O2 EU Small Biz 8GB</option>
-            <option>O2 Small Biz 12GB (12m)</option>
-            <option>O2 Small Biz 12GB (2016)</option>
-            <option>O2 Small Biz 12GB (2017)</option>
-            <option>O2 Small Biz 12Gb +10Gb (2017 Promo)</option>
-            <option>O2 Small Biz 1Gb (2016)</option>
-            <option>O2 Small Biz 1Gb (2017)</option>
-            <option>O2 Small Biz 20GB (12m)</option>
-            <option>O2 Small Biz 20GB (2016)</option>
-            <option>O2 Small Biz 25GB (2017)</option>
-            <option>O2 Small Biz 25Gb +10Gb (2017 Promo)</option>
-            <option>O2 Small Biz 2GB (12m)</option>
-            <option>O2 Small Biz 2GB (2016)</option>
-            <option>O2 Small Biz 300MB (2016)</option>
-            <option>O2 Small Biz 3Gb (2016)</option>
-            <option>O2 Small Biz 3Gb (2017)</option>
-            <option>O2 Small Biz 500MB (2016)</option>
-            <option>O2 Small Biz 500MB (2017)</option>
-            <option>O2 Small Biz 500Mins + 500MB (2016)</option>
-            <option>O2 Small Biz 50Gb (2017)</option>
-            <option>O2 Small Biz 50Gb +10Gb (2017 Promo)</option>
-            <option>O2 Small Biz 5Gb (2016)</option>
-            <option>O2 Small Biz 6GB (12m)</option>
-            <option>O2 Small Biz 6GB (2016)</option>
-            <option>O2 Small Biz 6GB (2017)</option>
-            <option>O2 Small Biz 8Gb (2016)</option>
-            <option>O2 Small Biz Data Share - Child</option>
-            <option>O2 Small Biz Data Share - Child (2017)</option>
-            <option>O2 Small Biz Data Share - Lead</option>
-            <option>O2 Small Biz Data Share - Lead (2017)</option>
-            <option>O2 Small Biz SIMO 12GB (2017)</option>
-            <option>O2 Small Biz SIMO 20GB (2017)</option>
-            <option>O2 Small Biz SIMO 2GB (2017)</option>
-            <option>O2 Small Biz SIMO 300MB (2017)</option>
-            <option>O2 Small Biz SIMO 4Gb (2017)</option>
-            <option>O2 Small Biz SIMO 500MB (2017)</option>
-            <option>O2 Small Biz SIMO 7Gb (2017)</option>
-            <option>O2 Small Biz 2GB (2020)</option>
-            <option>O2 Small Biz 8GB (2020)</option>
-            <option>O2 Small Biz 24GB (2020)</option>
-            <option>O2 Small Biz 50GB (2020)</option>
-            <option>O2 Small Biz 300MB Shared (2018)</option>
-            <option>O2 Small Biz 500MB Shared (2018)</option>
-            <option>O2 Small Biz 5GB Shared (2018)</option>
-            <option>O2 Small Biz 8GB Shared (2018)</option>
-            <option>O2 Small Biz 16GB Shared (2018)</option>
-            <option>O2 Small Biz 32GB Shared (2018)</option>
-            <option>O2 Small Biz 12Gb (2018)</option>
-            <option>O2 Small Biz 25Gb (2018)</option>
-            <option>O2 Small Biz 50Gb (2018)</option>
-            <option>O2 Small Biz SIMO 300MB (2018)</option>
-            <option>O2 Small Biz SIMO 500MB (2018)</option>
-            <option>O2 Small Biz SIMO 2GB (2018)</option>
-            <option>O2 Small Biz SIMO 5GB (2018)</option>
-            <option>O2 Small Biz SIMO 8GB (2018)</option>
-            <option>O2 Small Biz SIMO 10GB (2018)</option>
-            <option>O2 Small Biz SIMO 16GB (2018)</option>
-            <option>O2 Small Biz SIMO 20GB (2018)</option>
-            <option>O2 Small Biz SIMO 30GB (2018)</option>
-            <option>O2 Small Biz SIMO 32GB (2018)</option>
-            <option>O2 Small Biz 300MB (2019)</option>
-            <option>O2 Small Biz 500MB (2019)</option>
-            <option>O2 Small Biz 2GB (2019)</option>
-            <option>O2 Small Biz 6Gb (2019)</option>
-            <option>O2 Small Biz 5GB (2019)</option>
-            <option>O2 Small Biz 8GB (2019)</option>
-            <option>O2 Small Biz 10GB (2019)</option>
-            <option>O2 Small Biz 12Gb (2019)</option>
-            <option>O2 Small Biz 16GB (2019)</option>
-            <option>O2 Small Biz 20GB (2019)</option>
-            <option>O2 Small Biz 24GB (2019)</option>
-            <option>O2 Small Biz 25Gb (2019)</option>
-            <option>O2 Small Biz 30GB (2019)</option>
-            <option>O2 Small Biz 32GB (2019)</option>
-            <option>O2 Small Biz 36GB (2019)</option>
-            <option>O2 Small Biz 50GB (2019)</option>
-            <option>O2 Small Biz 50GB + EU (2019)</option>
-            <option>O2 Small Biz 60GB (2019)</option>
-            <option>O2 Small Biz 100GB (2019)</option>
-            <!-- O2 Small Biz Capped -->
-            <option>Capped - O2 Small Biz 500MB (2017)</option>
-            <option>Capped - O2 Small Biz 1Gb (2017)</option>
-            <option>Capped - O2 Small Biz 3Gb (2017)</option>
-            <option>Capped - O2 Small Biz 6GB (2017)</option>
-            <option>Capped - O2 Small Biz 12GB (2017)</option>
-            <option>Capped - O2 Small Biz 25GB (2017)</option>
-            <option>Capped - O2 Small Biz 50Gb (2017)</option>
-            <option>Capped - O2 Small Biz SIMO 300MB (2017)</option>
-            <option>Capped - O2 Small Biz SIMO 500MB (2017)</option>
-            <option>Capped - O2 Small Biz SIMO 2GB (2017)</option>
-            <option>Capped - O2 Small Biz SIMO 4Gb (2017)</option>
-            <option>Capped - O2 Small Biz SIMO 7Gb (2017)</option>
-            <option>Capped - O2 Small Biz SIMO 12GB (2017)</option>
-            <option>Capped - O2 Small Biz SIMO 20GB (2017)</option>
-            <option>Capped - O2 Small Biz Data Share - Child (2017)</option>
-            <option>Capped - O2 Small Biz Data Share - Lead (2017)</option>
-            <option>Capped - O2 Small Biz 300MB Shared (2018)</option>
-            <option>Capped - O2 Small Biz 500MB Shared (2018)</option>
-            <option>Capped - O2 Small Biz 5GB Shared (2018)</option>
-            <option>Capped - O2 Small Biz 8GB Shared (2018)</option>
-            <option>Capped - O2 Small Biz 16GB Shared (2018)</option>
-            <option>Capped - O2 Small Biz 32GB Shared (2018)</option>
-            <option>Capped - O2 Small Biz 12Gb (2018)</option>
-            <option>Capped - O2 Small Biz 25Gb (2018)</option>
-            <option>Capped - O2 Small Biz 50Gb (2018)</option>
-            <option>Capped - O2 Small Biz SIMO 300MB (2018)</option>
-            <option>Capped - O2 Small Biz SIMO 500MB (2018)</option>
-            <option>Capped - O2 Small Biz SIMO 5GB (2018)</option>
-            <option>Capped - O2 Small Biz SIMO 8GB (2018)</option>
-            <option>Capped - O2 Small Biz SIMO 16GB (2018)</option>
-            <option>Capped - O2 Small Biz SIMO 32GB (2018)</option>
-            <!-- O2 Small Biz 5G -->
-            <option>O2 Small Biz Unlimited (2019)</option>
-            <option>O2 Small Biz EU Unlimited (2019)</option>
-            <option>O2 Small Biz Voice & Data Share (2021)</option>
-            <option>O2 Small Biz 2GB (2021)</option>
-            <option>O2 Small Biz 6GB (2021)</option>
-            <option>O2 Small Biz 20GB (2021)</option>
-            <option>O2 Small Biz 50GB (2021)</option>
-            <option>O2 Small Biz Unlimited (2021)</option>
-            <option>O2 Small Biz Data Share (2021)</option>
-            <!-- O2 Mobile Broadband -->
-            <option>O2 Mobile Broadband 1GB (2016)</option>
-            <option>O2 Mobile Broadband 20GB (2016)</option>
-            <option>O2 Mobile Broadband 3GB (2016)</option>
-            <option>O2 Mobile Broadband 5GB (2016)</option>
-            <option>O2 Mobile Broadband 8GB (2016)</option>
-            <option>O2 Mobile Broadband 1GB (2017)</option>
-            <option>O2 Mobile Broadband 20GB (2017)</option>
-            <option>O2 Mobile Broadband 2GB (2017)</option>
-            <option>O2 Mobile Broadband 30GB (2017)</option>
-            <option>O2 Mobile Broadband 4GB (2017)</option>
-            <option>O2 Mobile Broadband 8GB (2017)</option>
-            <option>O2 Mobile Broadband 2GB (2020)</option>
-            <option>O2 Mobile Broadband 8GB (2020)</option>
-            <option>O2 Mobile Broadband 24GB (2020)</option>
-            <option>O2 Mobile Broadband 60GB (2020)</option>
-            <option>O2 Mobile Broadband 100GB (2020)</option>
-            <option>O2 Mobile Broadband 2GB (2021)</option>
-            <option>O2 Mobile Broadband 10GB (2021)</option>
-            <option>O2 Mobile Broadband 30GB (2021)</option>
-            <option>O2 Mobile Broadband 150GB (2021)</option>
-            <!-- O2 Mobile Broadband - Capped -->
-            <option>Capped - O2 Mobile Broadband 1GB (2017)</option>
-            <option>Capped - O2 Mobile Broadband 2GB (2017)</option>
-            <option>Capped - O2 Mobile Broadband 4GB (2017)</option>
-            <option>Capped - O2 Mobile Broadband 8GB (2017)</option>
-            <option>Capped - O2 Mobile Broadband 20GB (2017)</option>
-            <option>Capped - O2 Mobile Broadband 30GB (2017)</option>
-            <!-- O2 Wholesale PPM -->
-            <option>O2 wholesale PPM (2016)</option>
-            <option>O2 wholesale PPM (2017)</option>
-            <option>Capped - O2 wholesale PPM (2017)</option>
-            <option>O2 Mobel PPM (2020)</option>
-            <!-- O2 Unlimited Data Flex -->
-            <option>O2 Unlimited Data Flex</option>
-            <option>O2 Unlimited Data Flex (2020)</option>
-            <option>O2 Flex - SIM Only</option>
-            <option>O2 Flex - With Kit</option>
-            <!-- O2 Reliance M2M -->
-            <option>O2 Reliance M2M</option>
-          </select>
+    <div id="mainDivContainer">
+      <div id="mainDiv">
+        <div class="containerOne">
+          <h2 class="one" id="topHeader">Mobile Script Generator</h2>
         </div>
-        <div class="dropdownTwo" id="selectConnectionTypeDiv">
-          <label>Select connection type:</label>
-          <select
-            class="selectpicker"
-            id="selectConnectionType"
-            data-live-search="true"
-            title="Select connection type"
-          >
-            <option>New</option>
-            <option>Port</option>
-            <option>Migration</option>
-          </select>
-        </div>
-        <div class="dropdownOne" id="selectDNODiv" style="visibility: hidden">
-          <label>Select DNO:</label>
-          <select
-            class="selectpicker"
-            id="selectDNO"
-            data-size="15"
-            data-live-search="true"
-            title="Select DNO"
-          >
-            <option>BT</option>
-            <option>Cable and Wireless</option>
-            <option>Cellnet</option>
-            <option>Cloud9</option>
-            <option>Gamma</option>
-            <option>Hay Systems Ltd</option>
-            <option>Limitless Mobile</option>
-            <option>Lleida</option>
-            <option>LYCA Mobile</option>
-            <option>MCom/Mundio</option>
-            <option>Orange</option>
-            <option>Resilient Plc</option>
-            <option>Sky</option>
-            <option>Stour Marine</option>
-            <option>Teleena</option>
-            <option>Three</option>
-            <option>TISMI</option>
-            <option>T-Mobile</option>
-            <option>Truphone</option>
-            <option>Vectone</option>
-            <option>Virgin</option>
-            <option>Vodafone</option>
-          </select>
-        </div>
-        <div id="selectLeadhandsetDiv" style="visibility: hidden">
-          <label>Enter lead handset number:</label>
-          <textarea
-            class="leadHandsetNumber"
-            id="leadHandsetNumber"
-            rows="1"
-            disabled
-          ></textarea>
-        </div>
-      </div>
-      <div class="containerTwo">
-        <div class="mobileNumberDiv">
-          <label for="mobileNumbers">Enter mobile numbers:</label>
-          <textarea
-            class="mobileNumberArea"
-            id="mobileNumberArea"
-            rows="5"
-          ></textarea>
-        </div>
-        <div id="simNumberDiv" style="visibility: hidden">
-          <label for="simNumbers">Enter SIM numbers:</label>
-          <textarea
-            class="simNumberArea"
-            id="simNumberArea"
-            rows="5"
-          ></textarea>
-        </div>
-      </div>
-      <div class="containerThree">
-        <div id="generateButtonDiv">
-          <input
-            class="generateButton"
-            type="button"
-            value="Generate Script"
-            onclick="go()"
-          />
-        </div>
-      </div>
-      <div class="containerFour">
-        <div id="generatedScriptAreaDiv">
-          <div>
-            <label for="generatedScriptArea">Generated script:</label>
+        <div class="containerTwo">
+          <div class="dropdownOne" id="selectTariffDiv">
+            <label>Select tariff:</label>
+            <select
+              class="selectpicker"
+              id="selectTariff"
+              data-size="15"
+              data-live-search="true"
+              title="Select tariff"
+              data-style="btn-dark"
+            >
+              <!-- VF Abzorb Unlimited -->
+              <option>VF Abzorb Unlimited 2GB (4G)</option>
+              <option>VF Abzorb Unlimited 6GB (4G)</option>
+              <option>VF Abzorb Unlimited 10GB (4G)</option>
+              <option>VF Abzorb Unlimited 20GB (4G)</option>
+              <!-- VF Business Advance -->
+              <option>VF Business Advance Basic BT Lead</option>
+              <option>VF Business Advance Basic BT Child</option>
+              <option>VF Business Advance Basic Lead</option>
+              <option>VF Business Advance Basic Child</option>
+              <option>VF Business Advance Extra BT Lead</option>
+              <option>VF Business Advance Extra BT Child</option>
+              <option>VF Business Advance Extra Lead</option>
+              <option>VF Business Advance Extra Child</option>
+              <!-- VF Business Advance 5G-->
+              <option>VF 5G Business Advance Basic BT 5GB Lead</option>
+              <option>VF 5G Business Advance Basic BT 5GB Child</option>
+              <option>VF 5G Business Advance Extra BT 5GB Lead</option>
+              <option>VF 5G Business Advance Extra BT 5GB Child</option>
+              <!-- VF Business Advance 2020 -->
+              <option>VF Bus Adv - Value Base 0GB</option>
+              <option>VF Bus Adv - Value Base 1GB</option>
+              <option>VF Bus Adv - Value Base 2GB</option>
+              <option>VF Bus Adv - Value Base 5GB</option>
+              <option>VF Bus Adv - Value Base 10GB</option>
+              <option>VF Bus Adv - Value Trav 0GB</option>
+              <option>VF Bus Adv - Value Trav 1GB</option>
+              <option>VF Bus Adv - Value Trav 2GB</option>
+              <option>VF Bus Adv - Value Trav 5GB</option>
+              <option>VF Bus Adv - Value Trav 10GB</option>
+              <option>VF Bus Adv - Value Base 0GB - (2021)</option>
+              <option>VF Bus Adv - Value Base 1GB - (2021)</option>
+              <option>VF Bus Adv - Value Base 2GB - (2021)</option>
+              <option>VF Bus Adv - Value Base 5GB - (2021)</option>
+              <option>VF Bus Adv - Value Base 10GB - (2021)</option>
+              <option>VF Bus Adv - Value Trav 0GB - (2021)</option>
+              <option>VF Bus Adv - Value Trav 1GB - (2021)</option>
+              <option>VF Bus Adv - Value Trav 2GB - (2021)</option>
+              <option>VF Bus Adv - Value Trav 5GB - (2021)</option>
+              <option>VF Bus Adv - Value Trav 10GB - (2021)</option>
+              <option>VF Bus Adv - Extra Base 0GB</option
+              ><option> </option
+              ><option>VF Bus Adv - Extra Base 1GB</option
+              ><option> </option
+              ><option>VF Bus Adv - Extra Base 2GB</option
+              ><option> </option
+              ><option>VF Bus Adv - Extra Base 5GB</option
+              ><option> </option
+              ><option>VF Bus Adv - Extra Base 10GB</option
+              ><option> </option
+              ><option>VF Bus Adv - Extra Trav 0GB</option
+              ><option> </option
+              ><option>VF Bus Adv - Extra Trav 1GB</option
+              ><option> </option
+              ><option>VF Bus Adv - Extra Trav 2GB</option
+              ><option> </option
+              ><option>VF Bus Adv - Extra Trav 5GB</option
+              ><option> </option
+              ><option>VF Bus Adv - Extra Trav 10GB</option
+              ><option> </option
+              ><option>VF Bus Adv - Extra Base 0GB - (2021)</option>
+              <option>VF Bus Adv - Extra Base 1GB - (2021)</option>
+              <option>VF Bus Adv - Extra Base 2GB - (2021)</option>
+              <option>VF Bus Adv - Extra Base 5GB - (2021)</option>
+              <option>VF Bus Adv - Extra Base 10GB - (2021)</option>
+              <option>VF Bus Adv - Extra Trav 0GB - (2021)</option>
+              <option>VF Bus Adv - Extra Trav 1GB - (2021)</option>
+              <option>VF Bus Adv - Extra Trav 2GB - (2021)</option>
+              <option>VF Bus Adv - Extra Trav 5GB - (2021)</option>
+              <option>VF Bus Adv - Extra Trav 10GB - (2021)</option>
+              <option>VF Bus Adv Unlimited Calls & Data - Extra Base</option
+              ><option> </option
+              ><option>VF Bus Adv Unlimited Calls & Data - Extra Trav</option
+              ><option> </option
+              ><option>VF Bus Adv Unlimited Calls & Data - Value Base</option
+              ><option> </option
+              ><option>VF Bus Adv Unlimited Calls & Data - Value Trav</option
+              ><option> </option
+              ><option>VF Bus Adv Unlimited Data Only - Extra</option
+              ><option> </option
+              ><option>VF Bus Adv Unlimited Data Only - Value</option
+              ><option> </option
+              ><option>VF Bus Adv Unlimited Voice Only - Extra Base</option
+              ><option> </option
+              ><option>VF Bus Adv Unlimited Voice Only - Extra Trav</option
+              ><option> </option
+              ><option>VF Bus Adv Unlimited Voice Only - Value Base</option
+              ><option> </option
+              ><option>VF Bus Adv Unlimited Voice Only - Value Trav</option
+              ><option> </option
+              ><option
+                >VF Bus Adv Unlimited Calls & Data - Extra Base - (2021)</option
+              >
+              <option
+                >VF Bus Adv Unlimited Calls & Data - Extra Trav - (2021)</option
+              >
+              <option
+                >VF Bus Adv Unlimited Calls & Data - Value Base - (2021)</option
+              >
+              <option
+                >VF Bus Adv Unlimited Calls & Data - Value Trav - (2021)</option
+              >
+              <option
+                >VF Bus Adv Unlimited Voice Only - Extra Base - (2021)</option
+              >
+              <option
+                >VF Bus Adv Unlimited Voice Only - Extra Trav - (2021)</option
+              >
+              <option
+                >VF Bus Adv Unlimited Voice Only - Value Base - (2021)</option
+              >
+              <option
+                >VF Bus Adv Unlimited Voice Only - Value Trav - (2021)</option
+              >
+              <option>VF Bus Adv Unlimited Data Only - Extra - (2021)</option>
+              <option>VF Bus Adv Unlimited Data Only - Value - (2021)</option>
+              <!-- VF Business Value -->
+              <option>VF Business Value 500MB + 250Mb WiFi</option>
+              <option>VF Business Value 1GB + 250Mb WiFi</option>
+              <option>VF Business Value 3GB + 250Mb WiFi</option>
+              <!-- Business Freedom -->
+              <option>VF Bus Freedom 250 Data Sharer</option
+              ><option> </option
+              ><option>VF Bus Freedom 250 Sharer</option
+              ><option> </option
+              ><option>VF Bus Freedom 250 Single</option
+              ><option> </option
+              ><option>VF Bus Freedom 500 Data Sharer</option
+              ><option> </option
+              ><option>VF Bus Freedom 500 Sharer</option
+              ><option> </option
+              ><option>VF Bus Freedom 500 Single</option
+              ><option> </option
+              ><option>VF Bus Freedom 750 Data Sharer</option
+              ><option> </option
+              ><option>VF Bus Freedom 750 Sharer</option
+              ><option> </option
+              ><option>VF Bus Freedom 750 Single</option
+              ><option> </option
+              ><option>VF Bus Freedom Data Sharer</option
+              ><option> </option
+              ><option>VF Bus Freedom Sharer</option
+              ><option> </option
+              ><option>VF Bus Freedom Single</option
+              ><option> </option
+              ><option>VF Bus Freedom 250 Sharer - (2021)</option>
+              <option>VF Bus Freedom 250 Single - (2021)</option>
+              <option>VF Bus Freedom 500 Sharer - (2021)</option>
+              <option>VF Bus Freedom 500 Single - (2021)</option>
+              <option>VF Bus Freedom 750 Sharer - (2021)</option>
+              <option>VF Bus Freedom 750 Single - (2021)</option>
+              <option>VF Bus Freedom Sharer - (2021)</option>
+              <option>VF Bus Freedom Single - (2021)</option>
+              <option>VF Bus Freedom 250 Data Sharer - (2021)</option>
+              <option>VF Bus Freedom 500 Data Sharer - (2021)</option>
+              <option>VF Bus Freedom 750 Data Sharer - (2021)</option>
+              <option>VF Bus Freedom Data Sharer - (2021)</option>
+              <!-- VF Red Tariffs -->
+              <option>VF EU Red Bundle 12GB + 1GB WiFi</option>
+              <option>VF EU Red Bundle 12GB + 2GB WiFi</option>
+              <option>VF EU Red Bundle 12GB + 3GB WiFi</option>
+              <option>VF EU Red Bundle 12GB + 4GB WiFi</option>
+              <option>VF EU Red Bundle 12GB + 5GB WiFi</option>
+              <option>VF EU Red Bundle 1GB + 1GB WiFi</option>
+              <option>VF EU Red Bundle 1GB + 2GB WiFi</option>
+              <option>VF EU Red Bundle 1GB + 3GB WiFi</option>
+              <option>VF EU Red Bundle 1GB + 4GB WiFi</option>
+              <option>VF EU Red Bundle 1GB + 5GB WiFi</option>
+              <option>VF EU Red Bundle 24GB + 1GB WiFi</option>
+              <option>VF EU Red Bundle 24GB + 2GB WiFi</option>
+              <option>VF EU Red Bundle 24GB + 3GB WiFi</option>
+              <option>VF EU Red Bundle 24GB + 4GB WiFi</option>
+              <option>VF EU Red Bundle 24GB + 5GB WiFi</option>
+              <option>VF EU Red Bundle 2GB + 1GB WiFi</option>
+              <option>VF EU Red Bundle 3GB + 1GB WiFi</option>
+              <option>VF EU Red Bundle 3GB + 2GB WiFi</option>
+              <option>VF EU Red Bundle 3GB + 3GB WiFi</option>
+              <option>VF EU Red Bundle 3GB + 4GB WiFi</option>
+              <option>VF EU Red Bundle 3GB + 5GB WiFi</option>
+              <option>VF EU Red Bundle 4GB + 1GB WiFi</option>
+              <option>VF EU Red Bundle 6GB + 1GB WiFi</option>
+              <option>VF EU Red Bundle 6GB + 2GB WiFi</option>
+              <option>VF EU Red Bundle 6GB + 3GB WiFi</option>
+              <option>VF EU Red Bundle 6GB + 4GB WiFi</option>
+              <option>VF EU Red Bundle 6GB + 5GB WiFi</option>
+              <option>VF EU Red Standard Bundle 500min 500MB + 1GB WiFi</option>
+              <option>VF EU Red Standard Bundle 500min 500MB + 2GB WiFi</option>
+              <option>VF EU Red Standard Bundle 500min 500MB + 3GB WiFi</option>
+              <option>VF EU Red Standard Bundle 500min 500MB + 4GB WiFi</option>
+              <option>VF EU Red Standard Bundle 500min 500MB + 5GB WiFi</option>
+              <option>VF EU Red Value Bundle 10GB + 1GB WiFi</option>
+              <option>VF EU Red Value Bundle 10GB + 2GB WiFi</option>
+              <option>VF EU Red Value Bundle 10GB + 3GB WiFi</option>
+              <option>VF EU Red Value Bundle 10GB + 4GB WiFi</option>
+              <option>VF EU Red Value Bundle 10GB + 5GB WiFi</option>
+              <option>VF EU Red Value Bundle 12GB + 1GB WiFi</option>
+              <option>VF EU Red Value Bundle 20GB + 1GB WiFi</option>
+              <option>VF EU Red Value Bundle 20GB + 1GB WiFi</option>
+              <option>VF EU Red Value Bundle 20GB + 2GB WiFi</option>
+              <option>VF EU Red Value Bundle 20GB + 3GB WiFi</option>
+              <option>VF EU Red Value Bundle 20GB + 4GB WiFi</option>
+              <option>VF EU Red Value Bundle 20GB + 5GB WiFi</option>
+              <option>VF EU Red Value Bundle 2GB + 1GB WiFi</option>
+              <option>VF EU Red Value Bundle 2GB + 2GB WiFi</option>
+              <option>VF EU Red Value Bundle 2GB + 3GB WiFi</option>
+              <option>VF EU Red Value Bundle 2GB + 4GB WiFi</option>
+              <option>VF EU Red Value Bundle 2GB + 5GB WiFi</option>
+              <option>VF EU Red Value Bundle 30GB + 1GB WiFi</option>
+              <option>VF EU Red Value Bundle 30GB + 2GB WiFi</option>
+              <option>VF EU Red Value Bundle 30GB + 3GB WiFi</option>
+              <option>VF EU Red Value Bundle 30GB + 4GB WiFi</option>
+              <option>VF EU Red Value Bundle 30GB + 5GB WiFi</option>
+              <option>VF EU Red Value Bundle 5GB + 1GB WiFi</option>
+              <option>VF EU Red Value Bundle 5GB + 2GB WiFi</option>
+              <option>VF EU Red Value Bundle 5GB + 3GB WiFi</option>
+              <option>VF EU Red Value Bundle 5GB + 4GB WiFi</option>
+              <option>VF EU Red Value Bundle 5GB + 5GB WiFi</option>
+              <option>VF EU Red Value Bundle 8GB + 1GB WiFi</option>
+              <option>VF Red</option>
+              <option>VF Red 10GB DATA + 2GB WiFi</option>
+              <option>VF Red 10GB DATA + 4GB WiFi</option>
+              <option>VF Red 13GB DATA + 2GB WiFi</option>
+              <option>VF Red 13GB DATA + 4GB WiFi</option>
+              <option>VF Red 20Gb DATA + 2Gb WiFi</option>
+              <option>VF Red 20Gb DATA + 4Gb WiFi</option>
+              <option>VF Red 4G</option>
+              <option>VF Red 4G 16GB</option>
+              <option>VF Red 4G L</option>
+              <option>VF Red 4G XL</option>
+              <option>VF Red 4GB DATA + 2GB WiFi</option>
+              <option>VF Red 4GB DATA + 4GB WiFi</option>
+              <option>VF Red 7GB DATA + 2GB WiFi</option>
+              <option>VF Red 7GB DATA + 4GB WiFi</option>
+              <option>VF Red Basic 600mins 1GB DATA + 2GB WiFi</option>
+              <option>VF Red Basic 600mins 1GB DATA + 4GB WiFi</option>
+              <option>VF Red Bundle 10GB + 2GB WiFi</option>
+              <option>VF Red Bundle 10GB + 3GB WiFi</option>
+              <option>VF Red Bundle 10GB + 4GB WiFi</option>
+              <option>VF Red Bundle 10GB + 5GB WiFi</option>
+              <option>VF Red Bundle 20GB + 2GB WiFi</option>
+              <option>VF Red Bundle 20GB + 3GB WiFi</option>
+              <option>VF Red Bundle 20GB + 4GB WiFi</option>
+              <option>VF Red Bundle 20GB + 5GB WiFi</option>
+              <option>VF Red Bundle 2GB + 2GB WiFi</option>
+              <option>VF Red Bundle 2GB + 3GB WiFi</option>
+              <option>VF Red Bundle 2GB + 4GB WiFi</option>
+              <option>VF Red Bundle 2GB + 5GB WiFi</option>
+              <option>VF Red Bundle 6GB + 2GB WiFi</option>
+              <option>VF Red Bundle 6GB + 3GB WiFi</option>
+              <option>VF Red Bundle 6GB + 4GB WiFi</option>
+              <option>VF Red Bundle 6GB + 5GB WiFi</option>
+              <option>VF Red Business Share 4G</option>
+              <option>VF Red Business Share 4G + 2GB WiFi</option>
+              <option>VF Red Business Share 4G L</option>
+              <option>VF Red Business Share 4G L + 2GB WiFi</option>
+              <option>VF Red Business Share 4G XL</option>
+              <option>VF Red Business Share 4G XL + 2GB WiFi</option>
+              <option>VF Red Essentials 250MB + 250MB WiFi</option>
+              <option>VF Red Essentials 500MB + 250MB WiFi</option>
+              <option>VF Red Executive 10GB </option>
+              <option>VF Red Executive 16GB </option>
+              <option>VF Red Executive 1GB </option>
+              <option>VF Red Executive 20GB </option>
+              <option>VF Red Executive 250MB </option>
+              <option>VF Red Executive 2GB </option>
+              <option>VF Red Executive 32GB + 250MB WiFi</option>
+              <option>VF Red Executive 40GB </option>
+              <option>VF Red Executive 4GB </option>
+              <option>VF Red Executive 500MB </option>
+              <option>VF Red Executive 5GB </option>
+              <option>VF Red Executive 60GB + 250MB WiFi</option>
+              <option>VF Red Executive 8GB </option>
+              <option>VF Red Executive 8GB + 250MB WiFi</option>
+              <option>VF Red Executive 20GB (2019)</option>
+              <option>VF Red Executive EU 25GB (2019)</option>
+              <option>VF Red Executive EU 50GB (2019)</option>
+              <option>VF Red Executive EU 100GB (2019)</option>
+              <option>VF Red Extra 16GB + 250MB WiFi</option>
+              <option>VF Red Extra 1GB + 250MB WiFi</option>
+              <option>VF Red Extra 40GB + 1GB WiFi</option>
+              <option>VF Red Extra 4GB + 250MB WiFi</option>
+              <option>VF Red L</option>
+              <option>VF Red Sharer 2GB</option>
+              <option>VF Red Sharer 3GB</option>
+              <option>VF Red Sharer 4GB</option>
+              <option>VF Red Standard Bundle 1000min 1GB + 2GB WiFi</option>
+              <option>VF Red Standard Bundle 1000min 1GB + 3GB WiFi</option>
+              <option>VF Red Standard Bundle 1000min 1GB + 4GB WiFi</option>
+              <option>VF Red Standard Bundle 1000min 1GB + 5GB WiFi</option>
+              <option>VF Red Standard Bundle 500min 500MB + 2GB WiFi</option>
+              <option>VF Red Standard Bundle 500min 500MB + 3GB WiFi</option>
+              <option>VF Red Standard Bundle 500min 500MB + 4GB WiFi</option>
+              <option>VF Red Standard Bundle 500min 500MB + 5GB WiFi</option>
+              <option>VF Red Value 4GB</option>
+              <option>VF Red Value Bundle 15GB + 2GB WiFi</option>
+              <option>VF Red Value Bundle 15GB + 3GB WiFi</option>
+              <option>VF Red Value Bundle 15GB + 4GB WiFi</option>
+              <option>VF Red Value Bundle 15GB + 5GB WiFi</option>
+              <option>VF Red Value Bundle 25GB + 2GB WiFi</option>
+              <option>VF Red Value Bundle 25GB + 3GB WiFi</option>
+              <option>VF Red Value Bundle 25GB + 4GB WiFi</option>
+              <option>VF Red Value Bundle 25GB + 5GB WiFi</option>
+              <option>VF Red Value Bundle 2GB + 2GB WiFi</option>
+              <option>VF Red Value Bundle 2GB + 3GB WiFi</option>
+              <option>VF Red Value Bundle 2GB + 4GB WiFi</option>
+              <option>VF Red Value Bundle 2GB + 5GB WiFi</option>
+              <option>VF Red Value Bundle 4GB + 2GB WiFi</option>
+              <option>VF Red Value Bundle 4GB + 3GB WiFi</option>
+              <option>VF Red Value Bundle 4GB + 4GB WiFi</option>
+              <option>VF Red Value Bundle 4GB + 5GB WiFi</option>
+              <option>VF Red Value Bundle 8GB + 2GB WiFi</option>
+              <option>VF Red Value Bundle 8GB + 3GB WiFi</option>
+              <option>VF Red Value Bundle 8GB + 4GB WiFi</option>
+              <option>VF Red Value Bundle 8GB + 5GB WiFi</option>
+              <option>VF Red XL</option>
+              <option>VF Red Executive 1GB (2019)</option>
+              <!-- 5G VF Red Tariffs -->
+              <option>VF 5G Red Executive 5GB (2019)</option>
+              <option>VF 5G Red Executive 15GB (2019)</option>
+              <option>VF 5G Red Executive 30GB (2019)</option>
+              <option>VF 5G Red Executive 60GB (2019)</option>
+              <option>VF 5G Red Executive EU 25GB (2019)</option>
+              <option>VF 5G Red Executive EU 50GB (2019)</option>
+              <option>VF 5G Red Executive EU 100GB (2019)</option>
+              <option>VF Red Executive 5GB (5G) (2019)</option>
+              <option>VF Red Executive 20GB (5G) (2019)</option>
+              <option>VF Red Executive 20GB (5G) Plus (2019)</option>
+              <option>VF 5G Business Unlimited Max</option>
+              <option>VF 5G Business Unlimited Max Plus</option>
+              <option>VF Red 2GB - (2020)</option>
+              <option>VF Red 6GB - (2020)</option>
+              <option>VF Red 12GB - (2020)</option>
+              <option>VF Red 24GB - (2020)</option>
+              <option>VF Red Int 6GB - (2020)</option>
+              <option>VF Red Int 12GB - (2020)</option>
+              <option>VF Red Int 24GB - (2020)</option>
+              <option>VF Red Unlimited - (2020)</option>
+              <option>VF Red Int Unlimited - (2020)</option>
+              <option>VF Red 2GB - (2021)</option>
+              <option>VF Red 6GB - (2021)</option>
+              <option>VF Red 12GB - (2021)</option>
+              <option>VF Red 24GB - (2021)</option>
+              <option>VF Red Unlimited - (2021)</option>
+              <option>VF Red Int 6GB - (2021)</option>
+              <option>VF Red Int 12GB - (2021)</option>
+              <option>VF Red Int 24GB - (2021)</option>
+              <option>VF Red Int Unlimited - (2021)</option>
+              <!-- Business Optimiser -->
+              <option>VF Bus Opt Voice and Data 50</option>
+              <option>VF Bus Opt Voice and Data 500</option>
+              <option>VF Bus Opt Voice and Data 750</option>
+              <option>VF Bus Opt Voice and Data 50 - (2021)</option>
+              <option>VF Bus Opt Voice and Data 500 - (2021)</option>
+              <option>VF Bus Opt Voice and Data 750 - (2021)</option>
+              <option>VF Bus Opt Data Only 50</option>
+              <option>VF Bus Opt Data Only 500</option>
+              <option>VF Bus Opt Data Only 750</option>
+              <option>VF Bus Opt Data Only 50 - (2021)</option>
+              <option>VF Bus Opt Data Only 500 - (2021)</option>
+              <option>VF Bus Opt Data Only 750 - (2021)</option>
+              <!-- VF Business Advance MBB -->
+              <option>VF Business Advance Basic BT MBB</option>
+              <option>VF Business Advance Basic MBB</option>
+              <option>VF Business Advance Extra BT MBB</option>
+              <option>VF Business Advance Extra MBB</option>
+              <!-- VF Business Advance MBB -->
+              <option>VF 5G Business Advance Basic BT 5GB MBB</option>
+              <option>VF 5G Business Advance Extra BT 5GB MBB</option>
+              <!-- VF Business Advance MBB 2020 -->
+              <option>VF Bus Adv - MBB Value 4GB</option>
+              <option>VF Bus Adv - MBB Extra 4GB</option>
+              <option>VF Bus Adv - MBB Extra 4GB - (2021)</option>
+              <option>VF Bus Adv - MBB Value 4GB - (2021)</option>
+              <!-- VF Mobile Broadband -->
+              <option>VF Mobile Broadband 10GB + 1GB WiFi</option>
+              <option>VF Mobile Broadband 15GB (4G)</option>
+              <option>VF Mobile Broadband 1GB (3G) + 1GB WiFi</option>
+              <option>VF Mobile Broadband 1GB (4G) + 1GB WiFi</option>
+              <option>VF Mobile Broadband 1GB + 1GB WiFi</option>
+              <option>VF Mobile Broadband 2GB (4G)</option>
+              <option>VF Mobile Broadband 30GB (4G)</option>
+              <option>VF Mobile Broadband 30GB + 1GB WiFi</option>
+              <option>VF Mobile Broadband 3GB (4G) + 1GB WiFi</option>
+              <option>VF Mobile Broadband 3GB + 1GB WiFi</option>
+              <option>VF Mobile Broadband 50GB (4G)</option>
+              <option>VF Mobile Broadband 50GB + 1GB WiFi</option>
+              <option>VF Mobile Broadband 5GB (4G)</option>
+              <option>VF Mobile Broadband 5GB (4G) + 1GB WiFi</option>
+              <option>VF Mobile Broadband 8GB (4G) + 1GB WiFi</option>
+              <option>VF Red Data Sharer</option>
+              <option>VF Mobile Broadband 1GB (2019)</option>
+              <option>VF Mobile Broadband 5GB (2019)</option>
+              <option>VF Mobile Broadband 20GB (2019)</option>
+              <option>VF Mobile Broadband 50GB (2019)</option>
+              <option>VF Mobile Broadband 2GB - (2020)</option>
+              <option>VF Mobile Broadband 6GB - (2020)</option>
+              <option>VF Mobile Broadband 24GB - (2020)</option>
+              <option>VF Mobile Broadband Unlimited - (2020)</option>
+              <option>VF Mobile Broadband 2GB - (2021)</option>
+              <option>VF Mobile Broadband 6GB - (2021)</option>
+              <option>VF Mobile Broadband 24GB - (2021)</option>
+              <option>VF Mobile Broadband Unlimited - (2021)</option>
+              <!-- VF GigaCube -->
+              <option>VF GigaCube UK 60</option>
+              <option>VF GigaCube UK 100</option>
+              <option>VF GigaCube UK 200</option>
+              <option>VF GigaCube UK 300</option>
+              <option>VF GigaCube UK 60 - (2021)</option>
+              <option>VF GigaCube UK 100 - (2021)</option>
+              <option>VF GigaCube UK 200 - (2021)</option>
+              <option>VF GigaCube UK 300 - (2021)</option>
+              <!-- VF Business Share Sharers -->
+              <option>VF SB Sharer 500 Minutes Passport-Sharer 24</option>
+              <option>VF SB Sharer 1000 Minutes Passport-Sharer 24</option>
+              <option>VF SB Sharer 1500 Minutes Passport-Sharer 24</option>
+              <option>VF SB Sharer 2000 Minutes Passport-Sharer 24</option>
+              <option>VF SB Sharer 2500 Minutes Passport-Sharer 24</option>
+              <option>VF SB Sharer 3000 Minutes Passport-Sharer 24</option>
+              <option>VF SB Sharer 3500 Minutes Passport-Sharer 24</option>
+              <option>VF SB Sharer 4000 Minutes Passport-Sharer 24</option>
+              <option>VF SB Sharer 4500 Minutes Passport-Sharer 24</option>
+              <option>VF SB Sharer 5000 Minutes Passport-Sharer 24</option>
+              <option>VF SB Sharer 5500 Minutes Passport-Sharer 24</option>
+              <option>VF SB Sharer 6000 Minutes Passport-Sharer 24</option>
+              <option>VF SB Sharer 6500 Minutes Passport-Sharer 24</option>
+              <option>VF SB Sharer 7000 Minutes Passport-Sharer 24</option>
+              <option>VF SB Sharer 7500 Minutes Passport-Sharer 24</option>
+              <option>VF SB Sharer 8000 Minutes Passport-Sharer 24</option>
+              <option>VF SB Sharer 8500 Minutes Passport-Sharer 24</option>
+              <option>VF SB Sharer 9000 Minutes Passport-Sharer 24</option>
+              <option>VF SB Sharer 9500 Minutes Passport-Sharer 24</option>
+              <option>VF SB Sharer 10000 Minutes Passport-Sharer 24</option>
+              <option>VF SB Sharer 10500 Minutes Passport-Sharer 24</option>
+              <option>VF SB Sharer 11000 Minutes Passport-Sharer 24</option>
+              <option>VF SB Sharer 11500 Minutes Passport-Sharer 24</option>
+              <option>VF SB Sharer 12000 Minutes Passport-Sharer 24</option>
+              <option>VF SB Sharer 500 Minutes VF-World-Sharer 24</option>
+              <option>VF SB Sharer 1000 Minutes VF-World-Sharer 24</option>
+              <option>VF SB Sharer 1500 Minutes VF-World-Sharer 24</option>
+              <option>VF SB Sharer 2000 Minutes VF-World-Sharer 24</option>
+              <option>VF SB Sharer 2500 Minutes VF-World-Sharer 24</option>
+              <option>VF SB Sharer 3000 Minutes VF-World-Sharer 24</option>
+              <option>VF SB Sharer 3500 Minutes VF-World-Sharer 24</option>
+              <option>VF SB Sharer 4000 Minutes VF-World-Sharer 24</option>
+              <option>VF SB Sharer 4500 Minutes VF-World-Sharer 24</option>
+              <option>VF SB Sharer 5000 Minutes VF-World-Sharer 24</option>
+              <option>VF SB Sharer 5500 Minutes VF-World-Sharer 24</option>
+              <option>VF SB Sharer 6000 Minutes VF-World-Sharer 24</option>
+              <option>VF SB Sharer 6500 Minutes VF-World-Sharer 24</option>
+              <option>VF SB Sharer 7000 Minutes VF-World-Sharer 24</option>
+              <option>VF SB Sharer 7500 Minutes VF-World-Sharer 24</option>
+              <option>VF SB Sharer 8000 Minutes VF-World-Sharer 24</option>
+              <option>VF SB Sharer 8500 Minutes VF-World-Sharer 24</option>
+              <option>VF SB Sharer 9000 Minutes VF-World-Sharer 24</option>
+              <option>VF SB Sharer 9500 Minutes VF-World-Sharer 24</option>
+              <option>VF SB Sharer 10000 Minutes VF-World-Sharer 24</option>
+              <option>VF SB Sharer 10500 Minutes VF-World-Sharer 24</option>
+              <option>VF SB Sharer 11000 Minutes VF-World-Sharer 24</option>
+              <option>VF SB Sharer 11500 Minutes VF-World-Sharer 24</option>
+              <option>VF SB Sharer 12000 Minutes VF-World-Sharer 24</option>
+              <option>VF SB Sharer 12500 VF World 24 Add</option>
+              <option>VF SB Sharer 13000 VF World 24 Add</option>
+              <option>VF SB Sharer 13500 VF World 24 Add</option>
+              <option>VF SB Sharer 14000 VF World 24 Add</option>
+              <option>VF SB Sharer 14500 VF World 24 Add</option>
+              <option>VF SB Sharer 15000 VF World 24 Add</option>
+              <option>VF SB Sharer 16000 VF World 24 Add</option>
+              <option>VF SB Sharer 17000 VF World 24 Add</option>
+              <option>VF SB Sharer 18000 VF World 24 Add</option>
+              <option>VF SB Sharer 19000 VF World 24 Add</option>
+              <option>VF SB Sharer 20000 VF World 24 Add</option>
+              <option>VF SB Sharer 21000 VF World 24 Add</option>
+              <option>VF SB Sharer 22000 VF World 24 Add</option>
+              <option>VF SB Sharer 23000 VF World 24 Add</option>
+              <option>VF SB Sharer 24000 VF World 24 Add</option>
+              <option>VF SB Sharer 25000 VF World 24 Add</option>
+              <option>VF SB Sharer 12500 VF Passport 24 Add</option>
+              <option>VF SB Sharer 13000 VF Passport 24 Add</option>
+              <option>VF SB Sharer 13500 VF Passport 24 Add</option>
+              <option>VF SB Sharer 14000 VF Passport 24 Add</option>
+              <option>VF SB Sharer 14500 VF Passport 24 Add</option>
+              <option>VF SB Sharer 15000 VF Passport 24 Add</option>
+              <option>VF SB Sharer 16000 VF Passport 24 Add</option>
+              <option>VF SB Sharer 17000 VF Passport 24 Add</option>
+              <option>VF SB Sharer 18000 VF Passport 24 Add</option>
+              <option>VF SB Sharer 19000 VF Passport 24 Add</option>
+              <option>VF SB Sharer 20000 VF Passport 24 Add</option>
+              <option>VF SB Sharer 21000 VF Passport 24 Add</option>
+              <option>VF SB Sharer 22000 VF Passport 24 Add</option>
+              <option>VF SB Sharer 23000 VF Passport 24 Add</option>
+              <option>VF SB Sharer 24000 VF Passport 24 Add</option>
+              <option>VF SB Sharer 25000 VF Passport 24 Add</option>
+              <option>VF SB Sharer 30000 VF World 24 Add</option>
+              <option>VF SB Sharer 36000 VF World 24 Add</option>
+              <option>VF SB Sharer 42000 VF World 24 Add</option>
+              <option>VF SB Sharer 48000 VF World 24 Add</option>
+              <option>VF SB Sharer 30000 VF Passport 24 Add</option>
+              <option>VF SB Sharer 36000 VF Passport 24 Add</option>
+              <option>VF SB Sharer 42000 VF Passport 24 Add</option>
+              <option>VF SB Sharer 48000 VF Passport 24 Add</option>
+              <!-- VF Businesss Share Leads -->
+              <option>VF SB Sharer 500 Minutes Passport 24</option>
+              <option>VF SB Sharer 1000 Minutes Passport 24</option>
+              <option>VF SB Sharer 1500 Minutes Passport 24</option>
+              <option>VF SB Sharer 2000 Minutes Passport 24</option>
+              <option>VF SB Sharer 2500 Minutes Passport 24</option>
+              <option>VF SB Sharer 3000 Minutes Passport 24</option>
+              <option>VF SB Sharer 3500 Minutes Passport 24</option>
+              <option>VF SB Sharer 4000 Minutes Passport 24</option>
+              <option>VF SB Sharer 4500 Minutes Passport 24</option>
+              <option>VF SB Sharer 5000 Minutes Passport 24</option>
+              <option>VF SB Sharer 5500 Minutes Passport 24</option>
+              <option>VF SB Sharer 6000 Minutes Passport 24</option>
+              <option>VF SB Sharer 6500 Minutes Passport 24</option>
+              <option>VF SB Sharer 7000 Minutes Passport 24</option>
+              <option>VF SB Sharer 7500 Minutes Passport 24</option>
+              <option>VF SB Sharer 8000 Minutes Passport 24</option>
+              <option>VF SB Sharer 8500 Minutes Passport 24</option>
+              <option>VF SB Sharer 9000 Minutes Passport 24</option>
+              <option>VF SB Sharer 9500 Minutes Passport 24</option>
+              <option>VF SB Sharer 10000 Minutes Passport 24</option>
+              <option>VF SB Sharer 10500 Minutes Passport 24</option>
+              <option>VF SB Sharer 11000 Minutes Passport 24</option>
+              <option>VF SB Sharer 11500 Minutes Passport 24</option>
+              <option>VF SB Sharer 12000 Minutes Passport 24</option>
+              <option>VF SB Sharer 500 Minutes VF-World 24</option>
+              <option>VF SB Sharer 1000 Minutes VF-World 24</option>
+              <option>VF SB Sharer 1500 Minutes VF-World 24</option>
+              <option>VF SB Sharer 2000 Minutes VF-World 24</option>
+              <option>VF SB Sharer 2500 Minutes VF-World 24</option>
+              <option>VF SB Sharer 3000 Minutes VF-World 24</option>
+              <option>VF SB Sharer 3500 Minutes VF-World 24</option>
+              <option>VF SB Sharer 4000 Minutes VF-World 24</option>
+              <option>VF SB Sharer 4500 Minutes VF-World 24</option>
+              <option>VF SB Sharer 5000 Minutes VF-World 24</option>
+              <option>VF SB Sharer 5500 Minutes VF-World 24</option>
+              <option>VF SB Sharer 6000 Minutes VF-World 24</option>
+              <option>VF SB Sharer 6500 Minutes VF-World 24</option>
+              <option>VF SB Sharer 7000 Minutes VF-World 24</option>
+              <option>VF SB Sharer 7500 Minutes VF-World 24</option>
+              <option>VF SB Sharer 8000 Minutes VF-World 24</option>
+              <option>VF SB Sharer 8500 Minutes VF-World 24</option>
+              <option>VF SB Sharer 9000 Minutes VF-World 24</option>
+              <option>VF SB Sharer 9500 Minutes VF-World 24</option>
+              <option>VF SB Sharer 10000 Minutes VF-World 24</option>
+              <option>VF SB Sharer 10500 Minutes VF-World 24</option>
+              <option>VF SB Sharer 11000 Minutes VF-World 24</option>
+              <option>VF SB Sharer 11500 Minutes VF-World 24</option>
+              <option>VF SB Sharer 12000 Minutes VF-World 24</option>
+              <option>VF SB Sharer 12500 VF World 24</option>
+              <option>VF SB Sharer 13000 VF World 24</option>
+              <option>VF SB Sharer 13500 VF World 24</option>
+              <option>VF SB Sharer 14000 VF World 24</option>
+              <option>VF SB Sharer 14500 VF World 24</option>
+              <option>VF SB Sharer 15000 VF World 24</option>
+              <option>VF SB Sharer 16000 VF World 24</option>
+              <option>VF SB Sharer 17000 VF World 24</option>
+              <option>VF SB Sharer 18000 VF World 24</option>
+              <option>VF SB Sharer 19000 VF World 24</option>
+              <option>VF SB Sharer 20000 VF World 24</option>
+              <option>VF SB Sharer 21000 VF World 24</option>
+              <option>VF SB Sharer 22000 VF World 24</option>
+              <option>VF SB Sharer 23000 VF World 24</option>
+              <option>VF SB Sharer 24000 VF World 24</option>
+              <option>VF SB Sharer 25000 VF World 24</option>
+              <option>VF SB Sharer 12500 VF Passport 24</option>
+              <option>VF SB Sharer 13000 VF Passport 24</option>
+              <option>VF SB Sharer 13500 VF Passport 24</option>
+              <option>VF SB Sharer 14000 VF Passport 24</option>
+              <option>VF SB Sharer 14500 VF Passport 24</option>
+              <option>VF SB Sharer 15000 VF Passport 24</option>
+              <option>VF SB Sharer 16000 VF Passport 24</option>
+              <option>VF SB Sharer 17000 VF Passport 24</option>
+              <option>VF SB Sharer 18000 VF Passport 24</option>
+              <option>VF SB Sharer 19000 VF Passport 24</option>
+              <option>VF SB Sharer 20000 VF Passport 24</option>
+              <option>VF SB Sharer 21000 VF Passport 24</option>
+              <option>VF SB Sharer 22000 VF Passport 24</option>
+              <option>VF SB Sharer 23000 VF Passport 24</option>
+              <option>VF SB Sharer 24000 VF Passport 24</option>
+              <option>VF SB Sharer 25000 VF Passport 24</option>
+              <option>VF SB Sharer 30000 VF World 24</option>
+              <option>VF SB Sharer 36000 VF World 24</option>
+              <option>VF SB Sharer 42000 VF World 24</option>
+              <option>VF SB Sharer 48000 VF World 24</option>
+              <option>VF SB Sharer 30000 VF Passport 24</option>
+              <option>VF SB Sharer 36000 VF Passport 24</option>
+              <option>VF SB Sharer 42000 VF Passport 24</option>
+              <option>VF SB Sharer 48000 VF Passport 24</option>
+              <!-- VF Wholesale PPM -->
+              <option>VF Wholesale PPM Tariff</option>
+              <option>VF Wholesale PPM (2020)</option>
+              <option>VF Wholesale PPM (2021)</option>
+              <option>VF Gighub PPM</option>
+              <!-- VF Unlimited Data Flex -->
+              <option>VF Unlimited Data Flex</option>
+              <option>VF Unlimited Data Flex (2020)</option>
+              <!-- VF Flex -->
+              <option>VF Flex Data Only - (2020)</option>
+              <option>VF Flex Unlimited Voice - (2020)</option>
+              <option>VF Flex Data Only - (2021)</option>
+              <option>VF Flex Unlimited Voice - (2021)</option>
+              <option>VF Flex - SIM Only</option>
+              <option>VF Flex - With Kit</option>
+              <!-- VF Sharer -->
+              <option>VF Sharer Data Only</option>
+              <option>VF Sharer Data Only - (2021)</option>
+              <option>VF Sharer Unlimited Voice</option>
+              <option>VF Sharer Unlimited Voice + Int</option>
+              <option>VF Sharer Unlimited Voice - (2021)</option>
+              <option>VF Sharer Unlimited Voice + Int - (2021)</option>
+              <!-- VF Evolve Single -->
+              <option>VF Evolve 24m Business Voice</option>
+              <option>VF Evolve 24m Business Single 2GB</option>
+              <option>VF Evolve 24m Business Single 6GB</option>
+              <option>VF Evolve 24m Business Single 12GB</option>
+              <option>VF Evolve 24m Business Single 25GB</option>
+              <option>VF Evolve 24m Business Pro Unlimited</option>
+              <option>VF Evolve 36m Business Voice</option>
+              <option>VF Evolve 36m Business Single 2GB</option>
+              <option>VF Evolve 36m Business Single 6GB</option>
+              <option>VF Evolve 36m Business Single 12GB</option>
+              <option>VF Evolve 36m Business Single 25GB</option>
+              <option>VF Evolve 36m Business Pro Unlimited</option>
+              <!-- VF Evolve Sharer -->
+              <option>VF Evolve 24m Business Sharer 2GB</option>
+              <option>VF Evolve 24m Business Sharer 6GB</option>
+              <option>VF Evolve 24m Business Sharer 12GB</option>
+              <option>VF Evolve 36m Business Sharer 2GB</option>
+              <option>VF Evolve 36m Business Sharer 6GB</option>
+              <option>VF Evolve 36m Business Sharer 12GB</option>
+              <!-- VF Evolve Data -->
+              <option>VF Evolve 24m Business Data 4GB</option>
+              <option>VF Evolve 36m Business Data 4GB</option>
+              <!-- O2 Best for Business -->
+              <option>O2 Best for Business (2016)</option>
+              <!-- O2 Business Shared -->
+              <option>O2 Business Shared 1300 (2016)</option>
+              <option>O2 Business Shared 1300 (2017)</option>
+              <option>O2 Business Shared 1300 Sharer (2016)</option>
+              <option>O2 Business Shared 1300 Sharer (2017)</option>
+              <option>O2 Business Shared 2000 (2016)</option>
+              <option>O2 Business Shared 2000 (2017)</option>
+              <option>O2 Business Shared 2000 Sharer (2016)</option>
+              <option>O2 Business Shared 2000 Sharer (2017)</option>
+              <option>O2 Business Shared 500 (2017)</option>
+              <option>O2 Business Shared 500 Lead (2016)</option>
+              <option>O2 Business Shared 500 Sharer (2016)</option>
+              <option>O2 Business Shared 500 Sharer (2017)</option>
+              <option>O2 Business Shared 5000 (2016)</option>
+              <option>O2 Business Shared 5000 (2017)</option>
+              <option>O2 Business Shared 5000 Sharer (2016)</option>
+              <option>O2 Business Shared 5000 Sharer (2017)</option>
+              <option>Capped - O2 Business Shared 500 (2016)</option>
+              <option>Capped - O2 Business Shared 500 Sharer (2016)</option>
+              <option>Capped - O2 Business Shared 1300 (2016)</option>
+              <option>Capped - O2 Business Shared 1300 Sharer (2016)</option>
+              <option>Capped - O2 Business Shared 2000 (2016)</option>
+              <option>Capped - O2 Business Shared 2000 Sharer (2017)</option>
+              <option>Capped - O2 Business Shared 5000 (2017)</option>
+              <option>Capped - O2 Business Shared 5000 Sharer (2017)</option>
+              <!-- O2 Small Biz -->
+              <option>O2 EU Small Biz 12GB</option>
+              <option>O2 EU Small Biz 15GB</option>
+              <option>O2 EU Small Biz 20GB</option>
+              <option>O2 EU Small Biz 25GB</option>
+              <option>O2 EU Small Biz 2GB</option>
+              <option>O2 EU Small Biz 300Mb</option>
+              <option>O2 EU Small Biz 3GB</option>
+              <option>O2 EU Small Biz 4GB</option>
+              <option>O2 EU Small Biz 500Mb</option>
+              <option>O2 EU Small Biz 750Mb</option>
+              <option>O2 EU Small Biz 7GB</option>
+              <option>O2 EU Small Biz 8GB</option>
+              <option>O2 Small Biz 12GB (12m)</option>
+              <option>O2 Small Biz 12GB (2016)</option>
+              <option>O2 Small Biz 12GB (2017)</option>
+              <option>O2 Small Biz 12Gb +10Gb (2017 Promo)</option>
+              <option>O2 Small Biz 1Gb (2016)</option>
+              <option>O2 Small Biz 1Gb (2017)</option>
+              <option>O2 Small Biz 20GB (12m)</option>
+              <option>O2 Small Biz 20GB (2016)</option>
+              <option>O2 Small Biz 25GB (2017)</option>
+              <option>O2 Small Biz 25Gb +10Gb (2017 Promo)</option>
+              <option>O2 Small Biz 2GB (12m)</option>
+              <option>O2 Small Biz 2GB (2016)</option>
+              <option>O2 Small Biz 300MB (2016)</option>
+              <option>O2 Small Biz 3Gb (2016)</option>
+              <option>O2 Small Biz 3Gb (2017)</option>
+              <option>O2 Small Biz 500MB (2016)</option>
+              <option>O2 Small Biz 500MB (2017)</option>
+              <option>O2 Small Biz 500Mins + 500MB (2016)</option>
+              <option>O2 Small Biz 50Gb (2017)</option>
+              <option>O2 Small Biz 50Gb +10Gb (2017 Promo)</option>
+              <option>O2 Small Biz 5Gb (2016)</option>
+              <option>O2 Small Biz 6GB (12m)</option>
+              <option>O2 Small Biz 6GB (2016)</option>
+              <option>O2 Small Biz 6GB (2017)</option>
+              <option>O2 Small Biz 8Gb (2016)</option>
+              <option>O2 Small Biz Data Share - Child</option>
+              <option>O2 Small Biz Data Share - Child (2017)</option>
+              <option>O2 Small Biz Data Share - Lead</option>
+              <option>O2 Small Biz Data Share - Lead (2017)</option>
+              <option>O2 Small Biz SIMO 12GB (2017)</option>
+              <option>O2 Small Biz SIMO 20GB (2017)</option>
+              <option>O2 Small Biz SIMO 2GB (2017)</option>
+              <option>O2 Small Biz SIMO 300MB (2017)</option>
+              <option>O2 Small Biz SIMO 4Gb (2017)</option>
+              <option>O2 Small Biz SIMO 500MB (2017)</option>
+              <option>O2 Small Biz SIMO 7Gb (2017)</option>
+              <option>O2 Small Biz 2GB (2020)</option>
+              <option>O2 Small Biz 8GB (2020)</option>
+              <option>O2 Small Biz 24GB (2020)</option>
+              <option>O2 Small Biz 50GB (2020)</option>
+              <option>O2 Small Biz 300MB Shared (2018)</option>
+              <option>O2 Small Biz 500MB Shared (2018)</option>
+              <option>O2 Small Biz 5GB Shared (2018)</option>
+              <option>O2 Small Biz 8GB Shared (2018)</option>
+              <option>O2 Small Biz 16GB Shared (2018)</option>
+              <option>O2 Small Biz 32GB Shared (2018)</option>
+              <option>O2 Small Biz 12Gb (2018)</option>
+              <option>O2 Small Biz 25Gb (2018)</option>
+              <option>O2 Small Biz 50Gb (2018)</option>
+              <option>O2 Small Biz SIMO 300MB (2018)</option>
+              <option>O2 Small Biz SIMO 500MB (2018)</option>
+              <option>O2 Small Biz SIMO 2GB (2018)</option>
+              <option>O2 Small Biz SIMO 5GB (2018)</option>
+              <option>O2 Small Biz SIMO 8GB (2018)</option>
+              <option>O2 Small Biz SIMO 10GB (2018)</option>
+              <option>O2 Small Biz SIMO 16GB (2018)</option>
+              <option>O2 Small Biz SIMO 20GB (2018)</option>
+              <option>O2 Small Biz SIMO 30GB (2018)</option>
+              <option>O2 Small Biz SIMO 32GB (2018)</option>
+              <option>O2 Small Biz 300MB (2019)</option>
+              <option>O2 Small Biz 500MB (2019)</option>
+              <option>O2 Small Biz 2GB (2019)</option>
+              <option>O2 Small Biz 6Gb (2019)</option>
+              <option>O2 Small Biz 5GB (2019)</option>
+              <option>O2 Small Biz 8GB (2019)</option>
+              <option>O2 Small Biz 10GB (2019)</option>
+              <option>O2 Small Biz 12Gb (2019)</option>
+              <option>O2 Small Biz 16GB (2019)</option>
+              <option>O2 Small Biz 20GB (2019)</option>
+              <option>O2 Small Biz 24GB (2019)</option>
+              <option>O2 Small Biz 25Gb (2019)</option>
+              <option>O2 Small Biz 30GB (2019)</option>
+              <option>O2 Small Biz 32GB (2019)</option>
+              <option>O2 Small Biz 36GB (2019)</option>
+              <option>O2 Small Biz 50GB (2019)</option>
+              <option>O2 Small Biz 50GB + EU (2019)</option>
+              <option>O2 Small Biz 60GB (2019)</option>
+              <option>O2 Small Biz 100GB (2019)</option>
+              <!-- O2 Small Biz Capped -->
+              <option>Capped - O2 Small Biz 500MB (2017)</option>
+              <option>Capped - O2 Small Biz 1Gb (2017)</option>
+              <option>Capped - O2 Small Biz 3Gb (2017)</option>
+              <option>Capped - O2 Small Biz 6GB (2017)</option>
+              <option>Capped - O2 Small Biz 12GB (2017)</option>
+              <option>Capped - O2 Small Biz 25GB (2017)</option>
+              <option>Capped - O2 Small Biz 50Gb (2017)</option>
+              <option>Capped - O2 Small Biz SIMO 300MB (2017)</option>
+              <option>Capped - O2 Small Biz SIMO 500MB (2017)</option>
+              <option>Capped - O2 Small Biz SIMO 2GB (2017)</option>
+              <option>Capped - O2 Small Biz SIMO 4Gb (2017)</option>
+              <option>Capped - O2 Small Biz SIMO 7Gb (2017)</option>
+              <option>Capped - O2 Small Biz SIMO 12GB (2017)</option>
+              <option>Capped - O2 Small Biz SIMO 20GB (2017)</option>
+              <option>Capped - O2 Small Biz Data Share - Child (2017)</option>
+              <option>Capped - O2 Small Biz Data Share - Lead (2017)</option>
+              <option>Capped - O2 Small Biz 300MB Shared (2018)</option>
+              <option>Capped - O2 Small Biz 500MB Shared (2018)</option>
+              <option>Capped - O2 Small Biz 5GB Shared (2018)</option>
+              <option>Capped - O2 Small Biz 8GB Shared (2018)</option>
+              <option>Capped - O2 Small Biz 16GB Shared (2018)</option>
+              <option>Capped - O2 Small Biz 32GB Shared (2018)</option>
+              <option>Capped - O2 Small Biz 12Gb (2018)</option>
+              <option>Capped - O2 Small Biz 25Gb (2018)</option>
+              <option>Capped - O2 Small Biz 50Gb (2018)</option>
+              <option>Capped - O2 Small Biz SIMO 300MB (2018)</option>
+              <option>Capped - O2 Small Biz SIMO 500MB (2018)</option>
+              <option>Capped - O2 Small Biz SIMO 5GB (2018)</option>
+              <option>Capped - O2 Small Biz SIMO 8GB (2018)</option>
+              <option>Capped - O2 Small Biz SIMO 16GB (2018)</option>
+              <option>Capped - O2 Small Biz SIMO 32GB (2018)</option>
+              <!-- O2 Small Biz 5G -->
+              <option>O2 Small Biz Unlimited (2019)</option>
+              <option>O2 Small Biz EU Unlimited (2019)</option>
+              <option>O2 Small Biz Voice & Data Share (2021)</option>
+              <option>O2 Small Biz 2GB (2021)</option>
+              <option>O2 Small Biz 6GB (2021)</option>
+              <option>O2 Small Biz 20GB (2021)</option>
+              <option>O2 Small Biz 50GB (2021)</option>
+              <option>O2 Small Biz Unlimited (2021)</option>
+              <option>O2 Small Biz Data Share (2021)</option>
+              <!-- O2 Mobile Broadband -->
+              <option>O2 Mobile Broadband 1GB (2016)</option>
+              <option>O2 Mobile Broadband 20GB (2016)</option>
+              <option>O2 Mobile Broadband 3GB (2016)</option>
+              <option>O2 Mobile Broadband 5GB (2016)</option>
+              <option>O2 Mobile Broadband 8GB (2016)</option>
+              <option>O2 Mobile Broadband 1GB (2017)</option>
+              <option>O2 Mobile Broadband 20GB (2017)</option>
+              <option>O2 Mobile Broadband 2GB (2017)</option>
+              <option>O2 Mobile Broadband 30GB (2017)</option>
+              <option>O2 Mobile Broadband 4GB (2017)</option>
+              <option>O2 Mobile Broadband 8GB (2017)</option>
+              <option>O2 Mobile Broadband 2GB (2020)</option>
+              <option>O2 Mobile Broadband 8GB (2020)</option>
+              <option>O2 Mobile Broadband 24GB (2020)</option>
+              <option>O2 Mobile Broadband 60GB (2020)</option>
+              <option>O2 Mobile Broadband 100GB (2020)</option>
+              <option>O2 Mobile Broadband 2GB (2021)</option>
+              <option>O2 Mobile Broadband 10GB (2021)</option>
+              <option>O2 Mobile Broadband 30GB (2021)</option>
+              <option>O2 Mobile Broadband 150GB (2021)</option>
+              <!-- O2 Mobile Broadband - Capped -->
+              <option>Capped - O2 Mobile Broadband 1GB (2017)</option>
+              <option>Capped - O2 Mobile Broadband 2GB (2017)</option>
+              <option>Capped - O2 Mobile Broadband 4GB (2017)</option>
+              <option>Capped - O2 Mobile Broadband 8GB (2017)</option>
+              <option>Capped - O2 Mobile Broadband 20GB (2017)</option>
+              <option>Capped - O2 Mobile Broadband 30GB (2017)</option>
+              <!-- O2 Wholesale PPM -->
+              <option>O2 wholesale PPM (2016)</option>
+              <option>O2 wholesale PPM (2017)</option>
+              <option>Capped - O2 wholesale PPM (2017)</option>
+              <option>O2 Mobel PPM (2020)</option>
+              <!-- O2 Unlimited Data Flex -->
+              <option>O2 Unlimited Data Flex</option>
+              <option>O2 Unlimited Data Flex (2020)</option>
+              <option>O2 Flex - SIM Only</option>
+              <option>O2 Flex - With Kit</option>
+              <!-- O2 Reliance M2M -->
+              <option>O2 Reliance M2M</option>
+            </select>
           </div>
-          <div>
+          <div class="dropdownTwo" id="selectConnectionTypeDiv">
+            <label>Select connection type:</label>
+            <select
+              class="selectpicker"
+              id="selectConnectionType"
+              data-live-search="true"
+              title="Select connection type"
+              data-style="btn-dark"
+            >
+              <option>New</option>
+              <option>Port</option>
+              <option>Migration</option>
+            </select>
+          </div>
+        </div>
+        <div class="containerThree" id="containerThree" style="display: none;">
+          <div class="dropdownOne" id="selectDNODiv" style="visibility: hidden">
+            <label>Select DNO:</label>
+            <select
+              class="selectpicker"
+              id="selectDNO"
+              data-size="15"
+              data-live-search="true"
+              title="Select DNO"
+              data-style="btn-dark"
+            >
+              <option>BT</option>
+              <option>Cable and Wireless</option>
+              <option>Cellnet</option>
+              <option>Cloud9</option>
+              <option>Gamma</option>
+              <option>Hay Systems Ltd</option>
+              <option>Limitless Mobile</option>
+              <option>Lleida</option>
+              <option>LYCA Mobile</option>
+              <option>MCom/Mundio</option>
+              <option>Orange</option>
+              <option>Resilient Plc</option>
+              <option>Sky</option>
+              <option>Stour Marine</option>
+              <option>Teleena</option>
+              <option>Three</option>
+              <option>TISMI</option>
+              <option>T-Mobile</option>
+              <option>Truphone</option>
+              <option>Vectone</option>
+              <option>Virgin</option>
+              <option>Vodafone</option>
+            </select>
+          </div>
+          <div id="selectLeadhandsetDiv" style="visibility: hidden">
+            <label>Enter lead handset number:</label>
             <textarea
-              class="generatedScriptArea"
-              id="generatedScriptArea"
-              rows="5"
+              class="leadHandsetNumber"
+              id="leadHandsetNumber"
+              rows="1"
               disabled
             ></textarea>
+          </div>
+        </div>
+        <div class="containerFour">
+          <div class="mobileNumberDiv">
+            <label for="mobileNumbers">Enter mobile numbers:</label>
+            <textarea
+              class="mobileNumberArea"
+              id="mobileNumberArea"
+              rows="5"
+            ></textarea>
+          </div>
+          <div id="simNumberDiv" style="visibility: hidden">
+            <label for="simNumbers">Enter SIM numbers:</label>
+            <textarea
+              class="simNumberArea"
+              id="simNumberArea"
+              rows="5"
+            ></textarea>
+          </div>
+        </div>
+        <div class="containerFive">
+          <div id="generateButtonDiv">
+            <input
+              class="generateButton"
+              type="button"
+              value="Generate Script"
+              onclick="go()"
+            />
+          </div>
+          <div id="copyButtonDiv">
+            <input
+              class="copyButton"
+              type="button"
+              value="Copy Script"
+              onclick="copyGeneratedScript()"
+            />
+          </div>
+        </div>
+        <div class="containerSix">
+          <div id="generatedScriptAreaDiv">
+            <div>
+              <label for="generatedScriptArea">Generated script:</label>
+            </div>
+            <div>
+              <textarea
+                class="generatedScriptArea"
+                id="generatedScriptArea"
+                rows="5"
+                readonly
+              ></textarea>
+            </div>
           </div>
         </div>
       </div>
@@ -987,9 +1050,11 @@
       integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
       crossorigin="anonymous"
     ></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
     <script src="MSG.js"></script>
   </body>

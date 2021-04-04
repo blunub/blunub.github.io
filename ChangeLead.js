@@ -1,23 +1,27 @@
 //Need to check and update GPM codes
 
-String.prototype.replaceAt=function(index, replacement) {
-  return this.substr(0, index) + replacement+ this.substr(index + replacement.length);
+String.prototype.replaceAt = function(index, replacement) {
+  return (
+    this.substr(0, index) +
+    replacement +
+    this.substr(index + replacement.length)
+  );
 };
 
 //This generates the script once the Generate Script button is pressed
 function go() {
-  var tariff = document.getElementById('selectTariff').value;
-  var currentLead = document.getElementById('leadNumberCurrent').value;
-  var newLead = document.getElementById('leadNumberNew').value;
-  var sharers = document.getElementById('sharerNumbersArea').value;
-  var generatedScript = document.getElementById('generatedScriptArea');
+  var tariff = document.getElementById("selectTariff").value;
+  var currentLead = document.getElementById("leadNumberCurrent").value;
+  var newLead = document.getElementById("leadNumberNew").value;
+  var sharers = document.getElementById("sharerNumbersArea").value;
+  var generatedScript = document.getElementById("generatedScriptArea");
   var sharersArray = sharers.split(/\n/);
   var finalScript = "";
   var valueBundle = newTest.valueBundle;
   var tempLeadCode = newTest.tempCode;
   var tempSharerCode = newTestTwo.tempCodeSharer;
   var groupCode = newTestTwo.groupCode;
-  for(i=0;i<sharersArray.length;i++){
+  for (i = 0; i < sharersArray.length; i++) {
     var sharerNumber = sharersArray[i];
     finalScript += `MIGRATE ${tempSharerCode} ${sharerNumber} ${newLead} CD300400\n`;
   }
@@ -35,12 +39,13 @@ function go() {
   } else if (sharers === "") {
     generatedScript.innerHTML = "Please enter sharer numbers";
   } else {
-    generatedScript.innerHTML = lineOne + lineTwo + finalScript + lineThree + lineFour + lineFive;
+    generatedScript.innerHTML =
+      lineOne + lineTwo + finalScript + lineThree + lineFour + lineFive;
   }
 }
-                       
+
 //This updates object properties for tariff and valuebundle when tariff is selected
-var selectOne = document.getElementById('selectTariff');
+var selectOne = document.getElementById("selectTariff");
 var test = {
   GPM33: "VF SB Sharer 500 Minutes",
   GPM34: "VF SB Sharer 1000 Minutes",
@@ -178,7 +183,7 @@ var testThree = {
   VFGFZ471: "VF SB Sharer 30000 Minutes",
   VFGFZ472: "VF SB Sharer 36000 Minutes",
   VFGFZ473: "VF SB Sharer 42000 Minutes",
-  VFGFZ472: "VF SB Sharer 48000 Minutes",
+  VFGFZ472: "VF SB Sharer 48000 Minutes"
 };
 
 var newTest = {
@@ -195,7 +200,7 @@ var newTestTwo = {
 };
 
 function onSelectOneChanged() {
-  var tariff = document.getElementById('selectTariff').value;
+  var tariff = document.getElementById("selectTariff").value;
   newTest.tariff = tariff;
   for (var property in test) {
     if (test[property] == newTest.tariff) {
@@ -220,12 +225,16 @@ function onSelectOneChanged() {
 }
 
 //This is an event listener for when the tariff is changed
-if (selectOne.addEventListener)
-{
-  selectOne.addEventListener('change', onSelectOneChanged, true);
-}
-else
-{
-  selectOne.attachEvent('onchange', onSelectOneChanged, true);
+if (selectOne.addEventListener) {
+  selectOne.addEventListener("change", onSelectOneChanged, true);
+} else {
+  selectOne.attachEvent("onchange", onSelectOneChanged, true);
 }
 
+//Function to copy text from generated script area
+let copyGeneratedScript = () => {
+  var copyText = document.getElementById("generatedScriptArea");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+}

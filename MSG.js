@@ -585,6 +585,7 @@ var divThree = document.getElementById("simNumberDiv");
 var DNO = "";
 var DNOCode = "";
 var DNONameIndex = "";
+let containerThree = document.getElementById("containerThree");
 
 //This enables lead handset textarea when a valid tariff is selected
 var leadhandsetDisabled = {
@@ -610,6 +611,15 @@ function onSelectOneChanged() {
     divOne.style.visibility = "";
   } else {
     divOne.style.visibility = "hidden";
+  }
+  if (
+    (leadhandsetDisabled.tariff in sbSharerTariffs) ||
+    (leadhandsetDisabled.tariff.includes("O2") &&
+    leadhandsetDisabled.connectionType == "Port")
+  ) {
+    containerThree.style.display = "";
+  } else {
+    containerThree.style.display = "none";
   }
   textboxOne.disabled = leadhandsetDisabled.isDisabled === true;
   var tariff = document.getElementById("selectTariff").value;
@@ -650,6 +660,15 @@ function onSelectTwoChanged() {
   } else {
     divThree.style.visibility = "hidden";
   }
+  if (
+    (leadhandsetDisabled.tariff in sbSharerTariffs) ||
+    (leadhandsetDisabled.tariff.includes("O2") &&
+    leadhandsetDisabled.connectionType == "Port")
+  ) {
+    containerThree.style.display = "";
+  } else {
+    containerThree.style.display = "none";
+  }
 }
 
 //This is an event listener for when connection type is changed
@@ -671,6 +690,14 @@ if (selectThree.addEventListener) {
   selectThree.addEventListener("change", onSelectThreeChanged, true);
 } else {
   selectThree.attachEvent("onchange", onSelectThreeChanged, true);
+}
+
+//Function to copy text from generated script area
+let copyGeneratedScript = () => {
+  var copyText = document.getElementById("generatedScriptArea");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  document.execCommand("copy");
 }
 
 //Arrays for DNO name and the associated ABS code

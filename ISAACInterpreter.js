@@ -615,6 +615,14 @@ var arrayToOutput = (function(array) {
   };
 })();
 
+//Function to copy text from generated script area
+let copyGeneratedScript = () => {
+  var copyText = document.getElementById("generatedScriptArea");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+}
+
 /*
 get selected services to return -- getServices.servicesList();
 get isaac data and split isaac data into array -- splittingISAACData.splitISAACData();
