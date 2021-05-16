@@ -1600,7 +1600,17 @@ var vfDataTariffs5G = {
   "VF Mobile Broadband Unlimited - (2021)": "",
   "VF Sharer Data Only - (2021)": "",
   "VF Evolve 24m Business Data 4GB": "",
-  "VF Evolve 36m Business Data 4GB": ""
+  "VF Evolve 36m Business Data 4GB": "",
+  "VF Data SIM 4GB (2021)": "",
+  "VF Data SIM 10GB (2021)": "",
+  "VF Data SIM 30GB (2021)": "",
+  "VF Data SIM Unlimited (2021)": "",
+  "VF Data SIM Unlimited (2021) - DfE": "",
+  "VF Mobile Broadband 2GB (2021)": "",
+  "VF Mobile Broadband 6GB (2021)": "",
+  "VF Mobile Broadband 12GB (2021)": "",
+  "VF Mobile Broadband 25GB (2021)": "",
+  "VF Mobile Broadband Unlimited (2021)": ""
 };
 
 var sbSharerTariffs = {
@@ -1996,5 +2006,6 @@ var o2DataTariffs = {
   "O2 Mobile Broadband 2GB (2021)": "",
   "O2 Mobile Broadband 10GB (2021)": "",
   "O2 Mobile Broadband 30GB (2021)": "",
-  "O2 Mobile Broadband 150GB (2021)": ""
+  "O2 Mobile Broadband 150GB (2021)": "",
+  "O2 Small Biz Unlimited (2021) - (DfE)": ""
 };
