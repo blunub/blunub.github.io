@@ -8,13 +8,13 @@ function go() {
     for(i=0;i<mobileNumbersArray.length;i++){
       var mobileNumber = mobileNumbersArray[i];
       finalScript += `'${mobileNumber}',
-  `;
+`;
     }
     finalScript = finalScript.slice(0, finalScript.length - 2)
     for(i=0;i<mobileNumbersArray.length;i++){
       var mobileNumber = mobileNumbersArray[i];
       finalScriptTwo += `${mobileNumber},
-  `;
+`;
     }
     finalScriptTwo = finalScriptTwo.slice(0, finalScriptTwo.length - 2)
     if (mobileNumbers === "") {

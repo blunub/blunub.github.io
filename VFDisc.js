@@ -7,10 +7,10 @@ function go() {
     for(i=0;i<mobileNumbersArray.length;i++){
       var mobileNumber = mobileNumbersArray[i];
   finalScript += `UNBAR STOLEN ${mobileNumber}
-  MIGRATE VFBUS ${mobileNumber} CD300400
-  DISCO VFBUS ${mobileNumber}
-  
-  `
+MIGRATE VFBUS ${mobileNumber} CD300400
+DISCO VFBUS ${mobileNumber}
+
+`
     }
     if (mobileNumbers === "") {
       generatedScript.innerHTML = "Please enter mobile numbers";
