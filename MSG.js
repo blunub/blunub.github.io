@@ -1418,7 +1418,19 @@ var redExecTariffs = {
   "VF Bus Freedom 750 Sharer - (2021)": "",
   "VF Bus Freedom 750 Single - (2021)": "",
   "VF Bus Freedom Sharer - (2021)": "",
-  "VF Bus Freedom Single - (2021)": ""
+  "VF Bus Freedom Single - (2021)": "",
+  "Capped - VF Red Executive 10GB": "",
+  "Capped - VF Red Executive 16GB": "",
+  "Capped - VF Red Executive 20GB": "",
+  "Capped - VF Red Executive 40GB": "",
+  "VF EU Bus Freedom 250 Sharer - (2021)": "",
+  "VF EU Bus Freedom 250 Single - (2021)": "",
+  "VF EU Bus Freedom 500 Sharer - (2021)": "",
+  "VF EU Bus Freedom 500 Single - (2021)": "",
+  "VF EU Bus Freedom 750 Sharer - (2021)": "",
+  "VF EU Bus Freedom 750 Single - (2021)": "",
+  "VF EU Bus Freedom Sharer - (2021)": "",
+  "VF EU Bus Freedom Single - (2021)": ""
 };
 
 var redExecTariffsDataBar = {
@@ -1437,7 +1449,11 @@ var redExecTariffsDataBar = {
   "VF Bus Adv Unlimited Voice Only - Extra Base - (2021)": "",
   "VF Bus Adv Unlimited Voice Only - Extra Trav - (2021)": "",
   "VF Bus Adv Unlimited Voice Only - Value Base - (2021)": "",
-  "VF Bus Adv Unlimited Voice Only - Value Trav - (2021)": ""
+  "VF Bus Adv Unlimited Voice Only - Value Trav - (2021)": "",
+  "VF EU Bus Adv - Extra Base 0GB - (2021)": "",
+  "VF EU Bus Adv - Value Base 0GB - (2021)": "",
+  "VF EU Bus Adv Unltd Voice Only - Extra Base (2021)": "",
+  "VF EU Bus Adv Unltd Voice Only - Value Base (2021)": ""
 };
 
 var redExecTariffs5G = {
@@ -1484,6 +1500,7 @@ var redExecTariffs5G = {
   "VF Flex Unlimited Voice - (2020)": "",
   "VF Sharer Unlimited Voice": "",
   "VF Sharer Unlimited Voice + Int": "",
+  "VF Sharer Unlimited Voice - (2021) - (Whit)": "",
   "VF Bus Adv - Extra Base 10GB - (2021)": "",
   "VF Bus Adv - Extra Base 5GB - (2021)": "",
   "VF Bus Adv - Extra Trav 10GB - (2021)": "",
@@ -1499,6 +1516,7 @@ var redExecTariffs5G = {
   "VF Bus Opt Voice and Data 50 - (2021)": "",
   "VF Bus Opt Voice and Data 500 - (2021)": "",
   "VF Bus Opt Voice and Data 750 - (2021)": "",
+  "VF Bus Opt Voice and Data 750 - (Whit)": "",
   "VF Flex Unlimited Voice - (2021)": "",
   "VF Red 12GB - (2021)": "",
   "VF Red 24GB - (2021)": "",
@@ -1532,7 +1550,41 @@ var redExecTariffs5G = {
   "VF Evolve 36m Business Voice": "",
   "VF Evolve 36m Business Sharer 2GB": "",
   "VF Evolve 36m Business Sharer 6GB": "",
-  "VF Evolve 36m Business Sharer 12GB": ""
+  "VF Evolve 36m Business Sharer 12GB": "",
+  "VF B1 Evolve 24m Business Pro Unlimited": "",
+  "VF B1 Evolve 24m Business Single 12GB": "",
+  "VF B1 Evolve 24m Business Single 25GB": "",
+  "VF B1 Evolve 24m Business Single 2GB": "",
+  "VF B1 Evolve 24m Business Single 6GB": "",
+  "VF B2 Evolve 36m Business Sharer 2GB": "",
+  "VF EU B1 Evolve 24m Business Pro Unlimited": "",
+  "VF EU B1 Evolve 24m Business Single 12GB": "",
+  "VF EU B1 Evolve 24m Business Single 25GB": "",
+  "VF EU B1 Evolve 24m Business Single 2GB": "",
+  "VF EU B1 Evolve 24m Business Single 6GB": "",
+  "VF EU Bus Adv - Extra Base 10GB - (2021)": "",
+  "VF EU Bus Adv - Extra Base 1GB - (2021)": "",
+  "VF EU Bus Adv - Extra Base 2GB - (2021)": "",
+  "VF EU Bus Adv - Extra Base 5GB - (2021)": "",
+  "VF EU Bus Adv - Value Base 10GB - (2021)": "",
+  "VF EU Bus Adv - Value Base 1GB - (2021)": "",
+  "VF EU Bus Adv - Value Base 2GB - (2021)": "",
+  "VF EU Bus Adv - Value Base 5GB - (2021)": "",
+  "VF EU Bus Adv Unltd Calls&Data - Extra Base (2021)": "",
+  "VF EU Bus Adv Unltd Calls&Data - Value Base (2021)": "",
+  "VF EU Evolve 24m Business Pro Unlimited": "",
+  "VF EU Evolve 24m Business Sharer 12GB": "",
+  "VF EU Evolve 24m Business Sharer 2GB": "",
+  "VF EU Evolve 24m Business Sharer 6GB": "",
+  "VF EU Evolve 24m Business Single 12GB": "",
+  "VF EU Evolve 24m Business Single 25GB": "",
+  "VF EU Evolve 24m Business Single 2GB": "",
+  "VF EU Evolve 24m Business Single 6GB": "",
+  "VF EU Evolve 24m Business Voice": "",
+  "VF EU Flex Unlimited Voice - (2021)": "",
+  "VF EU Sharer Unlimited Voice - (2021)": "",
+  "VF EU Sharer Unlimited Voice - (2021) - (Whit)": "",
+  "VF EU Sharer Unlimited Voice + Int - (2021)": ""
 };
 
 var vfDataTariffs = {
@@ -1569,7 +1621,15 @@ var vfDataTariffs = {
   "VF Bus Freedom 500 Data Sharer - (2021)": "",
   "VF Bus Freedom 750 Data Sharer - (2021)": "",
   "VF Bus Freedom Data Sharer - (2021)": "",
-  "VF Mobile Broadband 2GB - (2021)": ""
+  "VF Mobile Broadband 2GB - (2021)": "",
+  "Capped - VF Mobile Broadband 15GB (4G)": "",
+  "Capped - VF Mobile Broadband 2GB (4G)": "",
+  "Capped - VF Mobile Broadband 30GB (4G)": "",
+  "Capped - VF Mobile Broadband 5GB (4G)": "",
+  "VF EU Bus Freedom 250 Data Sharer - (2021)": "",
+  "VF EU Bus Freedom 500 Data Sharer - (2021)": "",
+  "VF EU Bus Freedom 750 Data Sharer - (2021)": "",
+  "VF EU Bus Freedom Data Sharer - (2021)": ""
 };
 
 var vfDataTariffs5G = {
@@ -1578,9 +1638,14 @@ var vfDataTariffs5G = {
   "VF Mobile Broadband 6GB - (2020)": "",
   "VF Mobile Broadband 24GB - (2020)": "",
   "VF Mobile Broadband Unlimited - (2020)": "",
+  "VF B1 Data Sim 30GB (2021)": "",
+  "VF EU B1 Data Sim 30GB (2021)": "",
+  "VF B1 Data Sim Unlimited (2021)": "",
+  "VF EU B1 Data Sim Unlimited (2021)": "",
   "VF Bus Opt Data Only 50": "",
   "VF Bus Opt Data Only 500": "",
   "VF Bus Opt Data Only 750": "",
+  "VF Bus Opt Data Only 750 - (Whit)": "",
   "VF Bus Adv - MBB Value 4GB": "",
   "VF Bus Adv - MBB Extra 4GB": "",
   "VF Bus Adv Unlimited Data Only - Extra": "",
@@ -1610,7 +1675,24 @@ var vfDataTariffs5G = {
   "VF Mobile Broadband 6GB (2021)": "",
   "VF Mobile Broadband 12GB (2021)": "",
   "VF Mobile Broadband 25GB (2021)": "",
-  "VF Mobile Broadband Unlimited (2021)": ""
+  "VF Mobile Broadband Unlimited (2021)": "",
+  "VF EU Bus Adv - MBB Extra 4GB - (2021)": "",
+  "VF EU Bus Adv - MBB Value 4GB - (2021)": "",
+  "VF EU Bus Adv Unltd Data Only - Extra - (2021)": "",
+  "VF EU Bus Adv Unltd Data Only - Value - (2021)": "",
+  "VF EU Data Sim 10GB (2021)": "",
+  "VF EU Data Sim 30GB (2021)": "",
+  "VF EU Data Sim 4GB (2021)": "",
+  "VF EU Data Sim Unlimited (2021)": "",
+  "VF EU Data SIM Unlimited (2021) - DfE": "",
+  "VF EU Evolve 24m Business Data 4GB": "",
+  "VF EU Flex Data Only - (2021)": "",
+  "VF EU Mobile Broadband 12GB (2021)": "",
+  "VF EU Mobile Broadband 25GB (2021)": "",
+  "VF EU Mobile Broadband 2GB (2021)": "",
+  "VF EU Mobile Broadband 6GB (2021)": "",
+  "VF EU Mobile Broadband Unlimited (2021)": "",
+  "VF EU Sharer Data Only - (2021)": ""
 };
 
 var sbSharerTariffs = {
@@ -1799,7 +1881,8 @@ var vfPPMTariffs = {
   "VF Wholesale PPM Tariff": "",
   "VF Wholesale PPM (2020)": "",
   "VF Gighub PPM": "",
-  "VF Wholesale PPM (2021)": ""
+  "VF Wholesale PPM (2021)": "",
+  "VF Pangea 3 PPM": ""
 };
 
 var vfGigaCubeTariffs = {
@@ -1810,7 +1893,11 @@ var vfGigaCubeTariffs = {
   "VF GigaCube UK 100 - (2021)": "",
   "VF GigaCube UK 200 - (2021)": "",
   "VF GigaCube UK 300 - (2021)": "",
-  "VF GigaCube UK 60 - (2021)": ""
+  "VF GigaCube UK 60 - (2021)": "",
+  "VF GigaCube 30day 100": "",
+  "VF GigaCube 30day 200": "",
+  "VF GigaCube 30day 300": "",
+  "VF GigaCube 30day 60": ""
 };
 
 var o2VoiceTariffs = {
@@ -1881,6 +1968,7 @@ var o2VoiceTariffs = {
   "O2 Small Biz SIMO 7Gb (2017)": "",
   "O2 wholesale PPM (2016)": "",
   "O2 wholesale PPM (2017)": "",
+  "O2 Pangea 3 PPM": "",
   "O2 Unlimited Data Flex": "",
   "O2 Unlimited Data Flex (2020)": "",
   "O2 Small Biz Unlimited (2019)": "",
@@ -1976,7 +2064,9 @@ var o2VoiceTariffs = {
   "O2 Small Biz 6GB (2021)": "",
   "O2 Small Biz 20GB (2021)": "",
   "O2 Small Biz 50GB (2021)": "",
-  "O2 Small Biz Unlimited (2021)": ""
+  "O2 Small Biz Unlimited (2021)": "",
+  "O2 Small Biz 1GB Shared (2021)": "",
+  "O2 Small Biz Unlimited (2021) - Whit": ""
 };
 
 var o2DataTariffs = {

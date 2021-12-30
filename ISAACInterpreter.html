@@ -66,18 +66,11 @@
             <li class="nav-item">
               <a class="nav-link" href="O2Barring.html">O2 Bars & Services</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="VFDisc.html">VF Disconnection</a>
-            </li>
             <li class="nav-item active">
               <a class="nav-link" href="ISAACInterpreter.html"
                 >ISAAC Interpreter</a
               >
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="SQLList.html"
-                >SQL List</a
-              >
           </ul>
         </div>
       </nav>
@@ -102,35 +95,32 @@
               title="Select details"
               data-style="btn-dark"
             >
-              <option value="CLI">CLI</option>
-              <option value="SIM">SIM</option>
-              <option value="Tariff">Tariff</option>
-              <option value="ServiceLevels"
+              <option value="cli">CLI</option>
+              <option value="sim">SIM</option>
+              <option value="tariff">Tariff</option>
+              <option value="serviceLevels"
                 >Service Level (Letter Codes)</option
               >
-              <option value="StolenBar">Stolen Bar Status</option>
-              <option value="AdminBar">Admin Bar Status</option>
-              <option value="MMS">MMS</option>
-              <option value="Voicemail">Voicemail</option>
-              <option value="ServiceLevelTariffCode"
+              <option value="stolenBar">Stolen Bar Status</option>
+              <option value="adminBar">Admin Bar Status</option>
+              <option value="mms">MMS</option>
+              <option value="voicemail">Voicemail</option>
+              <option value="serviceLevelTariffCode"
                 >Service Level Tariff Code</option
               >
-              <option value="ServiceProvider">Service Provider</option>
-              <option value="SPID">SPID</option>
-              <option value="LastOperation">Last Operation</option>
-              <option value="LastOperationRequestDate"
+              <option value="serviceProvider">Service Provider</option>
+              <option value="lastOperation">Last Operation</option>
+              <option value="lastOpReqDate"
                 >Last Operation RequestDate</option
               >
-              <option value="LastOperationCompletedDate"
+              <option value="lastOpCompDate"
                 >Last Operation Completed Date</option
               >
-              <option value="ConnectDate">Connect Date</option>
-              <option value="GPRSTariff">GPRS Tariff</option>
-              <option value="SPID">SPID</option>
-              <option value="GPRSBar">GPRS Bar Status</option>
-              <option value="GPRSRoamBar">GPRS Roaming Bar Status</option>
-              <option value="WAP">WAP</option>
-              <option value="Internet">Internet APN</option>
+              <option value="connectDate">Connect Date</option>
+              <option value="gprsTariff">GPRS Tariff</option>
+              <option value="gprsBarStatus">GPRS Bar Status</option>
+              <option value="gprsRoamBarStatus">GPRS Roaming Bar Status</option>
+              <option value="wap">WAP</option>
             </select>
           </div>
         </div>
@@ -150,7 +140,7 @@
               class="generateButton"
               type="button"
               value="Interpret Data"
-              onclick="arrayToOutput.arrayToOutput(mobConObjectArray.mobConObjectArray())"
+              onclick="interpretData()"
             />
           </div>
           <div id="copyButtonDiv">
