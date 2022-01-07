@@ -3,6 +3,8 @@ function go() {
   var mobileNumbers = document.getElementById('mobileNumbersArea').value;
   var generatedScript = document.getElementById('generatedScriptArea');
   var mobileNumbersArray = mobileNumbers.split(/\n/);
+  mobileNumbers = mobileNumbers.replaceAll(" ", "");
+  mobileNumbersArray = mobileNumbersArray.filter(item => item != "");
   var finalScript = "";
   var finalScriptTwo = "";
   for(i=0;i<mobileNumbersArray.length;i++){

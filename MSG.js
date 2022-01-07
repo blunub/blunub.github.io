@@ -7,7 +7,11 @@ function go() {
   var selectConnectionType = document.getElementById("selectConnectionType")
     .value;
   var mobileNumbersArray = mobileNumbers.split(/\n/);
+  mobileNumbers = mobileNumbers.replaceAll(" ", "");
+  mobileNumbersArray = mobileNumbersArray.filter(item => item != "")
   var simNumbersArray = simNumbers.split(/\n/);
+  simNumbers = simNumbers.replaceAll(" ", "");
+  simNumbersArray = simNumbersArray.filter(item => item != "")
   var finalScript = "";
   var bothArray = [];
   var DNO = document.getElementById("selectDNO").value;
