@@ -2070,7 +2070,8 @@ var o2VoiceTariffs = {
   "O2 Small Biz 50GB (2021)": "",
   "O2 Small Biz Unlimited (2021)": "",
   "O2 Small Biz 1GB Shared (2021)": "",
-  "O2 Small Biz Unlimited (2021) - Whit": ""
+  "O2 Small Biz Unlimited (2021) - Whit": "",
+  "O2 Small Biz Unlimited (2021) - (DfE)": ""
 };
 
 var o2DataTariffs = {
@@ -2100,6 +2101,5 @@ var o2DataTariffs = {
   "O2 Mobile Broadband 2GB (2021)": "",
   "O2 Mobile Broadband 10GB (2021)": "",
   "O2 Mobile Broadband 30GB (2021)": "",
-  "O2 Mobile Broadband 150GB (2021)": "",
-  "O2 Small Biz Unlimited (2021) - (DfE)": ""
+  "O2 Mobile Broadband 150GB (2021)": ""
 };
