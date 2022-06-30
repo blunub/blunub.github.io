@@ -1609,7 +1609,8 @@ var redExecTariffs5G = {
   "VF EU Sharer Unlimited Voice + Int - (2021)": "",
   "VF Single 25GB - (2021)": "",
   "VF Single 3GB - (2021)": "",
-  "VF Single 7GB - (2021)": ""
+  "VF Single 7GB - (2021)": "",
+  "VF Single Unlimited - (2021)": ""
 };
 
 var vfDataTariffs = {
