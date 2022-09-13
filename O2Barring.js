@@ -7,6 +7,7 @@ function go() {
       x.options[x.options.length-2].value = "gp=2041,,N,2";
       x.options[x.options.length-4].value = "gp=1174,,N,2";
       x.options[x.options.length-5].value = "gp=986,,N,2";
+      x.options[x.options.length-9].value = "sb=0003";
       x.options[x.options.length-13].value = "gp=58,,N,2";
       x.options[x.options.length-22].value = "gp=985,,N,2";
     } else {
@@ -14,6 +15,7 @@ function go() {
       x.options[x.options.length-2].value = "gp=2041";
       x.options[x.options.length-4].value = "gp=1174";
       x.options[x.options.length-5].value = "gp=986";
+      x.options[x.options.length-9].value = "sb";
       x.options[x.options.length-13].value = "gp=58";
       x.options[x.options.length-22].value = "gp=985";
     }
