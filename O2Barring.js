@@ -10,6 +10,7 @@ function go() {
       x.options[x.options.length-9].value = "sb=0003";
       x.options[x.options.length-13].value = "gp=58,,N,2";
       x.options[x.options.length-22].value = "gp=985,,N,2";
+      x.options[x.options.length-39].value = "gp=57,,N,2";
     } else {
       x.options[x.options.length-1].value = "vl-vw-gp=1729";
       x.options[x.options.length-2].value = "gp=2041";
@@ -18,6 +19,7 @@ function go() {
       x.options[x.options.length-9].value = "sb";
       x.options[x.options.length-13].value = "gp=58";
       x.options[x.options.length-22].value = "gp=985";
+      x.options[x.options.length-39].value = "gp=57";
     }
     
   //Below gets values of selected services options and adds them to a string  
