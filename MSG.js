@@ -1610,7 +1610,24 @@ var redExecTariffs5G = {
   "VF Single 25GB - (2021)": "",
   "VF Single 3GB - (2021)": "",
   "VF Single 7GB - (2021)": "",
-  "VF Single Unlimited - (2021)": ""
+  "VF Single Unlimited - (2021)": "",
+  "VF B11 Evolve 24m Business Pro Unlimited": "",
+  "VF B10 Evolve 24m Business Pro Unlimited": "",
+  "VF B10 Evolve 24m Business Single 25GB": "",
+  "VF B10 Evolve 24m Business Single 2GB": "",
+  "VF B9 Evolve 24m Business Sharer 6GB": "",
+  "VF B8 Evolve 24m Business Pro Unlimited": "",
+  "VF B8 Evolve 24m Business Single 12GB": "",
+  "VF B8 Evolve 24m Business Single 6GB": "",
+  "VF B8 Evolve 24m Business Single 2GB": "",
+  "VF B7 Evolve 36m Business Sharer 6GB": "",
+  "VF B6 Evolve 24m Business Single 25GB": "",
+  "VF B6 Evolve 24m Business Single 12GB": "",
+  "VF B6 Evolve 24m Business Single 6GB": "",
+  "VF B5 Evolve 24m Business Pro Unlimited": "",
+  "VF B4 Sharer Unlimited Voice + Int - (2021)": "",
+  "VF B4 Sharer Unlimited Voice - (2021)": "",
+  "VF TVP (TECSAFE) - 500MB Share": ""
 };
 
 var vfDataTariffs = {
@@ -1725,7 +1742,10 @@ var vfDataTariffs5G = {
   "VF EU Mobile Broadband 2GB (2021)": "",
   "VF EU Mobile Broadband 6GB (2021)": "",
   "VF EU Mobile Broadband Unlimited (2021)": "",
-  "VF EU Sharer Data Only - (2021)": ""
+  "VF EU Sharer Data Only - (2021)": "",
+  "VF B10 Mobile Broadband Unlimited (2021)": "",
+  "VF B8 Data Sim Unlimited (2021)": "",
+  "VF B4 Sharer Data Only - (2021)": ""
 };
 
 var sbSharerTariffs = {
@@ -2113,7 +2133,19 @@ var o2VoiceTariffs = {
   "O2 Small Biz Voice & Data Share (2021) - Catapult": "",
   "O2 Small Biz Voice & Data Share (2022)": "",
   "O2 Unlimited Data Flex (2020)": "",
-  "O2 Unlimited Data Flex (2022)": ""
+  "O2 Unlimited Data Flex (2022)": "",
+  "O2 Business sharer + GR 2GB": "",
+  "O2 Business Single + GRE Unlimited Extra": "",
+  "O2 Business Single + GR Unlimited": "",
+  "O2 Business Single + GR 50GB": "",
+  "O2 Business Single + GR 20GB": "",
+  "O2 Business Single + GR 6GB": "",
+  "O2 Micro User Shared": "",
+  "O2 Micro User Single": "",
+  "O2 Basic User ": "",
+  "O2 Unlimited (2022)": "",
+  "O2 Business Data Flex + GRE": "",
+  "O2 Business Data Flex + GR": ""
 };
 
 var o2DataTariffs = {
@@ -2153,5 +2185,11 @@ var o2DataTariffs = {
   "O2 Mobile Broadband 30GB (2021) - Catapult": "",
   "O2 Mobile Broadband 30GB (2022)": "",
   "O2 Small Biz Data Share (2021) - Catapult": "",
-  "O2 Small Biz Data Share (2022)": ""
+  "O2 Small Biz Data Share (2022)": "",
+  "O2 Business Data Only sharer + GR 2GB": "",
+  "O2 Business Data Only + GR 100GB": "",
+  "O2 Business Data Only + GR 50GB": "",
+  "O2 Business Data Only + GR 25GB": "",
+  "O2 Business Data Only + GR 10GB": "",
+  "O2 Business Data Only + GR 5GB": ""
 };
