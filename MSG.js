@@ -78,7 +78,7 @@ ADD APN ${mobileNumber} WAP
 ADD APN ${mobileNumber} ACCINT
 
 ADD 4G ${mobileNumber}
-ADD 5G ${mobileNumber}
+ADD 5GBOLTON ${mobileNumber}
 ADD MMS ${mobileNumber}
 ADD WIFI ${mobileNumber}
 ADD APNBUNDLE ${mobileNumber} IRWDC
@@ -122,7 +122,7 @@ ADD APN ${mobileNumber} WAP
 ADD APN ${mobileNumber} ACCINT
 
 ADD 4G ${mobileNumber}
-ADD 5G ${mobileNumber}
+ADD 5GBOLTON ${mobileNumber}
 ADD MMS ${mobileNumber}
 ADD WIFI ${mobileNumber}
 BAR GPRSROAM ${mobileNumber}
@@ -154,7 +154,7 @@ CHANGE VALUEBUNDLE ${mobileNumber} GPZ09
 ADD APN ${mobileNumber} WAP
 
 ADD 4G ${mobileNumber}
-ADD 5G ${mobileNumber}
+ADD 5GBOLTON ${mobileNumber}
 ADD MMS ${mobileNumber}
 ADD APNBUNDLE ${mobileNumber} V2WT3
 ADD DNOO ${mobileNumber}
@@ -281,7 +281,7 @@ ADD APN ${mobileNumber} WAP
 ADD APN ${mobileNumber} ACCINT
 
 ADD 4G ${mobileNumber}
-ADD 5G ${mobileNumber}
+ADD 5GBOLTON ${mobileNumber}
 ADD MMS ${mobileNumber}
 ADD WIFI ${mobileNumber}
 
@@ -298,7 +298,7 @@ ADD APN ${mobileNumber} WAP
 ADD APN ${mobileNumber} ACCINT
 
 ADD 4G ${mobileNumber}
-ADD 5G ${mobileNumber}
+ADD 5GBOLTON ${mobileNumber}
 ADD MMS ${mobileNumber}
 ADD WIFI ${mobileNumber}
 
@@ -335,7 +335,7 @@ CHANGE VALUEBUNDLE ${mobileNumber} GPZ09
 ADD APN ${mobileNumber} WAP
 
 ADD 4G ${mobileNumber}
-ADD 5G ${mobileNumber}
+ADD 5GBOLTON ${mobileNumber}
 ADD MMS ${mobileNumber}
 ADD APN ${mobileNumber} ACCINT
 
@@ -435,7 +435,7 @@ ADD APN ${mobileNumber} WAP
 ADD APN ${mobileNumber} ACCINT
 
 ADD 4G ${mobileNumber}
-ADD 5G ${mobileNumber}
+ADD 5GBOLTON ${mobileNumber}
 ADD MMS ${mobileNumber}
 ADD WIFI ${mobileNumber}
 
@@ -493,7 +493,7 @@ ADD APN ${mobileNumber} WAP
 ADD APN ${mobileNumber} ACCINT
 
 ADD 4G ${mobileNumber}
-ADD 5G ${mobileNumber}
+ADD 5GBOLTON ${mobileNumber}
 ADD MMS ${mobileNumber}
 ADD WIFI ${mobileNumber}
 BAR GPRSROAM ${mobileNumber}
@@ -529,7 +529,7 @@ CHANGE VALUEBUNDLE ${mobileNumber} GPZ09
 ADD APN ${mobileNumber} WAP
 
 ADD 4G ${mobileNumber}
-ADD 5G ${mobileNumber}
+ADD 5GBOLTON ${mobileNumber}
 ADD MMS ${mobileNumber}
 ADD APN ${mobileNumber} ACCINT
 
