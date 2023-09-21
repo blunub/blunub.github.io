@@ -46,6 +46,8 @@ ADD APNBUNDLE ${mobileNumber} IRWDC
 ADD APNBUNDLE ${mobileNumber} WTRDC
 CONNECT RECALL ${mobileNumber}
 
+ADD ERM150 ${mobileNumber}
+
 
 `;
       } else if (selectTariff in o2VoiceTariffs) {
@@ -66,6 +68,7 @@ ADD MMS ${mobileNumber}
 ADD WIFI ${mobileNumber}
 ADD APNBUNDLE ${mobileNumber} IRWDC
 ADD APNBUNDLE ${mobileNumber} WTRDC
+ADD ERM150 ${mobileNumber}
 
 `;
       } else if (selectTariff in vfDataTariffs5G) {
@@ -83,6 +86,7 @@ ADD MMS ${mobileNumber}
 ADD WIFI ${mobileNumber}
 ADD APNBUNDLE ${mobileNumber} IRWDC
 ADD APNBUNDLE ${mobileNumber} WTRDC
+ADD ERM150 ${mobileNumber}
 
 `;
       } else if (selectTariff in sbSharerTariffs) {
@@ -96,6 +100,8 @@ CONNECT RECALL ${mobileNumber}
 
 ADD WO ${mobileNumber} 1
 
+ADD ERM150 ${mobileNumber}
+
 `;
       } else if (selectTariff in sbSharerLeadTariffs) {
         finalScript += `MIGRATE ${leadTariffCode} ${mobileNumber} CD300400
@@ -108,6 +114,8 @@ ADD WIFI ${mobileNumber}
 CONNECT RECALL ${mobileNumber}
 
 ADD WO ${mobileNumber} 1
+
+ADD ERM150 ${mobileNumber}
 
 `;
       } else if (selectTariff in vfPPMTariffs) {
@@ -126,6 +134,7 @@ ADD 5GBOLTON ${mobileNumber}
 ADD MMS ${mobileNumber}
 ADD WIFI ${mobileNumber}
 BAR GPRSROAM ${mobileNumber}
+ADD ERM150 ${mobileNumber}
 
 `;
       } else if (selectTariff in redExecTariffs) {
@@ -143,6 +152,8 @@ ADD APNBUNDLE ${mobileNumber} IRWDC
 ADD APNBUNDLE ${mobileNumber} WTRDC
 ADD APNBUNDLE ${mobileNumber} MRD21
 CONNECT RECALL ${mobileNumber}
+
+ADD ERM150 ${mobileNumber}
 
 
 `;
@@ -163,6 +174,8 @@ ADD APNBUNDLE ${mobileNumber} WTRDC
 ADD APNBUNDLE ${mobileNumber} MRD21
 CONNECT RECALL ${mobileNumber}
 
+ADD ERM150 ${mobileNumber}
+
 
 `;
       } else if (selectTariff in redExecTariffsDataBar) {
@@ -182,6 +195,8 @@ BAR GPRS ${mobileNumber}
 BAR GPRSROAM ${mobileNumber}
 ADD APNBUNDLE ${mobileNumber} MRD21
 CONNECT RECALL ${mobileNumber}
+
+ADD ERM150 ${mobileNumber}
 
 
 `;
@@ -206,6 +221,8 @@ ADD APNBUNDLE ${mobileNumber} IRWDC
 ADD APNBUNDLE ${mobileNumber} WTRDC
 CONNECT RECALL ${mobileNumber}
 
+ADD ERM150 ${mobileNumber}
+
 TRANSFER SNB OC600000 CD300400 ${mobileNumber}
 Y
 
@@ -227,6 +244,7 @@ CONNECT RECALL ${mobileNumber}
 
 ADD WO ${mobileNumber} 1
 
+ADD ERM150 ${mobileNumber}
 
 `;
       } else if (selectTariff in sbSharerLeadTariffs) {
@@ -240,6 +258,8 @@ ADD WIFI ${mobileNumber}
 CONNECT RECALL ${mobileNumber}
 
 ADD WO ${mobileNumber} 1
+
+ADD ERM150 ${mobileNumber}
 
 TRANSFER SNB OC600000 CD300400 ${mobileNumber}
 Y
@@ -256,6 +276,8 @@ CONNECT RECALL ${mobileNumber}
 
 ADD WO ${mobileNumber} 1
 
+ADD ERM150 ${mobileNumber}
+
 `;
       } else if (selectTariff in vfDataTariffs) {
         finalScript += `CON/SNB DATA ${simNumber} ${mobileNumber} 1919
@@ -270,6 +292,7 @@ ADD MMS ${mobileNumber}
 ADD WIFI ${mobileNumber}
 ADD APNBUNDLE ${mobileNumber} IRWDC
 ADD APNBUNDLE ${mobileNumber} WTRDC
+ADD ERM150 ${mobileNumber}
 
 `;
       } else if (selectTariff in vfDataTariffs5G) {
@@ -287,6 +310,7 @@ ADD WIFI ${mobileNumber}
 
 ADD APNBUNDLE ${mobileNumber} IRWDC
 ADD APNBUNDLE ${mobileNumber} WTRDC
+ADD ERM150 ${mobileNumber}
 
 `;
       } else if (selectTariff in vfGigaCubeTariffs) {
@@ -303,6 +327,7 @@ ADD MMS ${mobileNumber}
 ADD WIFI ${mobileNumber}
 
 BAR GPRSROAM ${mobileNumber}
+ADD ERM150 ${mobileNumber}
 
 `;
       } else if (selectTariff in redExecTariffs) {
@@ -322,6 +347,8 @@ ADD APNBUNDLE ${mobileNumber} IRWDC
 ADD APNBUNDLE ${mobileNumber} WTRDC
 ADD APNBUNDLE ${mobileNumber} MRD21
 CONNECT RECALL ${mobileNumber}
+
+ADD ERM150 ${mobileNumber}
 
 TRANSFER SNB OC600000 CD300400 ${mobileNumber}
 Y
@@ -346,6 +373,8 @@ ADD APNBUNDLE ${mobileNumber} WTRDC
 ADD APNBUNDLE ${mobileNumber} MRD21
 CONNECT RECALL ${mobileNumber}
 
+ADD ERM150 ${mobileNumber}
+
 TRANSFER SNB OC600000 CD300400 ${mobileNumber}
 Y
 
@@ -369,6 +398,8 @@ ADD APNBUNDLE ${mobileNumber} MRD21
 BAR GPRS ${mobileNumber}
 BAR GPRSROAM ${mobileNumber}
 CONNECT RECALL ${mobileNumber}
+
+ADD ERM150 ${mobileNumber}
 
 TRANSFER SNB OC600000 CD300400 ${mobileNumber}
 Y
@@ -394,6 +425,8 @@ ADD DNOO ${mobileNumber}
 ADD APNBUNDLE ${mobileNumber} IRWDC
 ADD APNBUNDLE ${mobileNumber} WTRDC
 CONNECT RECALL ${mobileNumber}
+
+ADD ERM150 ${mobileNumber}
 
 TRANSFER SNB OC600000 CD300400 ${mobileNumber}
 Y
@@ -424,6 +457,7 @@ ADD MMS ${mobileNumber}
 ADD WIFI ${mobileNumber}
 ADD APNBUNDLE ${mobileNumber} IRWDC
 ADD APNBUNDLE ${mobileNumber} WTRDC
+ADD ERM150 ${mobileNumber}
 
 `;
       } else if (selectTariff in vfDataTariffs5G) {
@@ -441,6 +475,7 @@ ADD WIFI ${mobileNumber}
 
 ADD APNBUNDLE ${mobileNumber} IRWDC
 ADD APNBUNDLE ${mobileNumber} WTRDC
+ADD ERM150 ${mobileNumber}
 
 `;
       } else if (selectTariff in sbSharerTariffs) {
@@ -453,6 +488,8 @@ ADD WIFI ${mobileNumber}
 CONNECT RECALL ${mobileNumber}
 
 ADD WO ${mobileNumber} 1
+
+ADD ERM150 ${mobileNumber}
 
 `;
       } else if (selectTariff in sbSharerLeadTariffs) {
@@ -467,6 +504,8 @@ ADD WIFI ${mobileNumber}
 CONNECT RECALL ${mobileNumber}
 
 ADD WO ${mobileNumber} 1
+
+ADD ERM150 ${mobileNumber}
 
 TRANSFER SNB OC600000 CD300400 ${mobileNumber}
 Y
@@ -483,6 +522,8 @@ CONNECT RECALL ${mobileNumber}
 
 ADD WO ${mobileNumber} 1
 
+ADD ERM150 ${mobileNumber}
+
 `;
       } else if (selectTariff in vfGigaCubeTariffs) {
         finalScript += `IMPORT DATA1 ${simNumber} ${mobileNumber} 1919
@@ -497,6 +538,7 @@ ADD 5GBOLTON ${mobileNumber}
 ADD MMS ${mobileNumber}
 ADD WIFI ${mobileNumber}
 BAR GPRSROAM ${mobileNumber}
+ADD ERM150 ${mobileNumber}
 
 `;
       } else if (selectTariff in redExecTariffs) {
@@ -516,6 +558,8 @@ ADD APNBUNDLE ${mobileNumber} IRWDC
 ADD APNBUNDLE ${mobileNumber} WTRDC
 ADD APNBUNDLE ${mobileNumber} MRD21
 CONNECT RECALL ${mobileNumber}
+
+ADD ERM150 ${mobileNumber}
 
 TRANSFER SNB OC600000 CD300400 ${mobileNumber}
 Y
@@ -539,6 +583,8 @@ ADD APNBUNDLE ${mobileNumber} IRWDC
 ADD APNBUNDLE ${mobileNumber} WTRDC
 ADD APNBUNDLE ${mobileNumber} MRD21
 CONNECT RECALL ${mobileNumber}
+
+ADD ERM150 ${mobileNumber}
 
 TRANSFER SNB OC600000 CD300400 ${mobileNumber}
 Y
@@ -564,6 +610,7 @@ CONNECT RECALL ${mobileNumber}
 
 BAR GPRS ${mobileNumber}
 BAR GPRSROAM ${mobileNumber}
+ADD ERM150 ${mobileNumber}
 TRANSFER SNB OC600000 CD300400 ${mobileNumber}
 Y
 
