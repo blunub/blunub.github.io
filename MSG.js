@@ -1674,7 +1674,51 @@ var redExecTariffs5G = {
   "VF B5 Evolve 24m Business Pro Unlimited": "",
   "VF B4 Sharer Unlimited Voice + Int - (2021)": "",
   "VF B4 Sharer Unlimited Voice - (2021)": "",
-  "VF TVP (TECSAFE) - 500MB Share": ""
+  "VF TVP (TECSAFE) - 500MB Share": "",
+  "VF B12 Evolve 24m Business Sharer 2GB": "",
+  "VF B13 Evolve 24m Business Sharer 2GB": "",
+  "VF B14 Evolve 24m Business Sharer 2GB": "",
+  "VF B15 Evolve 24m Business Sharer 2GB (2023)": "",
+  "VF B16 Evolve 24m Business Sharer 2GB (2023)": "",
+  "VF B17 Evolve 24m Business Single 12GB (2023)": "",
+  "VF B17 Evolve 24m Business Single 25GB (2023)": "",
+  "VF B17 Evolve 24m Business Single 2GB (2023)": "",
+  "VF B17 Evolve 24m Business Single 6GB (2023)": "",
+  "VF B18 Evolve 24m Business Sharer 6GB (2023)": "",
+  "VF Business Pro Unlimited (2023)": "",
+  "VF Evolve 24m Business Pro Unlimited (2023)": "",
+  "VF Evolve 24m Business Sharer 12GB (2023)": "",
+  "VF Evolve 24m Business Sharer 1GB (2023)": "",
+  "VF Evolve 24m Business Sharer 2GB (2023)": "",
+  "VF Evolve 24m Business Sharer 6GB (2023)": "",
+  "VF Evolve 24m Business Single 12GB (2023)": "",
+  "VF Evolve 24m Business Single 25GB (2023)": "",
+  "VF Evolve 24m Business Single 2GB (2023)": "",
+  "VF Evolve 24m Business Single 50GB (2023)": "",
+  "VF Evolve 24m Business Single 6GB (2023)": "",
+  "VF Evolve 24m Business Voice (2023)": "",
+  "VF Evolve 36m Business Pro Unlimited (2023)": "",
+  "VF Evolve 36m Business Sharer 12GB (2023)": "",
+  "VF Evolve 36m Business Sharer 1GB (2023)": "",
+  "VF Evolve 36m Business Sharer 2GB (2023)": "",
+  "VF Evolve 36m Business Sharer 6GB (2023)": "",
+  "VF Evolve 36m Business Single 12GB (2023)": "",
+  "VF Evolve 36m Business Single 25GB (2023)": "",
+  "VF Evolve 36m Business Single 2GB (2023)": "",
+  "VF Evolve 36m Business Single 50GB (2023)": "",
+  "VF Evolve 36m Business Single 6GB (2023)": "",
+  "VF Evolve 36m Business Voice (2023)": "",
+  "VF Evolve Business Pro Unlimited": "",
+  "VF Evolve Business Sharer 12GB": "",
+  "VF Evolve Business Sharer 1GB": "",
+  "VF Evolve Business Sharer 2GB": "",
+  "VF Evolve Business Sharer 6GB": "",
+  "VF Evolve Business Single 12GB": "",
+  "VF Evolve Business Single 25GB": "",
+  "VF Evolve Business Single 2GB": "",
+  "VF Evolve Business Single 50GB": "",
+  "VF Evolve Business Single 6GB": "",
+  "VF Evolve Business Voice": ""
 };
 
 var vfDataTariffs = {
@@ -1792,7 +1836,26 @@ var vfDataTariffs5G = {
   "VF EU Sharer Data Only - (2021)": "",
   "VF B10 Mobile Broadband Unlimited (2021)": "",
   "VF B8 Data Sim Unlimited (2021)": "",
-  "VF B4 Sharer Data Only - (2021)": ""
+  "VF B4 Sharer Data Only - (2021)": "",
+  "VF B18 Evolve 24m Data Only Unlimited (2023)": "",
+  "VF Evolve 24m Business Data 4GB (2023)": "",
+  "VF Evolve 24m Data Only 100GB (2023)": "",
+  "VF Evolve 24m Data Only 12GB (2023)": "",
+  "VF Evolve 24m Data Only 25GB (2023)": "",
+  "VF Evolve 24m Data Only 2GB (2023)": "",
+  "VF Evolve 24m Data Only Unlimited (2023)": "",
+  "VF Evolve 36m Business Data 4GB (2023)": "",
+  "VF Evolve 36m Data Only 100GB (2023)": "",
+  "VF Evolve 36m Data Only 12GB (2023)": "",
+  "VF Evolve 36m Data Only 25GB (2023)": "",
+  "VF Evolve 36m Data Only 2GB (2023)": "",
+  "VF Evolve 36m Data Only Unlimited (2023)": "",
+  "VF Evolve Business Data 4GB": "",
+  "VF Evolve Data Only 100GB": "",
+  "VF Evolve Data Only 12GB": "",
+  "VF Evolve Data Only 25GB": "",
+  "VF Evolve Data Only 2GB": "",
+  "VF Evolve Data Only Unlimited": ""
 };
 
 var sbSharerTariffs = {
@@ -2192,7 +2255,8 @@ var o2VoiceTariffs = {
   "O2 Basic User ": "",
   "O2 Unlimited (2022)": "",
   "O2 Business Data Flex + GRE": "",
-  "O2 Business Data Flex + GR": ""
+  "O2 Business Data Flex + GR": "",
+  "O2 Business Single + GR 500MB": ""
 };
 
 var o2DataTariffs = {
@@ -2238,5 +2302,6 @@ var o2DataTariffs = {
   "O2 Business Data Only + GR 50GB": "",
   "O2 Business Data Only + GR 25GB": "",
   "O2 Business Data Only + GR 10GB": "",
-  "O2 Business Data Only + GR 5GB": ""
+  "O2 Business Data Only + GR 5GB": "",
+  "O2 Mobile Broadband Unlimited (2023)": ""
 };
