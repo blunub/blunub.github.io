@@ -9,11 +9,11 @@ function go() {
   var finalScriptTwo = "";
   for(i=0;i<mobileNumbersArray.length;i++){
     var mobileNumber = mobileNumbersArray[i];
-    finalScript += "Transfer " + mobileNumber + " 095/serv=+DC+gs=476+gp=2041,,N,2+gp=58,,N,2+gp=985,,N,2+gp=986,,N,2+MV+mm+d Y" + "\n" + "\n";
+    finalScript += "Transfer " + mobileNumber + " 095/serv=+DC+gs=476+gp=2041,,N,2+gp=58,,N,2+gp=985,,N,2+gp=986,,N,2+MV+mm+d+5G+vl+vw+gp=1729,,N,2 Y" + "\n" + "\n";
   }
   for(i=0;i<mobileNumbersArray.length;i++){
     var mobileNumber = mobileNumbersArray[i];
-    finalScriptTwo += "Transfer " + mobileNumber + " 691/serv=+YX+gs=467+gp=2041,,N,2+gp=58,,N,2+gp=985,,N,2+gp=986,,N,2 y" + "\n" + "\n";
+    finalScriptTwo += "Transfer " + mobileNumber + " 691/serv=+YX+gs=467+gp=2041,,N,2+gp=58,,N,2+gp=985,,N,2+gp=986,,N,2+5G y" + "\n" + "\n";
   }
   if (mobileNumbers === "") {
     generatedScript.innerHTML = "Please enter mobile numbers";
