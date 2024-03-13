@@ -2256,7 +2256,11 @@ var o2VoiceTariffs = {
   "O2 Unlimited (2022)": "",
   "O2 Business Data Flex + GRE": "",
   "O2 Business Data Flex + GR": "",
-  "O2 Business Single + GR 500MB": ""
+  "O2 Business Single + GR 500MB": "",
+  "O2 Small Biz 7GB (2021)": "",
+  "O2 Small Biz 500MB (2024)": "",
+  "O2 Small Biz Data Share (2021) - Catapult": "",
+  "O2 Small Biz 2GB (2022)": ""
 };
 
 var o2DataTariffs = {
