@@ -51,9 +51,9 @@ ADD ERM150 ${mobileNumber}
 
 `;
       } else if (selectTariff in o2VoiceTariffs) {
-        finalScript += `change ${mobileNumber}/serv=+gs=476+gp=2041,,N,2+gp=58,,N,2+gp=985,,N,2+gp=986,,N,2+mm+MV+d+5G+vl+vw+gp=1729,,N,2 y\n`;
+        finalScript += `change ${mobileNumber}/serv=+gs=476+gp=2041,,N,2+gp=58,,N,2+gp=985,,N,2+gp=986,,N,2+mm+MV+d+4a+5G+vl+vw+gp=1729,,N,2 y\n`;
       } else if (selectTariff in o2DataTariffs) {
-        finalScript += `Transfer ${mobileNumber} 691/serv=+YX+gs=467+gp=2041,,N,2+gp=58,,N,2+gp=985,,N,2+gp=986,,N,2 y\n`;
+        finalScript += `Transfer ${mobileNumber} 691/serv=+YX+gs=467+gp=2041,,N,2+gp=58,,N,2+gp=985,,N,2+gp=986,,N,2+4a+5G y\n`;
       } else if (selectTariff in vfDataTariffs) {
         finalScript += `MIGRATE DATA ${mobileNumber} CD300400
 SERV CD300400 USER
@@ -229,10 +229,10 @@ Y
 `;
       } else if (selectTariff in o2VoiceTariffs) {
         finalScript +=
-          `INS ${mobileNumber} ${simNumber} 095 +DC+24+gs=476+gp=2041,,N,2+gp=58,,N,2+gp=985,,N,2+gp=986,,N,2+mm+MV+d+5G+vl+vw+gp=1729,,N,2 y\n`;
+          `INS ${mobileNumber} ${simNumber} 095 +DC+24+gs=476+gp=2041,,N,2+gp=58,,N,2+gp=985,,N,2+gp=986,,N,2+mm+MV+d+4a+5G+vl+vw+gp=1729,,N,2 y\n`;
       } else if (selectTariff in o2DataTariffs) {
         finalScript +=
-          `INS ${mobileNumber} ${simNumber} 691 +YX+gs=467+gp=2041,,N,2+gp=58,,N,2+gp=985,,N,2+gp=986,,N,2+5G y\n`;
+          `INS ${mobileNumber} ${simNumber} 691 +YX+gs=467+gp=2041,,N,2+gp=58,,N,2+gp=985,,N,2+gp=986,,N,2+4a+5G y\n`;
       } else if (selectTariff in sbSharerTariffs) {
         finalScript +=`CON/SNB ${tariffCode} ${simNumber} ${mobileNumber} ${leadHandsetNumber} 1919
 
@@ -436,13 +436,13 @@ Y
         if (DNO == "") {
           finalScript = "Please select a DNO";
         } else {
-          finalScript += `PIN ${mobileNumber} ${simNumber} 095 +DC+gs=476+gp=2041,,N,2+gp=58,,N,2+gp=985,,N,2+gp=986,,N,2+mm+MV+d+5G+vl+vw+gp=1729,,N,2 ${DNOCode} 536 y\n`;
+          finalScript += `PIN ${mobileNumber} ${simNumber} 095 +DC+gs=476+gp=2041,,N,2+gp=58,,N,2+gp=985,,N,2+gp=986,,N,2+mm+MV+d+4a+5G+vl+vw+gp=1729,,N,2 ${DNOCode} 536 y\n`;
         }
       } else if (selectTariff in o2DataTariffs) {
         if (DNO == "") {
           finalScript = "Please select a DNO";
         } else {
-          finalScript += `PIN ${mobileNumber} ${simNumber} 691 +YX+gs=467+gp=2041,,N,2+gp=58,,N,2+gp=985,,N,2+gp=986,,N,2+5G ${DNOCode} 536 y\n`;
+          finalScript += `PIN ${mobileNumber} ${simNumber} 691 +YX+gs=467+gp=2041,,N,2+gp=58,,N,2+gp=985,,N,2+gp=986,,N,2+4a+5G ${DNOCode} 536 y\n`;
         }
       } else if (selectTariff in vfDataTariffs) {
         finalScript += `IMPORT DATA ${simNumber} ${mobileNumber} 1919
