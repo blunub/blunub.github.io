@@ -1855,7 +1855,8 @@ var vfDataTariffs5G = {
   "VF Evolve Data Only 12GB": "",
   "VF Evolve Data Only 25GB": "",
   "VF Evolve Data Only 2GB": "",
-  "VF Evolve Data Only Unlimited": ""
+  "VF Evolve Data Only Unlimited": "",
+  "VF Academia Data Only 2GB": ""
 };
 
 var sbSharerTariffs = {
