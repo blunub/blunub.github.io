@@ -1413,7 +1413,7 @@ var redTariffs = {
   "VF Red Value Bundle 8GB + 3GB WiFi": "",
   "VF Red Value Bundle 8GB + 4GB WiFi": "",
   "VF Red Value Bundle 8GB + 5GB WiFi": "",
-  "VF Red XL": ""
+  "VF Red XL": "",
 };
 
 var redExecTariffs = {
@@ -1434,6 +1434,7 @@ var redExecTariffs = {
   "VF Red Executive 20GB (2019)": "",
   "VF Unlimited Data Flex": "",
   "VF Unlimited Data Flex (2020)": "",
+  "VF Business Data Flex": "",
   "VF Red Executive EU 25GB (2019)": "",
   "VF Red Executive EU 50GB (2019)": "",
   "VF Red Executive EU 100GB (2019)": "",
@@ -1504,7 +1505,7 @@ var redExecTariffsDataBar = {
   "VF EU Bus Adv - Extra Base 0GB - (2021)": "",
   "VF EU Bus Adv - Value Base 0GB - (2021)": "",
   "VF EU Bus Adv Unltd Voice Only - Extra Base (2021)": "",
-  "VF EU Bus Adv Unltd Voice Only - Value Base (2021)": ""
+  "VF EU Bus Adv Unltd Voice Only - Value Base (2021)": "",
 };
 
 var redExecTariffs5G = {
@@ -1718,7 +1719,49 @@ var redExecTariffs5G = {
   "VF Evolve Business Single 2GB": "",
   "VF Evolve Business Single 50GB": "",
   "VF Evolve Business Single 6GB": "",
-  "VF Evolve Business Voice": ""
+  "VF Evolve Business Voice": "",
+  "VF B20 Evolve 24m Business Pro Unlimited (2023)": "",
+  "VF B21 Evolve 24m Business Sharer 2GB (2023)": "",
+  "VF B22 Evolve 36m Business Sharer 2GB (2023)": "",
+  "VF B23 Evolve 36m Business Single 25GB (2023)": "",
+  "VF B24 Evolve 24m Business Pro Unlimited (2023)": "",
+  "VF BCU Business Pro Unlimited (2023)": "",
+  "VF BCU Business Single 12GB (2023)": "",
+  "VF BCU Business Single 2GB (2023)": "",
+  "VF BCU Business Single 50GB (2023)": "",
+  "VF BCU Business Single 6GB (2023)": "",
+  "VF BCU Business Voice (2023)": "",
+  "VF Business Share Unlimited Voice": "",
+  "VF Business Share Unlimited Voice + Int": "",
+  "VF Business Single 12GB": "",
+  "VF Business Single 24GB": "",
+  "VF Business Single 2GB": "",
+  "VF Business Single 6GB": "",
+  "VF Business Single Unlimited": "",
+  "VF Evolve 24m Business Pro Unlimited (2024)": "",
+  "VF Evolve 24m Business Sharer 12GB (2024)": "",
+  "VF Evolve 24m Business Sharer 1GB (2024)": "",
+  "VF Evolve 24m Business Sharer 2GB (2024)": "",
+  "VF Evolve 24m Business Sharer 6GB (2024)": "",
+  "VF Evolve 24m Business Single 12GB (2024)": "",
+  "VF Evolve 24m Business Single 25GB (2024)": "",
+  "VF Evolve 24m Business Single 2GB (2024)": "",
+  "VF Evolve 24m Business Single 50GB (2024)": "",
+  "VF Evolve 24m Business Single 6GB (2024)": "",
+  "VF Evolve 24m Business Voice (2024)": "",
+  "VF Evolve 36m Business Pro Unlimited (2024)": "",
+  "VF Evolve 36m Business Sharer 12GB (2024)": "",
+  "VF Evolve 36m Business Sharer 1GB (2024)": "",
+  "VF Evolve 36m Business Sharer 2GB (2024)": "",
+  "VF Evolve 36m Business Sharer 6GB (2024)": "",
+  "VF Evolve 36m Business Single 12GB (2024)": "",
+  "VF Evolve 36m Business Single 25GB (2024)": "",
+  "VF Evolve 36m Business Single 2GB (2024)": "",
+  "VF Evolve 36m Business Single 50GB (2024)": "",
+  "VF Evolve 36m Business Single 6GB (2024)": "",
+  "VF Evolve 36m Business Voice (2024)": "",
+  "VF R1 Evolve 36m Business Sharer 2GB (2024)": "",
+  "VF R1 Evolve 36m Business Voice (2024)": "",
 };
 
 var vfDataTariffs = {
@@ -1763,7 +1806,7 @@ var vfDataTariffs = {
   "VF EU Bus Freedom 250 Data Sharer - (2021)": "",
   "VF EU Bus Freedom 500 Data Sharer - (2021)": "",
   "VF EU Bus Freedom 750 Data Sharer - (2021)": "",
-  "VF EU Bus Freedom Data Sharer - (2021)": ""
+  "VF EU Bus Freedom Data Sharer - (2021)": "",
 };
 
 var vfDataTariffs5G = {
@@ -1856,7 +1899,35 @@ var vfDataTariffs5G = {
   "VF Evolve Data Only 25GB": "",
   "VF Evolve Data Only 2GB": "",
   "VF Evolve Data Only Unlimited": "",
-  "VF Academia Data Only 2GB": ""
+  "VF Academia Data Only 2GB": "",
+  "VF B19 Evolve 24m Data Only Unlimited (2023)": "",
+  "VF B20 Evolve 24m Data Only Unlimited (2023)": "",
+  "VF B24 Evolve 24m Data Only Unlimited (2023)": "",
+  "VF BCU Data Only 100GB (2023)": "",
+  "VF BCU Data Only 12GB (2023)": "",
+  "VF BCU Data Only 25GB (2023)": "",
+  "VF BCU Data Only 2GB (2023)": "",
+  "VF BCU Data Only Unlimited (2023)": "",
+  "VF Business Data Only 10GB": "",
+  "VF Business Data Only 30GB": "",
+  "VF Business Data Only 4GB": "",
+  "VF Business Data Only Unlimited": "",
+  "VF Business Flex Data Only": "",
+  "VF Business Share Data Only": "",
+  "VF Evolve 24m Business Data 4GB (2024)": "",
+  "VF Evolve 24m Data Only 100GB (2024)": "",
+  "VF Evolve 24m Data Only 12GB (2024)": "",
+  "VF Evolve 24m Data Only 25GB (2024)": "",
+  "VF Evolve 24m Data Only 2GB (2024)": "",
+  "VF Evolve 24m Data Only Unlimited (2024)": "",
+  "VF Evolve 36m Business Data 4GB (2024)": "",
+  "VF Evolve 36m Data Only 100GB (2024)": "",
+  "VF Evolve 36m Data Only 12GB (2024)": "",
+  "VF Evolve 36m Data Only 25GB (2024)": "",
+  "VF Evolve 36m Data Only 2GB (2024)": "",
+  "VF Evolve 36m Data Only Unlimited (2024)": "",
+  "VF R1 Evolve 36m Data Only 12GB (2024)": "",
+  "VF R1 Evolve 36m Data Only Unlimited (2024)": "",
 };
 
 var sbSharerTariffs = {
@@ -1947,7 +2018,7 @@ var sbSharerTariffs = {
   "VF SB Sharer 30000 VF Passport 24 Add": "",
   "VF SB Sharer 36000 VF Passport 24 Add": "",
   "VF SB Sharer 42000 VF Passport 24 Add": "",
-  "VF SB Sharer 48000 VF Passport 24 Add": ""
+  "VF SB Sharer 48000 VF Passport 24 Add": "",
 };
 
 var sbSharerLeadTariffs = {
@@ -2038,7 +2109,7 @@ var sbSharerLeadTariffs = {
   "VF SB Sharer 30000 VF Passport 24": "",
   "VF SB Sharer 36000 VF Passport 24": "",
   "VF SB Sharer 42000 VF Passport 24": "",
-  "VF SB Sharer 48000 VF Passport 24": ""
+  "VF SB Sharer 48000 VF Passport 24": "",
 };
 
 var vfPPMTariffs = {
@@ -2046,7 +2117,7 @@ var vfPPMTariffs = {
   "VF Wholesale PPM (2020)": "",
   "VF Gighub PPM": "",
   "VF Wholesale PPM (2021)": "",
-  "VF Pangea 3 PPM": ""
+  "VF Pangea 3 PPM": "",
 };
 
 var vfGigaCubeTariffs = {
@@ -2061,7 +2132,7 @@ var vfGigaCubeTariffs = {
   "VF GigaCube 30day 100": "",
   "VF GigaCube 30day 200": "",
   "VF GigaCube 30day 300": "",
-  "VF GigaCube 30day 60": ""
+  "VF GigaCube 30day 60": "",
 };
 
 var o2VoiceTariffs = {
@@ -2261,7 +2332,32 @@ var o2VoiceTariffs = {
   "O2 Small Biz 7GB (2021)": "",
   "O2 Small Biz 500MB (2024)": "",
   "O2 Small Biz Data Share (2021) - Catapult": "",
-  "O2 Small Biz 2GB (2022)": ""
+  "O2 Small Biz 2GB (2022)": "",
+  "O2 Abzorb 2022-2023": "",
+  "O2 Abzorb 2022-2023": "",
+  "O2 B1 Business Sharer + GR 10GB (2024)": "",
+  "O2 Business Data Flex + GR (2024)": "",
+  "O2 Business Sharer + GR 3GB (2024)": "",
+  "O2 Business Sharer + GR 6GB (2024)": "",
+  "O2 Business Sharer + GR 9GB (2024)": "",
+  "O2 Business Single + GR 25GB (2024)": "",
+  "O2 Business Single + GR 500MB (2024)": "",
+  "O2 Business Single + GR 50GB (2024)": "",
+  "O2 Business Single + GR 6GB (2024)": "",
+  "O2 Business Single + GR Unlimited (2024)": "",
+  "O2 Business Single + GRE Unlimited Extra (2024)": "",
+  "O2 F1 Business Single + GR Unlimited": "",
+  "O2 F1 Small Biz Unlimited (2022)": "",
+  "O2 L1 Business Single + GR Unlimited (2024)": "",
+  "O2 SIM only Small Biz 10GB Shared (2020)": "",
+  "O2 SIM only Small Biz 1GB Shared (2020)": "",
+  "O2 SIM only Small Biz 5GB Shared (2020)": "",
+  "O2 Small Biz 3GB Shares (2024)": "",
+  "O2 Small Biz 9GB (2021)": "",
+  "O2 TH Business Single + GR 0GB (2024)": "",
+  "O2 TH Business Single + GR 2GB (2024)": "",
+  "O2 TH Business Single + GR 4GB (2024)": "",
+  "O2 TH Business Single + GR 6GB (2024)": "",
 };
 
 var o2DataTariffs = {
@@ -2308,5 +2404,16 @@ var o2DataTariffs = {
   "O2 Business Data Only + GR 25GB": "",
   "O2 Business Data Only + GR 10GB": "",
   "O2 Business Data Only + GR 5GB": "",
-  "O2 Mobile Broadband Unlimited (2023)": ""
+  "O2 Mobile Broadband Unlimited (2023)": "",
+  "O2 Business Data Only + GR 100GB (2024)": "",
+  "O2 Business Data Only + GR 10GB (2024)": "",
+  "O2 Business Data Only + GR 25GB (2024)": "",
+  "O2 Business Data Only + GR 50GB (2024)": "",
+  "O2 Business Data Only + GR 5GB (2024)": "",
+  "O2 Business Data Only + GR Unlimited (2024)": "",
+  "O2 Business Data Only sharer + GR 4GB (2024)": "",
+  "O2 Mobile Broadband 12GB (2022)": "",
+  "O2 Mobile Broadband 1GB Shared (2020)": "",
+  "O2 Mobile Broadband 6GB (2022)": "",
+  "O2 Mobile Broadband Unlimited (2024)": "",
 };
