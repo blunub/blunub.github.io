@@ -2118,6 +2118,8 @@ var vfPPMTariffs = {
   "VF Gighub PPM": "",
   "VF Wholesale PPM (2021)": "",
   "VF Pangea 3 PPM": "",
+  "VF Virocom PPM - Lead": "",
+  "VF Virocom PPM - Child": "",
 };
 
 var vfGigaCubeTariffs = {
