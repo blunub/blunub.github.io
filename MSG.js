@@ -47,6 +47,7 @@ ADD APNBUNDLE ${mobileNumber} WTRDC
 CONNECT RECALL ${mobileNumber}
 
 ADD ERM150 ${mobileNumber}
+ADD VOLTE0 ${mobileNumber}
 
 
 `;
@@ -135,6 +136,7 @@ ADD MMS ${mobileNumber}
 ADD WIFI ${mobileNumber}
 BAR GPRSROAM ${mobileNumber}
 ADD ERM150 ${mobileNumber}
+ADD VOLTE5 ${mobileNumber}
 
 `;
       } else if (selectTariff in redExecTariffs) {
@@ -154,6 +156,7 @@ ADD APNBUNDLE ${mobileNumber} MRD21
 CONNECT RECALL ${mobileNumber}
 
 ADD ERM150 ${mobileNumber}
+ADD VOLTE0 ${mobileNumber}
 
 
 `;
@@ -175,6 +178,7 @@ ADD APNBUNDLE ${mobileNumber} MRD21
 CONNECT RECALL ${mobileNumber}
 
 ADD ERM150 ${mobileNumber}
+ADD VOLTE0 ${mobileNumber}
 
 
 `;
@@ -197,6 +201,7 @@ ADD APNBUNDLE ${mobileNumber} MRD21
 CONNECT RECALL ${mobileNumber}
 
 ADD ERM150 ${mobileNumber}
+ADD VOLTE0 ${mobileNumber}
 
 
 `;
@@ -222,6 +227,7 @@ ADD APNBUNDLE ${mobileNumber} WTRDC
 CONNECT RECALL ${mobileNumber}
 
 ADD ERM150 ${mobileNumber}
+ADD VOLTE0 ${mobileNumber}
 
 TRANSFER SNB OC600000 CD300400 ${mobileNumber}
 Y
@@ -277,6 +283,7 @@ CONNECT RECALL ${mobileNumber}
 ADD WO ${mobileNumber} 1
 
 ADD ERM150 ${mobileNumber}
+ADD VOLTE5 ${mobileNumber}
 
 `;
       } else if (selectTariff in vfDataTariffs) {
@@ -349,6 +356,7 @@ ADD APNBUNDLE ${mobileNumber} MRD21
 CONNECT RECALL ${mobileNumber}
 
 ADD ERM150 ${mobileNumber}
+ADD VOLTE0 ${mobileNumber}
 
 TRANSFER SNB OC600000 CD300400 ${mobileNumber}
 Y
@@ -374,6 +382,7 @@ ADD APNBUNDLE ${mobileNumber} MRD21
 CONNECT RECALL ${mobileNumber}
 
 ADD ERM150 ${mobileNumber}
+ADD VOLTE0 ${mobileNumber}
 
 TRANSFER SNB OC600000 CD300400 ${mobileNumber}
 Y
@@ -400,6 +409,7 @@ BAR GPRSROAM ${mobileNumber}
 CONNECT RECALL ${mobileNumber}
 
 ADD ERM150 ${mobileNumber}
+ADD VOLTE0 ${mobileNumber}
 
 TRANSFER SNB OC600000 CD300400 ${mobileNumber}
 Y
@@ -427,6 +437,7 @@ ADD APNBUNDLE ${mobileNumber} WTRDC
 CONNECT RECALL ${mobileNumber}
 
 ADD ERM150 ${mobileNumber}
+ADD VOLTE0 ${mobileNumber}
 
 TRANSFER SNB OC600000 CD300400 ${mobileNumber}
 Y
@@ -523,6 +534,7 @@ CONNECT RECALL ${mobileNumber}
 ADD WO ${mobileNumber} 1
 
 ADD ERM150 ${mobileNumber}
+ADD VOLTE5 ${mobileNumber}
 
 `;
       } else if (selectTariff in vfGigaCubeTariffs) {
@@ -560,6 +572,7 @@ ADD APNBUNDLE ${mobileNumber} MRD21
 CONNECT RECALL ${mobileNumber}
 
 ADD ERM150 ${mobileNumber}
+ADD VOLTE0 ${mobileNumber}
 
 TRANSFER SNB OC600000 CD300400 ${mobileNumber}
 Y
@@ -585,6 +598,7 @@ ADD APNBUNDLE ${mobileNumber} MRD21
 CONNECT RECALL ${mobileNumber}
 
 ADD ERM150 ${mobileNumber}
+ADD VOLTE0 ${mobileNumber}
 
 TRANSFER SNB OC600000 CD300400 ${mobileNumber}
 Y
@@ -611,6 +625,8 @@ CONNECT RECALL ${mobileNumber}
 BAR GPRS ${mobileNumber}
 BAR GPRSROAM ${mobileNumber}
 ADD ERM150 ${mobileNumber}
+ADD VOLTE0 ${mobileNumber}
+
 TRANSFER SNB OC600000 CD300400 ${mobileNumber}
 Y
 
