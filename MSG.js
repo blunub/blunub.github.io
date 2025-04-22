@@ -120,7 +120,12 @@ ADD ERM150 ${mobileNumber}
 
 `;
       } else if (selectTariff in vfPPMTariffs) {
-        finalScript += `MIGRATE VFVSZ685 ${mobileNumber}/ORGID=ABZORBPPM CD300400\n`;
+        finalScript += `MIGRATE VFVSZ685 ${mobileNumber}/ORGID=ABZORBPPM CD300400
+ADD 4G ${mobileNumber}
+ADD ERM150 ${mobileNumber}
+ADD VOLTE5 ${mobileNumber}
+
+`;
       } else if (selectTariff in vfGigaCubeTariffs) {
         finalScript += `MIGRATE DATA1 ${mobileNumber} CD300400
 SERV CD300400 USER
@@ -279,8 +284,6 @@ ADD APN ${mobileNumber} ACCINT
 
 ADD WIFI ${mobileNumber}
 CONNECT RECALL ${mobileNumber}
-
-ADD WO ${mobileNumber} 1
 
 ADD ERM150 ${mobileNumber}
 ADD VOLTE5 ${mobileNumber}
@@ -530,8 +533,6 @@ ADD APN ${mobileNumber} ACCINT
 
 ADD WIFI ${mobileNumber}
 CONNECT RECALL ${mobileNumber}
-
-ADD WO ${mobileNumber} 1
 
 ADD ERM150 ${mobileNumber}
 ADD VOLTE5 ${mobileNumber}
